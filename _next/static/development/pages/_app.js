@@ -889,7 +889,7 @@ var _module$exports;
 
 var env = "development";
 var production = env === 'production';
-module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidofc.github.io' : 'http://localhost:3000'), _module$exports);
+module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), _module$exports);
 
 /***/ }),
 

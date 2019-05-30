@@ -1,1 +1,0 @@
-{"version":3,"file":"static/webpack/static/development/pages/_app.js.bd4ed04ffad2a6b601d0.hot-update.js","sources":["webpack:///./config.js"],"sourcesContent":["console.log(process.env.NODE_ENV);\nmodule.exports = {\n    ENV: process.env.NODE_ENV,\n    HOSTNAME: 'https://sidofc.github.io'\n};\n"],"mappings":";;;;;;;;;;;;AAAA;AACA;AACA;AACA;AAFA;;;;A","sourceRoot":""}
