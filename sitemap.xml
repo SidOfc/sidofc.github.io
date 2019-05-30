@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="https://sitemaps.org/schemas/sitemap/0.9"><url><loc>https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/index</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/vim-tip-persistent-undo</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/404.html</loc><priority>0</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
-<url><loc>https://sidneyliebrand.io</loc><priority>1</priority><changefreq>weekly</changefreq></url></urlset>
+<urlset xmlns="https://sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/index</loc><priority>0.5</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/vim-tip-persistent-undo</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/404.html</loc><priority>0</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</loc><priority>0.8</priority><changefreq>yearly</changefreq></url><url><loc>https://sidneyliebrand.io</loc><priority>1</priority><changefreq>weekly</changefreq></url>
+</urlset>

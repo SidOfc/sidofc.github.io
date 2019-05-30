@@ -23254,11 +23254,21 @@ function (_App) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "Sidney Liebrand's blog",
+        href: "/feed.xml",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
         rel: "canonical",
         href: "".concat(_config__WEBPACK_IMPORTED_MODULE_15__["hostname"]).concat(route.slice(1) ? route : ''),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23267,7 +23277,7 @@ function (_App) {
         href: "/static/apple-touch-icon.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 63
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23277,7 +23287,7 @@ function (_App) {
         href: "/static/favicon-32x32.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 68
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23287,7 +23297,7 @@ function (_App) {
         href: "/static/favicon-16x16.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 74
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23297,7 +23307,7 @@ function (_App) {
         href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 80
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23307,7 +23317,7 @@ function (_App) {
         crossOrigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 86
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23315,7 +23325,7 @@ function (_App) {
         href: "/static/site.webmanifest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 92
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23323,7 +23333,7 @@ function (_App) {
         httpEquiv: "content-type",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 93
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23331,7 +23341,7 @@ function (_App) {
         httpEquiv: "content-language",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 94
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23339,7 +23349,7 @@ function (_App) {
         content: "index, follow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 95
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23347,19 +23357,19 @@ function (_App) {
         content: "width=device-width, initial-scale=1.0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 96
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_global_css__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 101
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ComponentWithMDX, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 102
         },
         __self: this
       })));
@@ -23484,13 +23494,30 @@ function date() {
   }
 
   if (typeof args[0] === 'string') {
-    var _args$0$split$map = args[0].split('-').map(function (n) {
+    var _args$0$split = args[0].split(' '),
+        _args$0$split2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_args$0$split, 2),
+        dmy = _args$0$split2[0],
+        hms = _args$0$split2[1];
+
+    var _dmy$split$map = dmy.split('-').map(function (n) {
       return _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(n);
     }),
-        _args$0$split$map2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_args$0$split$map, 3),
-        dd = _args$0$split$map2[0],
-        mm = _args$0$split$map2[1],
-        yyyy = _args$0$split$map2[2];
+        _dmy$split$map2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_dmy$split$map, 3),
+        dd = _dmy$split$map2[0],
+        mm = _dmy$split$map2[1],
+        yyyy = _dmy$split$map2[2];
+
+    if (hms) {
+      var _hms$split$map = hms.split(':').map(function (n) {
+        return _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(n);
+      }),
+          _hms$split$map2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_hms$split$map, 3),
+          hh = _hms$split$map2[0],
+          ii = _hms$split$map2[1],
+          ss = _hms$split$map2[2];
+
+      return new Date(yyyy, mm - 1, dd, hh, ii, ss);
+    }
 
     return new Date(yyyy, mm - 1, dd);
   }
