@@ -460,7 +460,7 @@ function generateFontFaces(family, weights) {
   var mapped = [];
 
   _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(weights).forEach(function (name) {
-    if (['definitions', 'fmtVar', 'withVar'].includes(name)) return;
+    if (['definitions', 'withVar'].includes(name)) return;
     var weight = weights[name];
     var localName = Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["capitalize"])(name);
     mapped.push("@font-face {\n           font-family: ".concat(family, ";\n           font-style: normal;\n           font-display: swap;\n           font-weight: ").concat(weight, ";\n           src: url('/static/fonts/").concat(familyLower, "-").concat(weight, ".eot'); /* IE9 Compat Modes */\n           src: local('").concat(family, " ").concat(localName, "'),\n                local('").concat(family, "-").concat(localName, "'),\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".woff2') format('woff2'), /* Super Modern Browsers */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".woff') format('woff'), /* Modern Browsers */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".ttf') format('truetype'), /* Safari, Android, iOS */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".svg#").concat(family, "') format('svg'); /* Legacy iOS */\n           }"));
@@ -469,7 +469,7 @@ function generateFontFaces(family, weights) {
   return mapped.join();
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].definitions, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].definitions, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].white, 0.05), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].fmtVar('primary', '-0.06ex 0 ??, 0.06ex 0 ??', 'text-shadow')));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].definitions, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].definitions, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].white, 0.05), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color', 'color'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'text-shadow', '-0.06ex 0 ??, 0.06ex 0 ??')));
 
 /***/ }),
 
@@ -488,7 +488,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   componentId: "l5bfw4-0"
-})(["position:relative;min-height:100vh;width:100%;display:grid;grid-template-columns:auto;", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_1__["page"].header.fmtVar('height', '?? 1fr auto', 'grid-template-rows')));
+})(["position:relative;min-height:100vh;width:100%;display:grid;grid-template-columns:auto;", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_1__["page"].header.withVar('height', 'grid-template-rows', '?? 1fr auto')));
 
 /***/ }),
 
@@ -634,13 +634,13 @@ var GridCell =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "gefaab-0"
-})(["position:relative;", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.withVar('height'));
+})(["position:relative;", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.withVar('height', 'height'));
 
 var Container =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header.withConfig({
   componentId: "gefaab-1"
-})(["position:fixed;top:0;left:0;right:0;", ";", ";box-shadow:0px 0px ", " rgba(0,0,0,0.15);z-index:100;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.withVar('height'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["colors"].withVar('white', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].small);
+})(["position:fixed;top:0;left:0;right:0;", ";", ";box-shadow:0px 0px ", " rgba(0,0,0,0.15);z-index:100;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.withVar('height', 'height'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["colors"].withVar('white', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].small);
 
 var Inner =
 /*#__PURE__*/
@@ -709,7 +709,7 @@ styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
 })(["margin-bottom:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].article.withConfig({
   componentId: "sc-5dsxsd-1"
-})(["margin:auto;width:", ";max-width:calc(100% - ", ");max-width:calc(100vw - ", ");padding:", ";font-weight:", ";", " + ", "{margin-bottom:", ";}> *{display:block;", ";max-width:100%;margin-left:auto;margin-right:auto;}ul,ol{list-style:none;padding:0;li{position:relative;padding-left:1.5rem;&::before{position:absolute;line-height:1;padding-top:0.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:'\\2022';", ";}}}ol{counter-reset:ol-li-counter;li::before{padding-top:0.4rem;font-size:0.9em;font-weight:", ";counter-increment:ol-li-counter;content:counter(ol-li-counter)'.';}}img{max-width:100%;}pre{padding:", ";}blockquote{font-style:italic;margin-top:", ";margin-bottom:", ";padding:0 ", ";", ";p{opacity:0.8;}}> p{margin-top:", ";margin-bottom:", ";}h1,h2,h3,h4,h5,h6{&:not(:first-child){margin-top:", ";}}h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p{margin-top:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.light, StyledTitle, _blog_meta__WEBPACK_IMPORTED_MODULE_4__["StyledMeta"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.withVar('width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].fmtVar('dimgray', '4px solid ??', 'border-left'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular));
+})(["margin:auto;width:", ";max-width:calc(100% - ", ");max-width:calc(100vw - ", ");padding:", ";font-weight:", ";", " + ", "{margin-bottom:", ";}> *{display:block;", ";max-width:100%;margin-left:auto;margin-right:auto;}ul,ol{list-style:none;padding:0;li{position:relative;padding-left:1.5rem;&::before{position:absolute;line-height:1;padding-top:0.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:'\\2022';", ";}}}ol{counter-reset:ol-li-counter;li::before{padding-top:0.4rem;font-size:0.9em;font-weight:", ";counter-increment:ol-li-counter;content:counter(ol-li-counter)'.';}}img{max-width:100%;}pre{padding:", ";}blockquote{font-style:italic;margin-top:", ";margin-bottom:", ";padding:0 ", ";", ";p{opacity:0.8;&:first-child{margin-top:0;}&:last-child{margin-bottom:0;}}@media all and (max-width:420px){padding:", " 0;border:none;", ";", ";}}> p{margin-top:", ";margin-bottom:", ";}h1,h2,h3,h4,h5,h6{&:not(:first-child){margin-top:", ";}}h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p{margin-top:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.light, StyledTitle, _blog_meta__WEBPACK_IMPORTED_MODULE_4__["StyledMeta"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.withVar('width', 'width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'border-left', '4px solid ??'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'border-top', '4px solid ??'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'border-bottom', '4px solid ??'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular));
 function Title(_ref) {
   var author = _ref.author,
       title = _ref.title,
@@ -718,7 +718,7 @@ function Title(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StyledTitle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 120
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_blog_meta__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -728,7 +728,7 @@ function Title(_ref) {
   }, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 121
     },
     __self: this
   })));
@@ -966,18 +966,12 @@ function themeable(obj) {
     });
 
     _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()(obj, {
-      withVar: function withVar(name) {
-        var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : name;
-        property = var2css(property);
-        var def = "var(--".concat(parents.concat(var2css(name)).join('-'), ");");
-        return "\n                        ".concat(property, ": ").concat(obj[name], ";\n                        ").concat(property, ": ").concat(def, "\n                    ");
-      },
-      fmtVar: function fmtVar(name, fmt) {
-        var property = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : name;
+      withVar: function withVar(name, property) {
+        var fmt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
         property = var2css(property);
         var cssVar = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
-        var rawProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, obj[name]) : obj[name];
-        var cssVarProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, cssVar) : cssVar;
+        var rawProp = fmt ? fmt.replace(/\?{2}/g, obj[name]) : obj[name];
+        var cssVarProp = fmt ? fmt.replace(/\?{2}/g, cssVar) : cssVar;
         return "\n                        ".concat(property, ": ").concat(rawProp, ";\n                        ").concat(property, ": ").concat(cssVarProp, ";\n                    ");
       },
 
