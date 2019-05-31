@@ -294,7 +294,7 @@ var StyledMeta =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].small.withConfig({
   componentId: "vkw20g-0"
-})(["font-size:0.8rem;line-height:1.2;color:", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].dimgray);
+})(["font-size:0.8rem;line-height:1.2;", ";"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'color'));
 
 /***/ }),
 
@@ -313,19 +313,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
-/* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config/styles */ "./config/styles.js");
+/* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config/styles */ "./config/styles.js");
 
 
 var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/components/button.jsx";
-
 
 
 function Button(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StyledButton, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }));
@@ -334,7 +332,7 @@ var StyledButton =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
   componentId: "q4rscb-0"
-})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";background-color:", ";border-radius:2px;height:auto;border:1px solid rgba(0,0,0,0.1);color:", ";cursor:pointer;transition:all 150ms ease-in-out;&:hover{background-color:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.1), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].white, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.2));
+})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";border-radius:2px;height:auto;", ";border:1px solid rgba(0,0,0,0.1);", ";cursor:pointer;transition:all 100ms ease-out;&:hover{opacity:0.9;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('primary', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('white', 'color'));
 
 /***/ }),
 
@@ -444,7 +442,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    ", "\n\n    * {\n        box-sizing: border-box;\n\n        &::selection {\n            background-color: ", ";\n            color: ", ";\n        }\n    }\n\n    html {", "}\n\n    body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        font-family: ", ", serif;\n        line-height: 1.6;\n        font-weight: ", ";\n    }\n\n    #__next {\n        height: 100%;\n        height: 100vh;\n        color: ", ";\n    }\n\n    article, aside, details, figcaption, figure, footer,\n    header, main, mark, nav, section {\n        display: block;\n    }\n\n    h1, h2, h3, h4, h5, h6 {\n        color: ", ";\n        line-height: 1.1;\n        font-weight: ", ";\n        margin: 0 0 ", ";\n        ", "\n    }\n\n    h1 {", "}\n    h2 {", "}\n    h3 {", "}\n    h4 {", "}\n    h5 {", "}\n    h6 {", "}\n\n    p {\n        font-size: 1.15rem;\n        margin-top: 0;\n        margin-bottom: ", ";\n    }\n\n    li {\n        font-size: 1.15rem;\n        margin-bottom: ", ";\n    }\n\n    blockquote {\n        font-size: 1.15rem;\n    }\n\n    pre,\n    code,\n    kbd {\n        padding: 0.5rem 1rem;\n        border-radius: 4px;\n        background-color: #f2f2f2;\n        color: #444;\n    }\n\n    code,\n    kbd {\n        font-size: 0.8em;\n        padding: 0.2rem 0.4rem 0.15rem;\n        border-radius: 4px;\n    }\n\n    pre code {\n        padding: 0;\n    }\n\n    kbd {\n        background-image: none;\n        border: 1px solid ", ";\n    }\n\n    a, a > code {\n        position: relative;\n        color: ", ";\n        text-decoration: none;\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    ", "\n\n    * {\n        box-sizing: border-box;\n\n        &::selection {\n            background-color: ", ";\n            color: ", ";\n        }\n    }\n\n    :root {\n        ", ";\n        ", ";\n    }\n\n    html {", "}\n\n    body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        font-family: ", ", serif;\n        line-height: 1.6;\n        font-weight: ", ";\n    }\n\n    #__next {\n        height: 100%;\n        height: 100vh;\n        ", ";\n    }\n\n    article, aside, details, figcaption, figure, footer,\n    header, main, mark, nav, section {\n        display: block;\n    }\n\n    h1, h2, h3, h4, h5, h6 {\n        ", ";\n        line-height: 1.1;\n        font-weight: ", ";\n        margin: 0 0 ", ";\n        ", "\n    }\n\n    h1 {", "}\n    h2 {", "}\n    h3 {", "}\n    h4 {", "}\n    h5 {", "}\n    h6 {", "}\n\n    p {\n        font-size: 1.15rem;\n        margin-top: 0;\n        margin-bottom: ", ";\n    }\n\n    li {\n        font-size: 1.15rem;\n        margin-bottom: ", ";\n    }\n\n    blockquote {\n        font-size: 1.15rem;\n    }\n\n    pre,\n    code,\n    kbd {\n        padding: 0.5rem 1rem;\n        border-radius: 4px;\n        background-color: #f2f2f2;\n        ", ";\n    }\n\n    code,\n    kbd {\n        font-size: 0.8em;\n        padding: 0.2rem 0.4rem 0.15rem;\n        border-radius: 4px;\n    }\n\n    pre code {\n        padding: 0;\n    }\n\n    kbd {\n        background-image: none;\n        border: 1px solid ", ";\n    }\n\n    a, a > code {\n        position: relative;\n        ", ";\n        text-decoration: none;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -462,6 +460,7 @@ function generateFontFaces(family, weights) {
   var mapped = [];
 
   _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(weights).forEach(function (name) {
+    if (['definitions', 'fmtVar', 'withVar'].includes(name)) return;
     var weight = weights[name];
     var localName = Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["capitalize"])(name);
     mapped.push("@font-face {\n           font-family: ".concat(family, ";\n           font-style: normal;\n           font-display: swap;\n           font-weight: ").concat(weight, ";\n           src: url('/static/fonts/").concat(familyLower, "-").concat(weight, ".eot'); /* IE9 Compat Modes */\n           src: local('").concat(family, " ").concat(localName, "'),\n                local('").concat(family, "-").concat(localName, "'),\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".woff2') format('woff2'), /* Super Modern Browsers */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".woff') format('woff'), /* Modern Browsers */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".ttf') format('truetype'), /* Safari, Android, iOS */\n                url('/static/fonts/").concat(familyLower, "-").concat(weight, ".svg#").concat(family, "') format('svg'); /* Legacy iOS */\n           }"));
@@ -470,7 +469,7 @@ function generateFontFaces(family, weights) {
   return mapped.join();
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].color, _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].definitions, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].definitions, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'color')));
 
 /***/ }),
 
@@ -551,7 +550,7 @@ var StyledFooter =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].footer.withConfig({
   componentId: "oijonz-0"
-})(["color:", ";padding:", " ", ";text-align:center;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].dimgray, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].small, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium);
+})(["", ";padding:", " ", ";text-align:center;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].small, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium);
 
 /***/ }),
 
@@ -641,7 +640,7 @@ var Container =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header.withConfig({
   componentId: "gefaab-1"
-})(["position:fixed;top:0;left:0;right:0;height:", ";background-color:", ";box-shadow:0px 0px ", " rgba(0,0,0,0.15);z-index:100;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.height, _config_styles__WEBPACK_IMPORTED_MODULE_6__["colors"].white, _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].small);
+})(["position:fixed;top:0;left:0;right:0;height:", ";", ";box-shadow:0px 0px ", " rgba(0,0,0,0.15);z-index:100;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].header.height, _config_styles__WEBPACK_IMPORTED_MODULE_6__["colors"].withVar('white', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].small);
 
 var Inner =
 /*#__PURE__*/
@@ -710,7 +709,7 @@ styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
 })(["margin-bottom:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].article.withConfig({
   componentId: "sc-5dsxsd-1"
-})(["margin:auto;width:", ";max-width:calc(100% - ", ");max-width:calc(100vw - ", ");padding:", ";font-weight:", ";", " + ", "{margin-bottom:", ";}> *{display:block;width:", ";max-width:100%;margin-left:auto;margin-right:auto;}ul,ol{list-style:none;padding:0;li{position:relative;padding-left:1.5rem;&::before{position:absolute;line-height:1;padding-top:0.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:'\\2022';color:", ";}}}ol{counter-reset:ol-li-counter;li::before{padding-top:0.4rem;font-size:0.9em;font-weight:", ";counter-increment:ol-li-counter;content:counter(ol-li-counter)'.';}}img{max-width:100%;}pre{padding:", ";}blockquote{font-style:italic;margin-top:", ";margin-bottom:", ";padding:0 ", ";border-left:4px solid ", ";p{opacity:0.8;}}> p{margin-top:", ";margin-bottom:", ";}h1,h2,h3,h4,h5,h6{&:not(:first-child){margin-top:", ";}}h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p{margin-top:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.light, StyledTitle, _blog_meta__WEBPACK_IMPORTED_MODULE_4__["StyledMeta"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].dimgray, _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].dimgray, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular));
+})(["margin:auto;width:", ";max-width:calc(100% - ", ");max-width:calc(100vw - ", ");padding:", ";font-weight:", ";", " + ", "{margin-bottom:", ";}> *{display:block;width:", ";max-width:100%;margin-left:auto;margin-right:auto;}ul,ol{list-style:none;padding:0;li{position:relative;padding-left:1.5rem;&::before{position:absolute;line-height:1;padding-top:0.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:'\\2022';", ";}}}ol{counter-reset:ol-li-counter;li::before{padding-top:0.4rem;font-size:0.9em;font-weight:", ";counter-increment:ol-li-counter;content:counter(ol-li-counter)'.';}}img{max-width:100%;}pre{padding:", ";}blockquote{font-style:italic;margin-top:", ";margin-bottom:", ";padding:0 ", ";", ";p{opacity:0.8;}}> p{margin-top:", ";margin-bottom:", ";}h1,h2,h3,h4,h5,h6{&:not(:first-child){margin-top:", ";}}h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p{margin-top:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.light, StyledTitle, _blog_meta__WEBPACK_IMPORTED_MODULE_4__["StyledMeta"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.width, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('dimgray', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].fmtVar('dimgray', '4px solid {{var}}', 'border-left'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular));
 function Title(_ref) {
   var author = _ref.author,
       title = _ref.title,
@@ -788,7 +787,7 @@ var Svg =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "jhtjut-0"
-})(["position:relative;width:100%;height:100%;display:flex;align-items:center;svg{flex:1 1 auto;max-width:100%;max-height:100%;display:block;fill:", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary);
+})(["position:relative;width:100%;height:100%;display:flex;align-items:center;svg{flex:1 1 auto;max-width:100%;max-height:100%;display:block;", ";}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'fill'));
 
 var Container =
 /*#__PURE__*/
@@ -907,12 +906,77 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "font", function() { return font; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colors", function() { return colors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spacing", function() { return spacing; });
-/* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
+
+
+
 
 function fluid(property, min, max) {
-  return Object(_utilities__WEBPACK_IMPORTED_MODULE_0__["fluid"])(property, [min.toString(), '280px'], [max.toString(), '1024px']);
+  return Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["fluid"])(property, [min.toString(), '280px'], [max.toString(), '1024px']);
 }
-var page = {
+
+var isObj = function isObj(x) {
+  return !_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default()(x) && typeof x === 'object';
+};
+
+var var2css = function var2css(str) {
+  return str.split(/(?=[A-Z])/).map(function (s) {
+    return s.toLowerCase();
+  }).join('-');
+};
+
+function themeable(obj) {
+  var parents = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+  if (isObj(obj)) {
+    var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(obj);
+
+    keys.filter(function (key) {
+      return isObj(obj[key]);
+    }).forEach(function (key) {
+      obj[key] = themeable(obj[key], parents.concat(key));
+    });
+
+    _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()(obj, {
+      withVar: function withVar(name) {
+        var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : name;
+        property = var2css(property);
+        var def = "var(--".concat(parents.concat(var2css(name)).join('-'), ");");
+        return "\n                        ".concat(property, ": ").concat(obj[name], ";\n                        ").concat(property, ": ").concat(def, ";\n                    ");
+      },
+      fmtVar: function fmtVar(name, fmt) {
+        var property = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : name;
+        property = var2css(property);
+        var def = "var(--".concat(parents.concat(var2css(name)).join('-'), ");");
+        return "\n                        ".concat(property, ": ").concat(obj[name], ";\n                        ").concat(property, ": ").concat(fmt.replace('{{var}}', def), ";\n                    ");
+      },
+
+      get definitions() {
+        return keys.map(function (key) {
+          if (isObj(obj[key])) {
+            return obj[key].definitions;
+          } else {
+            var name = parents.concat(var2css(key)).join('-');
+            return "--".concat(name, ": ").concat(obj[key], ";");
+          }
+        }).filter(function (x) {
+          return x;
+        }).join('');
+      }
+
+    });
+  }
+
+  return obj;
+}
+
+var page = themeable({
   fontFamily: 'Pridi',
   color: '#444',
   width: '50rem',
@@ -922,28 +986,27 @@ var page = {
   post: {
     width: '40rem'
   }
-};
-var font = {
+}, ['page']);
+var font = themeable({
   weights: {
     light: '300',
     regular: '400',
     medium: '500',
     bold: '700'
   }
-};
-var colors = {
-  primary: '#5405e8',
-  // '#e22', // '#40e0d0', // '#5405e8',
+}, ['font']);
+var colors = themeable({
+  primary: '#651eea',
   black: '#000',
   dimgray: '#555',
   white: '#fff'
-};
-var spacing = {
+}, ['colors']);
+var spacing = themeable({
   small: '0.25rem',
   regular: '0.5rem',
   medium: '1rem',
   large: '2rem'
-};
+}, ['spacing']);
 
 /***/ }),
 
@@ -23255,12 +23318,22 @@ function (_App) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
         rel: "alternate",
+        type: "application/atom+xml",
+        title: "Sidney Liebrand's blog",
+        href: "/atom.xml",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
+        rel: "alternate",
         type: "application/rss+xml",
         title: "Sidney Liebrand's blog",
         href: "/feed.xml",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23268,7 +23341,7 @@ function (_App) {
         href: "".concat(_config__WEBPACK_IMPORTED_MODULE_15__["hostname"]).concat(route.slice(1) ? route : ''),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 65
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23277,7 +23350,7 @@ function (_App) {
         href: "/static/apple-touch-icon.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 69
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23287,7 +23360,7 @@ function (_App) {
         href: "/static/favicon-32x32.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 74
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23297,7 +23370,7 @@ function (_App) {
         href: "/static/favicon-16x16.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 80
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23307,7 +23380,7 @@ function (_App) {
         href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 86
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23317,7 +23390,7 @@ function (_App) {
         crossOrigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 92
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23325,7 +23398,7 @@ function (_App) {
         href: "/static/site.webmanifest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 98
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23333,7 +23406,7 @@ function (_App) {
         httpEquiv: "content-type",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 99
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23341,7 +23414,7 @@ function (_App) {
         httpEquiv: "content-language",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 100
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23349,7 +23422,7 @@ function (_App) {
         content: "index, follow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 101
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23357,19 +23430,19 @@ function (_App) {
         content: "width=device-width, initial-scale=1.0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 102
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_global_css__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 107
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ComponentWithMDX, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 108
         },
         __self: this
       })));
