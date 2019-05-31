@@ -1,14 +1,26 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/vim-tip-persistent-undo.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/recruiters-who-call-during-working-hours.js"],{
+
+/***/ "./assets/img/avatar.jpg":
+/*!*******************************!*\
+  !*** ./assets/img/avatar.jpg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/avatar-c312fe45c6ec0c0cc223ac4d12dd6bb7.jpg";
+
+/***/ }),
 
 /***/ "./assets/img/index.js":
 /*!*****************************!*\
   !*** ./assets/img/index.js ***!
   \*****************************/
-/*! exports provided: AsdfMovieBanner, CaniuseCmdOutput, CaniuseSelectMultipleFeatures, CaniuseSearchWDFeature, CaniuseFzfIELastVersionFeatures, VimrcMovementKeyBinds, YamlHomepage, FzfRgDemo, FzfFilesDemo, CheckingCaniuse, DirsInPath, BIPInterface, KillWithKp, RecruiterTableFlip, VimlBanner, RipgrepLsFzf, OpenChangelogNeovim, FzfLsExample, CodiBanner, RubyDemo, SplitBehavior, PryMultilineTypo, WrappedSplitBehavior, WrappedSplitBehavior2 */
+/*! exports provided: Portrait, AsdfMovieBanner, CaniuseCmdOutput, CaniuseSelectMultipleFeatures, CaniuseSearchWDFeature, CaniuseFzfIELastVersionFeatures, VimrcMovementKeyBinds, YamlHomepage, FzfRgDemo, FzfFilesDemo, CheckingCaniuse, DirsInPath, BIPInterface, KillWithKp, RecruiterTableFlip, VimlBanner, RipgrepLsFzf, OpenChangelogNeovim, FzfLsExample, CodiBanner, RubyDemo, SplitBehavior, PryMultilineTypo, WrappedSplitBehavior, WrappedSplitBehavior2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portrait", function() { return Portrait; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsdfMovieBanner", function() { return AsdfMovieBanner; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CaniuseCmdOutput", function() { return CaniuseCmdOutput; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CaniuseSelectMultipleFeatures", function() { return CaniuseSelectMultipleFeatures; });
@@ -34,58 +46,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WrappedSplitBehavior", function() { return WrappedSplitBehavior; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WrappedSplitBehavior2", function() { return WrappedSplitBehavior2; });
 /* harmony import */ var _components_image__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/image */ "./components/image.jsx");
-/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./posts/asdfmovie-banner.svg */ "./assets/img/posts/asdfmovie-banner.svg");
-/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./posts/caniuse-cmd-output.png */ "./assets/img/posts/caniuse-cmd-output.png");
-/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./posts/caniuse-select-multiple-features.png */ "./assets/img/posts/caniuse-select-multiple-features.png");
-/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./posts/caniuse-search-wd-feature.png */ "./assets/img/posts/caniuse-search-wd-feature.png");
-/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/caniuse-fzf-ie-last-version-features.png */ "./assets/img/posts/caniuse-fzf-ie-last-version-features.png");
-/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/vimrc-movement-key-binds.png */ "./assets/img/posts/vimrc-movement-key-binds.png");
-/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./posts/yaml-homepage.png */ "./assets/img/posts/yaml-homepage.png");
-/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./posts/fzf-rg-demo.gif */ "./assets/img/posts/fzf-rg-demo.gif");
-/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./posts/fzf-files-demo.gif */ "./assets/img/posts/fzf-files-demo.gif");
-/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./posts/checking-caniuse.gif */ "./assets/img/posts/checking-caniuse.gif");
-/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./posts/dirs-in-path.gif */ "./assets/img/posts/dirs-in-path.gif");
-/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./posts/bip-interface.gif */ "./assets/img/posts/bip-interface.gif");
-/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./posts/kill-with-kp.gif */ "./assets/img/posts/kill-with-kp.gif");
-/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./posts/recruiter-table-flip.svg */ "./assets/img/posts/recruiter-table-flip.svg");
-/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./posts/vim-banner.svg */ "./assets/img/posts/vim-banner.svg");
-/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./posts/rg-ls-fzf.gif */ "./assets/img/posts/rg-ls-fzf.gif");
-/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./posts/open-changelog-neovim.gif */ "./assets/img/posts/open-changelog-neovim.gif");
-/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./posts/fzf-ls-example.gif */ "./assets/img/posts/fzf-ls-example.gif");
-/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./posts/codi-banner.png */ "./assets/img/posts/codi-banner.png");
-/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./posts/ruby-demo.gif */ "./assets/img/posts/ruby-demo.gif");
-/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./posts/split-behavior.gif */ "./assets/img/posts/split-behavior.gif");
-/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./posts/pry-multiline-typo.gif */ "./assets/img/posts/pry-multiline-typo.gif");
-/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./posts/wrapped-split-behavior.gif */ "./assets/img/posts/wrapped-split-behavior.gif");
-/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./posts/wrapped-split-behavior-2.gif */ "./assets/img/posts/wrapped-split-behavior-2.gif");
-/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./avatar.jpg */ "./assets/img/avatar.jpg");
+/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_avatar_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./posts/asdfmovie-banner.svg */ "./assets/img/posts/asdfmovie-banner.svg");
+/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./posts/caniuse-cmd-output.png */ "./assets/img/posts/caniuse-cmd-output.png");
+/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./posts/caniuse-select-multiple-features.png */ "./assets/img/posts/caniuse-select-multiple-features.png");
+/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/caniuse-search-wd-feature.png */ "./assets/img/posts/caniuse-search-wd-feature.png");
+/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/caniuse-fzf-ie-last-version-features.png */ "./assets/img/posts/caniuse-fzf-ie-last-version-features.png");
+/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./posts/vimrc-movement-key-binds.png */ "./assets/img/posts/vimrc-movement-key-binds.png");
+/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./posts/yaml-homepage.png */ "./assets/img/posts/yaml-homepage.png");
+/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./posts/fzf-rg-demo.gif */ "./assets/img/posts/fzf-rg-demo.gif");
+/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./posts/fzf-files-demo.gif */ "./assets/img/posts/fzf-files-demo.gif");
+/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./posts/checking-caniuse.gif */ "./assets/img/posts/checking-caniuse.gif");
+/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./posts/dirs-in-path.gif */ "./assets/img/posts/dirs-in-path.gif");
+/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./posts/bip-interface.gif */ "./assets/img/posts/bip-interface.gif");
+/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./posts/kill-with-kp.gif */ "./assets/img/posts/kill-with-kp.gif");
+/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./posts/recruiter-table-flip.svg */ "./assets/img/posts/recruiter-table-flip.svg");
+/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./posts/vim-banner.svg */ "./assets/img/posts/vim-banner.svg");
+/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./posts/rg-ls-fzf.gif */ "./assets/img/posts/rg-ls-fzf.gif");
+/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./posts/open-changelog-neovim.gif */ "./assets/img/posts/open-changelog-neovim.gif");
+/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./posts/fzf-ls-example.gif */ "./assets/img/posts/fzf-ls-example.gif");
+/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./posts/codi-banner.png */ "./assets/img/posts/codi-banner.png");
+/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./posts/ruby-demo.gif */ "./assets/img/posts/ruby-demo.gif");
+/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./posts/split-behavior.gif */ "./assets/img/posts/split-behavior.gif");
+/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./posts/pry-multiline-typo.gif */ "./assets/img/posts/pry-multiline-typo.gif");
+/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./posts/wrapped-split-behavior.gif */ "./assets/img/posts/wrapped-split-behavior.gif");
+/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./posts/wrapped-split-behavior-2.gif */ "./assets/img/posts/wrapped-split-behavior-2.gif");
+/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25__);
 
+
+var Portrait = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
+  src: _avatar_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
+  alt: 'Cartoon portrait photo of Sidney Liebrand',
+  caption: false,
+  width: 460,
+  height: 460
+});
 
 var AsdfMovieBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+  src: _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
   alt: 'asdfmovie quote from youtube',
   captionText: 'asdfmovie quote <a target="_blank" href="https://www.youtube.com/watch?v=cYNdUM2gRsg">from youtube</a>',
   width: 356,
@@ -93,33 +115,33 @@ var AsdfMovieBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asI
 });
 
 var CaniuseCmdOutput = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+  src: _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3___default.a,
   alt: 'Output entry results using caniuse-cmd package'
 });
 
 var CaniuseSelectMultipleFeatures = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+  src: _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4___default.a,
   alt: 'Selecting multiple feature entries',
   width: 1600,
   height: 496
 });
 
 var CaniuseSearchWDFeature = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+  src: _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5___default.a,
   alt: 'Searching for working draft CSS features',
   width: 1600,
   height: 248
 });
 
 var CaniuseFzfIELastVersionFeatures = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+  src: _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6___default.a,
   alt: 'Caniuse fzf: IE features supported since last version',
   width: 1600,
   height: 618
 });
 
 var VimrcMovementKeyBinds = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+  src: _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7___default.a,
   alt: 'A screenshot of my vimrc movement key bindings',
   captionText: 'A screenshot of my <a target="_blank" href="https://github.com/SidOfc/dotfiles/blob/b820c8b7ad84a7c29568ed55baa87c57d9c42bcc/.vimrc#L78-L132">.vimrc</a> movement key bindings',
   width: 984,
@@ -127,7 +149,7 @@ var VimrcMovementKeyBinds = Object(_components_image__WEBPACK_IMPORTED_MODULE_0_
 });
 
 var YamlHomepage = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+  src: _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8___default.a,
   alt: 'https://yaml.org homepage',
   captionText: '<a target="_blank" href="https://yaml.org">https://yaml.org</a> homepage',
   width: 2400,
@@ -135,49 +157,49 @@ var YamlHomepage = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImag
 });
 
 var FzfRgDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8___default.a,
+  src: _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9___default.a,
   alt: 'Fzf :Rg demo',
   width: 1049,
   height: 714
 });
 
 var FzfFilesDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9___default.a,
+  src: _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10___default.a,
   alt: 'Fzf :Files demo',
   width: 1049,
   height: 714
 });
 
 var CheckingCaniuse = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10___default.a,
+  src: _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11___default.a,
   alt: 'An example of looking for features using cani',
   width: 768,
   height: 180
 });
 
 var DirsInPath = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11___default.a,
+  src: _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12___default.a,
   alt: 'Directories present in $PATH',
   width: 768,
   height: 180
 });
 
 var BIPInterface = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12___default.a,
+  src: _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13___default.a,
   alt: 'Brew Install Plugin interface',
   width: 768,
   height: 180
 });
 
 var KillWithKp = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13___default.a,
+  src: _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14___default.a,
   alt: 'Killing processes using kp',
   width: 768,
   height: 180
 });
 
 var RecruiterTableFlip = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
+  src: _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
   alt: 'Table flip',
   caption: false,
   width: 800,
@@ -185,7 +207,7 @@ var RecruiterTableFlip = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["
 });
 
 var VimlBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
+  src: _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
   alt: 'Vim logo',
   caption: false,
   width: 1600,
@@ -193,63 +215,63 @@ var VimlBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"
 });
 
 var RipgrepLsFzf = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16___default.a,
+  src: _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17___default.a,
   alt: 'Ripgrep list files with FZF',
   width: 768,
   height: 180
 });
 
 var OpenChangelogNeovim = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17___default.a,
+  src: _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18___default.a,
   alt: 'Open CHANGELOG.md in NeoVim',
   width: 768,
   height: 180
 });
 
 var FzfLsExample = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18___default.a,
+  src: _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19___default.a,
   alt: 'FZF + LS example',
   width: 768,
   height: 180
 });
 
 var CodiBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19___default.a,
+  src: _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20___default.a,
   alt: 'A Codi.vim fullscreen buffer',
   width: 1672,
   height: 972
 });
 
 var RubyDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20___default.a,
+  src: _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21___default.a,
   alt: 'Demo of Ruby in Codi.vim',
   width: 1033,
   height: 141
 });
 
 var SplitBehavior = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21___default.a,
+  src: _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22___default.a,
   alt: 'Default split behaviour',
   width: 1033,
   height: 496
 });
 
 var PryMultilineTypo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22___default.a,
+  src: _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23___default.a,
   alt: 'Multiline expression typo in Pry',
   width: 1033,
   height: 255
 });
 
 var WrappedSplitBehavior = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23___default.a,
+  src: _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24___default.a,
   alt: 'Enhanced split behaviour',
   width: 1033,
   height: 496
 });
 
 var WrappedSplitBehavior2 = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24___default.a,
+  src: _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25___default.a,
   alt: 'Enhanced split behaviour version 2',
   width: 1033,
   height: 496
@@ -566,13 +588,14 @@ styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].small.withConfig({
 /*!******************************!*\
   !*** ./components/image.jsx ***!
   \******************************/
-/*! exports provided: default, asImage */
+/*! exports provided: default, asImage, Container */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Image; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "asImage", function() { return asImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
@@ -6714,21 +6737,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fvim-tip-persistent-undo&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fvim-tip-persistent-undo.mdx!./":
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fvim-tip-persistent-undo&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fvim-tip-persistent-undo.mdx ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx!./":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/vim-tip-persistent-undo", function() {
-      var page = __webpack_require__(/*! ./pages/blog/vim-tip-persistent-undo.mdx */ "./pages/blog/vim-tip-persistent-undo.mdx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/recruiters-who-call-during-working-hours", function() {
+      var page = __webpack_require__(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx")
       if(true) {
-        module.hot.accept(/*! ./pages/blog/vim-tip-persistent-undo.mdx */ "./pages/blog/vim-tip-persistent-undo.mdx", function() {
-          if(!next.router.components["/blog/vim-tip-persistent-undo"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/blog/vim-tip-persistent-undo.mdx */ "./pages/blog/vim-tip-persistent-undo.mdx")
-          next.router.update("/blog/vim-tip-persistent-undo", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx", function() {
+          if(!next.router.components["/blog/recruiters-who-call-during-working-hours"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx")
+          next.router.update("/blog/recruiters-who-call-during-working-hours", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -13828,10 +13851,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/blog/vim-tip-persistent-undo.mdx":
-/*!************************************************!*\
-  !*** ./pages/blog/vim-tip-persistent-undo.mdx ***!
-  \************************************************/
+/***/ "./pages/blog/recruiters-who-call-during-working-hours.mdx":
+/*!*****************************************************************!*\
+  !*** ./pages/blog/recruiters-who-call-during-working-hours.mdx ***!
+  \*****************************************************************/
 /*! exports provided: meta, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13844,11 +13867,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/index.es.js");
-/* harmony import */ var _components_layout_post__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/layout/post */ "./components/layout/post.jsx");
-/* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/img */ "./assets/img/index.js");
+/* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img */ "./assets/img/index.js");
+/* harmony import */ var _components_layout_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/layout/post */ "./components/layout/post.jsx");
 
 
-var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/vim-tip-persistent-undo.mdx";
+var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/recruiters-who-call-during-working-hours.mdx";
 
 /* @jsx mdx */
 
@@ -13858,11 +13881,11 @@ var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/vim-tip-persis
 
 
 var meta = {
-  title: 'Vim tip: persistent undo',
+  title: 'Recruiters who call during working hours',
   author: 'Sidney Liebrand',
-  date: '04-08-2018 20:17:52',
-  excerpt: 'Usually, when you open a file in your editor, make some changes, save and close, you lose the ability to <kbd>ctrl</kbd>+<kbd>Z</kbd>. Vim has a built in mechanism to persist changes made to files on disk. This may not sound that exciting, but what if your editor crashes while you have a set of changes you may want to revert stored?',
-  words: 802
+  date: '31-08-2018 22:41:19',
+  excerpt: 'Any kind of cold-call from some random recruiter or sales rep is annoying enough as is. Imagine my frustration when I got a call from a recruiter who called on the <strong>company phone</strong> in the middle of a working day!',
+  words: 1157
 };
 
 var makeShortcode = function makeShortcode(name) {
@@ -13894,15 +13917,17 @@ function MDXContent(_ref) {
       lineNumber: 27
     },
     __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_components_layout_post__WEBPACK_IMPORTED_MODULE_4__["Title"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, meta, {
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_components_layout_post__WEBPACK_IMPORTED_MODULE_5__["Title"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, meta, {
     mdxType: "Title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  })), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["VimlBanner"], {
-    mdxType: "VimlBanner",
+  })), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_4__["RecruiterTableFlip"], {
+    width: "800",
+    height: "409",
+    mdxType: "RecruiterTableFlip",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
@@ -13914,260 +13939,275 @@ function MDXContent(_ref) {
       lineNumber: 32
     },
     __self: this
-  }, "Sometimes I happen to close a buffer that I had open for a while and modified here and there.\nThen I find out that the code from two or three edits ago in that file actually worked better and I want to revert but upon reopening the file, pressing ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, "u"), " shows an ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, "Already at oldest change"), " message..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "So far I haven\u2019t been bothered too much by recruiters but every once in a while some moron decides to call me at work in the middle of the day.\nThey probably don\u2019t even care about the fact that I\u2019m already working happily and full-time at a company, they just call me up and say something like:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("blockquote", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }, "The second thing I try is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
+  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    parentName: "blockquote",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
-  }, "git"), " to see the unchanged file but this usually takes me way to far back to be of any use.\nThis is when I usually realize that I can\u2019t get back to that point by using any kind of \"undo\" functionality."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, "Finally, the last wall of defense is my brain, small changes from the last edit are usually still lingering in my mind and I can revert them from memory.\nAnything large or multi-line, though ", "\u2014", " forget about it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Hi Sidney! My name is ", "[insert random name]", " and I want to talk to you!\n", "\u2014", " every recruiter ever")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
-  }, "None of the above so far provide a good reliable solution out of the box, but one day while randomly reading through ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "The first time I got a call like this, it came from the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
-  }, ":h undo"), " I found a particularly useful section: ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "company phone."), "\nSomeone had asked specifically for ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, ":h undo-persistence"), "."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }, "Persistent undo"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "my"), " help with a certain issue.\nWhile uncommon to get a phone call like this, I thought it was probably something small and took the phone."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
-  }, "The ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
+  }, "I had a small conversation with this guy, he had all kinds of \"interests\" in all my \"skills\".\nHe was unclear about what he wanted exactly.\nI actually ended up giving him my phone number \uD83E\uDD26\u200D\u2642\uFE0F \uD83E\uDD26\u200D\u2642\uFE0F \uD83E\uDD26\u200D\u2642\uFE0F so that he would at least stop bothering me at that moment."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 44
     },
     __self: this
-  }, "undo-persistence"), " manual explains that Vim indeed destroys the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "undo tree "), "when a buffer is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "unloaded."), "\nTo understand exactly what this means, I\u2019ll give a small explanation."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, "In Vim, a buffer is basically a file ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, "loaded"), " in memory.\nWhenever a file is loaded in memory, Vim keeps track of its ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, "undo tree"), " ", "\u2014", " this is the construct that keeps track of changes and enables one to undo and redo them.\nAs long as the file remains in memory, the undo tree is kept with it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Big. Freaking. Mistake."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, "As soon as the buffer is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, "unloaded"), " using for example ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, ":[bufnum]bd"), ", it is cleared from memory and the undo tree is destroyed with it.\nThis is the part that is problematic if you want to revert back to some edit before the last time you re-opened the file in Vim."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "He called me again some three to four months later.\nI think I was awake for roughly ten minutes and just getting ready to eat my breakfast and have a cup of coffee before heading off to work."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 47
     },
     __self: this
-  }, "Persistent undo solves this by storing the changes in a file instead of in-memory and linked to the loaded buffer, allowing undo to go back and forth beyond just the set of changes since the file was last opened.\nYou could go back to yesterday\u2019s changes or those of two weeks ago for example."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, "Setup"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I can\u2019t recall what he said exactly but I do remember that he called to \"check up\" on me and see \"how I was doing\".\nWhat a mug ", "\u2014", " I thought and I killed the conversation quickly because he just went on and on about stuff I didn\u2019t care about.\nI was just trying to wake up and eat my breakfast..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, "Fortunately, not much is needed to set this up.\nVim needs a directory to store the persistent undo history and two settings need to be tweaked / enabled.\nThis is the snippet I have in my Vim config that handles this automatically:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "Then after another three to four months he started calling me during ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "working hours."), "\nI never answered simply because I see \"Amsterdam\" as location on my phone and already know it is a recruiter.\nHe actually tried calling me multiple times a week at which point I ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, "blocked his number"), "."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
     __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {
-    "className": "language-vim"
-  }, {
+  }, "But this guy didn\u2019t actually stop there! Oh no, of course not... This was the moment when he thought it would be a fantastic idea to start calling ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
     __self: this
-  }), "\" guard for distributions lacking the persistent_undo feature.\nif has('persistent_undo')\n    \" define a path to store persistent_undo files.\n    let target_path = expand('~/.config/vim-persisted-undo/')\n\n    \" create the directory and any parent directories\n    \" if the location does not exist.\n    if !isdirectory(target_path)\n        call system('mkdir -p ' . target_path)\n    endif\n\n    \" point Vim to the defined undo directory.\n    let &undodir = target_path\n\n    \" finally, enable undo persistence.\n    set undofile\nendif\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "anonymously."), "\nAs in \"No Number\". Yeah..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 55
     },
     __self: this
-  }, "The above VimL checks if the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "Keep hanging up"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "This was my tactic, I had ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 56
     },
     __self: this
-  }, "persistent_undo"), " feature is supported.\nDefines a path ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "zero interest"), " in speaking with a guy like that again.\nUp until now, all his efforts had been a tremendous waste of my time and focus.\nHonestly, I thought he would get the hint after pressing \"Decline\" on about 6 more calls.\nBoy was I wrong..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, "First, let me tell you that I am not the type of guy to explode on someone.\nUsually I am quite calm and controlled. I see no benefit in destructive arguments,\nI much rather prefer a constructive discussion."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, "This guy however... had pissed me off so much by now that when the next call hit,\nI walked out of the office, answered the phone and just started shouting that\nhe\u2019d better piss off and never call again. Then I ended the call without even\nlistening to what he had to say."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "To my surprise, he actually listened. After ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 67
     },
     __self: this
-  }, "~/.config/vim-persisted-undo/"), " to store the files.\nCreates the directory if it doesn\u2019t exist and sets the necessary undodir and undofile options."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "cutting conversations,\nblocking his number, ignoring him"), " and finally even ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 68
     },
     __self: this
-  }, "A simple example"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "raging at him,"), "\nhe too decided it was time to call it a loss. I am not proud of this behavior\nbut when you treat me like a dog I\u2019ll treat you like a tree and piss all over you."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 71
     },
     __self: this
-  }, "Now let\u2019s go through a simple exercise to see if this works."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("ol", {
+  }, "One down, infinite more to go"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 72
     },
     __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
-    parentName: "ol",
+  }, "Unfortunately, the battle did not end there. I did say \"first time\"\nat the start of the post and as you have guessed correctly,\nI received another call recently."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, "This time, I was better prepared though.\nI saw the location \"Amsterdam\" with a number that I hadn't blocked.\nI don\u2019t have any friends in Amsterdam whose number I don't already\nhave so I figured the only logical explanation was that this was another recruiter."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
     },
     __self: this
-  }, "After you\u2019ve added the snippet or enabled this feature manually, exit Vim and run the following command in the terminal:vim sample.txt."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
-    parentName: "ol",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }, "Write some text and save the file. Then make another change by adding, removing, or changing the content of the file and save it again."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
-    parentName: "ol",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  }, "The file now has some undo history we can use. Exit Vim and open the file again from the terminal: vim sample.txt."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
-    parentName: "ol",
+  }, "See my first quote for what he opened with.\nI told him \"Ahhh ", "\u2014", " you\u2019re a recruiter, aren\u2019t you?\".\nHe stuttered while trying to come up with a tactical answer to this simple question."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 82
     },
     __self: this
-  }, "Now, pressing u should work as expected and correctly undo the change you made before closing the file.")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "Failing miserably he replied: \"Well, you sure are direct...\" to which I replied:\n\"I'll be even more direct. I have ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strong", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 83
     },
     __self: this
-  }, "Profit"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "zero"), " interest in what you have to offer so\nI'm going to hang up now okay?\"."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 85
     },
     __self: this
-  }, "That\u2019s it! You now have access to any edit you made at any point in time for any particular file.\nIf you accidentally close a buffer, just re-open it and your undo tree will be like it was before closing it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }, "I hope that you enjoyed this post and got something useful out of it.\nIf there is anything I missed I\u2019d love to hear about it in the comments.\nLikewise if I\u2019m wrong or anything is unclear, I\u2019ll happily stand corrected."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: this
-  }, "Until next time :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "He backed off instantly and I gave him his farewell without exploding in his face.\nDespite the fact that we had a semi-normal ten second conversation,\nwhy do recruiters call in the middle of the day? Why can\u2019t they just leave me\n(or anyone for that matter) alone at work and call in the evening?\nBetter yet, why don\u2019t they stop calling all together if you\u2019re\nalready working somewhere?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
+    },
+    __self: this
+  }, "I mean, what is wrong with you recruiters..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }, "I always think to myself that even if most recruiters are just leeches moving\npeople from job A to job B, taking a grain of their monthly pay in the process,\nthey would at least respect the fact that who they are calling may already have\na full-time job and instead, call after working hours if at all?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    },
+    __self: this
+  }, "The worst offender here is still the first man-child who actually called on the\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }, "company phone"), ". I mean ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }, "what the hell."), " How does one even come up with the idea\nto call on the number of the company that you\u2019re trying to rip a piece out of?\nHe must have been pretty desperate and probably didn\u2019t have the resources to buy\nmy number online. And then to continue with such stalker behavior as well, sigh... \uD83D\uDD95"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: this
+  }, "Conclusion"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, "Despite all the cumbersome experiences I\u2019ve had with them I do still have faith that there are recruiters out there that haven\u2019t gone mad.\nThose that actually try to do what is best for both employer and employee."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    },
+    __self: this
+  }, "Most however, are just plain leeches that only move people for their own benefit.\nThey usually don\u2019t know what you do or which technologies you are familiar with.\nSometimes not even where to move you at the moment they decide to contact you.\nAnd even if they do provide some level of detail, it\u2019s not their brilliant research.\nIt\u2019s some algorithm which scrapes web pages for public information."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    },
+    __self: this
+  }, "I just ignore them and if that doesn\u2019t work, I pick up the phone,\ndominate the conversation and end it in roughly ten seconds making sure to opt-out\nof any call-list in the process."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }, "Until next time."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }, "Sidney Liebrand", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }), "\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strong", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, "Unrecruitable")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
     },
     __self: this
   }, "\uD83D\uDC4B"));
@@ -14391,14 +14431,14 @@ function color2rgba(color) {
 
 /***/ }),
 
-/***/ 5:
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog%2Fvim-tip-persistent-undo&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fvim-tip-persistent-undo.mdx ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ 4:
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2Fvim-tip-persistent-undo&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fvim-tip-persistent-undo.mdx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fvim-tip-persistent-undo&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fvim-tip-persistent-undo.mdx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx!./");
 
 
 /***/ }),
@@ -14414,5 +14454,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=vim-tip-persistent-undo.js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=recruiters-who-call-during-working-hours.js.map

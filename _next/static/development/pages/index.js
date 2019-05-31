@@ -1,5 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
+/***/ "./assets/img/avatar.jpg":
+/*!*******************************!*\
+  !*** ./assets/img/avatar.jpg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/avatar-c312fe45c6ec0c0cc223ac4d12dd6bb7.jpg";
+
+/***/ }),
+
 /***/ "./assets/img/github.svg?include":
 /*!***************************************!*\
   !*** ./assets/img/github.svg?include ***!
@@ -15,11 +26,12 @@ var raw = "<svg viewBox=\"0 0 16 16\" version=\"1.1\" aria-hidden=\"true\"><path
 /*!*****************************!*\
   !*** ./assets/img/index.js ***!
   \*****************************/
-/*! exports provided: AsdfMovieBanner, CaniuseCmdOutput, CaniuseSelectMultipleFeatures, CaniuseSearchWDFeature, CaniuseFzfIELastVersionFeatures, VimrcMovementKeyBinds, YamlHomepage, FzfRgDemo, FzfFilesDemo, CheckingCaniuse, DirsInPath, BIPInterface, KillWithKp, RecruiterTableFlip, VimlBanner, RipgrepLsFzf, OpenChangelogNeovim, FzfLsExample, CodiBanner, RubyDemo, SplitBehavior, PryMultilineTypo, WrappedSplitBehavior, WrappedSplitBehavior2 */
+/*! exports provided: Portrait, AsdfMovieBanner, CaniuseCmdOutput, CaniuseSelectMultipleFeatures, CaniuseSearchWDFeature, CaniuseFzfIELastVersionFeatures, VimrcMovementKeyBinds, YamlHomepage, FzfRgDemo, FzfFilesDemo, CheckingCaniuse, DirsInPath, BIPInterface, KillWithKp, RecruiterTableFlip, VimlBanner, RipgrepLsFzf, OpenChangelogNeovim, FzfLsExample, CodiBanner, RubyDemo, SplitBehavior, PryMultilineTypo, WrappedSplitBehavior, WrappedSplitBehavior2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portrait", function() { return Portrait; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsdfMovieBanner", function() { return AsdfMovieBanner; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CaniuseCmdOutput", function() { return CaniuseCmdOutput; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CaniuseSelectMultipleFeatures", function() { return CaniuseSelectMultipleFeatures; });
@@ -45,58 +57,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WrappedSplitBehavior", function() { return WrappedSplitBehavior; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WrappedSplitBehavior2", function() { return WrappedSplitBehavior2; });
 /* harmony import */ var _components_image__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/image */ "./components/image.jsx");
-/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./posts/asdfmovie-banner.svg */ "./assets/img/posts/asdfmovie-banner.svg");
-/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./posts/caniuse-cmd-output.png */ "./assets/img/posts/caniuse-cmd-output.png");
-/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./posts/caniuse-select-multiple-features.png */ "./assets/img/posts/caniuse-select-multiple-features.png");
-/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./posts/caniuse-search-wd-feature.png */ "./assets/img/posts/caniuse-search-wd-feature.png");
-/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/caniuse-fzf-ie-last-version-features.png */ "./assets/img/posts/caniuse-fzf-ie-last-version-features.png");
-/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/vimrc-movement-key-binds.png */ "./assets/img/posts/vimrc-movement-key-binds.png");
-/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./posts/yaml-homepage.png */ "./assets/img/posts/yaml-homepage.png");
-/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./posts/fzf-rg-demo.gif */ "./assets/img/posts/fzf-rg-demo.gif");
-/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./posts/fzf-files-demo.gif */ "./assets/img/posts/fzf-files-demo.gif");
-/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./posts/checking-caniuse.gif */ "./assets/img/posts/checking-caniuse.gif");
-/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./posts/dirs-in-path.gif */ "./assets/img/posts/dirs-in-path.gif");
-/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./posts/bip-interface.gif */ "./assets/img/posts/bip-interface.gif");
-/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./posts/kill-with-kp.gif */ "./assets/img/posts/kill-with-kp.gif");
-/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./posts/recruiter-table-flip.svg */ "./assets/img/posts/recruiter-table-flip.svg");
-/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./posts/vim-banner.svg */ "./assets/img/posts/vim-banner.svg");
-/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./posts/rg-ls-fzf.gif */ "./assets/img/posts/rg-ls-fzf.gif");
-/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./posts/open-changelog-neovim.gif */ "./assets/img/posts/open-changelog-neovim.gif");
-/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./posts/fzf-ls-example.gif */ "./assets/img/posts/fzf-ls-example.gif");
-/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./posts/codi-banner.png */ "./assets/img/posts/codi-banner.png");
-/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./posts/ruby-demo.gif */ "./assets/img/posts/ruby-demo.gif");
-/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./posts/split-behavior.gif */ "./assets/img/posts/split-behavior.gif");
-/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./posts/pry-multiline-typo.gif */ "./assets/img/posts/pry-multiline-typo.gif");
-/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./posts/wrapped-split-behavior.gif */ "./assets/img/posts/wrapped-split-behavior.gif");
-/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./posts/wrapped-split-behavior-2.gif */ "./assets/img/posts/wrapped-split-behavior-2.gif");
-/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./avatar.jpg */ "./assets/img/avatar.jpg");
+/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_avatar_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./posts/asdfmovie-banner.svg */ "./assets/img/posts/asdfmovie-banner.svg");
+/* harmony import */ var _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./posts/caniuse-cmd-output.png */ "./assets/img/posts/caniuse-cmd-output.png");
+/* harmony import */ var _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./posts/caniuse-select-multiple-features.png */ "./assets/img/posts/caniuse-select-multiple-features.png");
+/* harmony import */ var _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/caniuse-search-wd-feature.png */ "./assets/img/posts/caniuse-search-wd-feature.png");
+/* harmony import */ var _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/caniuse-fzf-ie-last-version-features.png */ "./assets/img/posts/caniuse-fzf-ie-last-version-features.png");
+/* harmony import */ var _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./posts/vimrc-movement-key-binds.png */ "./assets/img/posts/vimrc-movement-key-binds.png");
+/* harmony import */ var _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./posts/yaml-homepage.png */ "./assets/img/posts/yaml-homepage.png");
+/* harmony import */ var _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./posts/fzf-rg-demo.gif */ "./assets/img/posts/fzf-rg-demo.gif");
+/* harmony import */ var _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./posts/fzf-files-demo.gif */ "./assets/img/posts/fzf-files-demo.gif");
+/* harmony import */ var _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./posts/checking-caniuse.gif */ "./assets/img/posts/checking-caniuse.gif");
+/* harmony import */ var _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./posts/dirs-in-path.gif */ "./assets/img/posts/dirs-in-path.gif");
+/* harmony import */ var _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./posts/bip-interface.gif */ "./assets/img/posts/bip-interface.gif");
+/* harmony import */ var _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./posts/kill-with-kp.gif */ "./assets/img/posts/kill-with-kp.gif");
+/* harmony import */ var _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./posts/recruiter-table-flip.svg */ "./assets/img/posts/recruiter-table-flip.svg");
+/* harmony import */ var _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./posts/vim-banner.svg */ "./assets/img/posts/vim-banner.svg");
+/* harmony import */ var _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./posts/rg-ls-fzf.gif */ "./assets/img/posts/rg-ls-fzf.gif");
+/* harmony import */ var _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./posts/open-changelog-neovim.gif */ "./assets/img/posts/open-changelog-neovim.gif");
+/* harmony import */ var _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./posts/fzf-ls-example.gif */ "./assets/img/posts/fzf-ls-example.gif");
+/* harmony import */ var _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./posts/codi-banner.png */ "./assets/img/posts/codi-banner.png");
+/* harmony import */ var _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./posts/ruby-demo.gif */ "./assets/img/posts/ruby-demo.gif");
+/* harmony import */ var _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./posts/split-behavior.gif */ "./assets/img/posts/split-behavior.gif");
+/* harmony import */ var _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./posts/pry-multiline-typo.gif */ "./assets/img/posts/pry-multiline-typo.gif");
+/* harmony import */ var _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./posts/wrapped-split-behavior.gif */ "./assets/img/posts/wrapped-split-behavior.gif");
+/* harmony import */ var _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./posts/wrapped-split-behavior-2.gif */ "./assets/img/posts/wrapped-split-behavior-2.gif");
+/* harmony import */ var _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25__);
 
+
+var Portrait = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
+  src: _avatar_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
+  alt: 'Cartoon portrait photo of Sidney Liebrand',
+  caption: false,
+  width: 460,
+  height: 460
+});
 
 var AsdfMovieBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+  src: _posts_asdfmovie_banner_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
   alt: 'asdfmovie quote from youtube',
   captionText: 'asdfmovie quote <a target="_blank" href="https://www.youtube.com/watch?v=cYNdUM2gRsg">from youtube</a>',
   width: 356,
@@ -104,33 +126,33 @@ var AsdfMovieBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asI
 });
 
 var CaniuseCmdOutput = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+  src: _posts_caniuse_cmd_output_png__WEBPACK_IMPORTED_MODULE_3___default.a,
   alt: 'Output entry results using caniuse-cmd package'
 });
 
 var CaniuseSelectMultipleFeatures = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+  src: _posts_caniuse_select_multiple_features_png__WEBPACK_IMPORTED_MODULE_4___default.a,
   alt: 'Selecting multiple feature entries',
   width: 1600,
   height: 496
 });
 
 var CaniuseSearchWDFeature = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+  src: _posts_caniuse_search_wd_feature_png__WEBPACK_IMPORTED_MODULE_5___default.a,
   alt: 'Searching for working draft CSS features',
   width: 1600,
   height: 248
 });
 
 var CaniuseFzfIELastVersionFeatures = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+  src: _posts_caniuse_fzf_ie_last_version_features_png__WEBPACK_IMPORTED_MODULE_6___default.a,
   alt: 'Caniuse fzf: IE features supported since last version',
   width: 1600,
   height: 618
 });
 
 var VimrcMovementKeyBinds = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+  src: _posts_vimrc_movement_key_binds_png__WEBPACK_IMPORTED_MODULE_7___default.a,
   alt: 'A screenshot of my vimrc movement key bindings',
   captionText: 'A screenshot of my <a target="_blank" href="https://github.com/SidOfc/dotfiles/blob/b820c8b7ad84a7c29568ed55baa87c57d9c42bcc/.vimrc#L78-L132">.vimrc</a> movement key bindings',
   width: 984,
@@ -138,7 +160,7 @@ var VimrcMovementKeyBinds = Object(_components_image__WEBPACK_IMPORTED_MODULE_0_
 });
 
 var YamlHomepage = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+  src: _posts_yaml_homepage_png__WEBPACK_IMPORTED_MODULE_8___default.a,
   alt: 'https://yaml.org homepage',
   captionText: '<a target="_blank" href="https://yaml.org">https://yaml.org</a> homepage',
   width: 2400,
@@ -146,49 +168,49 @@ var YamlHomepage = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImag
 });
 
 var FzfRgDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_8___default.a,
+  src: _posts_fzf_rg_demo_gif__WEBPACK_IMPORTED_MODULE_9___default.a,
   alt: 'Fzf :Rg demo',
   width: 1049,
   height: 714
 });
 
 var FzfFilesDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_9___default.a,
+  src: _posts_fzf_files_demo_gif__WEBPACK_IMPORTED_MODULE_10___default.a,
   alt: 'Fzf :Files demo',
   width: 1049,
   height: 714
 });
 
 var CheckingCaniuse = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_10___default.a,
+  src: _posts_checking_caniuse_gif__WEBPACK_IMPORTED_MODULE_11___default.a,
   alt: 'An example of looking for features using cani',
   width: 768,
   height: 180
 });
 
 var DirsInPath = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_11___default.a,
+  src: _posts_dirs_in_path_gif__WEBPACK_IMPORTED_MODULE_12___default.a,
   alt: 'Directories present in $PATH',
   width: 768,
   height: 180
 });
 
 var BIPInterface = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_12___default.a,
+  src: _posts_bip_interface_gif__WEBPACK_IMPORTED_MODULE_13___default.a,
   alt: 'Brew Install Plugin interface',
   width: 768,
   height: 180
 });
 
 var KillWithKp = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_13___default.a,
+  src: _posts_kill_with_kp_gif__WEBPACK_IMPORTED_MODULE_14___default.a,
   alt: 'Killing processes using kp',
   width: 768,
   height: 180
 });
 
 var RecruiterTableFlip = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
+  src: _posts_recruiter_table_flip_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
   alt: 'Table flip',
   caption: false,
   width: 800,
@@ -196,7 +218,7 @@ var RecruiterTableFlip = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["
 });
 
 var VimlBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
+  src: _posts_vim_banner_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
   alt: 'Vim logo',
   caption: false,
   width: 1600,
@@ -204,63 +226,63 @@ var VimlBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"
 });
 
 var RipgrepLsFzf = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_16___default.a,
+  src: _posts_rg_ls_fzf_gif__WEBPACK_IMPORTED_MODULE_17___default.a,
   alt: 'Ripgrep list files with FZF',
   width: 768,
   height: 180
 });
 
 var OpenChangelogNeovim = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_17___default.a,
+  src: _posts_open_changelog_neovim_gif__WEBPACK_IMPORTED_MODULE_18___default.a,
   alt: 'Open CHANGELOG.md in NeoVim',
   width: 768,
   height: 180
 });
 
 var FzfLsExample = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_18___default.a,
+  src: _posts_fzf_ls_example_gif__WEBPACK_IMPORTED_MODULE_19___default.a,
   alt: 'FZF + LS example',
   width: 768,
   height: 180
 });
 
 var CodiBanner = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_19___default.a,
+  src: _posts_codi_banner_png__WEBPACK_IMPORTED_MODULE_20___default.a,
   alt: 'A Codi.vim fullscreen buffer',
   width: 1672,
   height: 972
 });
 
 var RubyDemo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_20___default.a,
+  src: _posts_ruby_demo_gif__WEBPACK_IMPORTED_MODULE_21___default.a,
   alt: 'Demo of Ruby in Codi.vim',
   width: 1033,
   height: 141
 });
 
 var SplitBehavior = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_21___default.a,
+  src: _posts_split_behavior_gif__WEBPACK_IMPORTED_MODULE_22___default.a,
   alt: 'Default split behaviour',
   width: 1033,
   height: 496
 });
 
 var PryMultilineTypo = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_22___default.a,
+  src: _posts_pry_multiline_typo_gif__WEBPACK_IMPORTED_MODULE_23___default.a,
   alt: 'Multiline expression typo in Pry',
   width: 1033,
   height: 255
 });
 
 var WrappedSplitBehavior = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_23___default.a,
+  src: _posts_wrapped_split_behavior_gif__WEBPACK_IMPORTED_MODULE_24___default.a,
   alt: 'Enhanced split behaviour',
   width: 1033,
   height: 496
 });
 
 var WrappedSplitBehavior2 = Object(_components_image__WEBPACK_IMPORTED_MODULE_0__["asImage"])({
-  src: _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_24___default.a,
+  src: _posts_wrapped_split_behavior_2_gif__WEBPACK_IMPORTED_MODULE_25___default.a,
   alt: 'Enhanced split behaviour version 2',
   width: 1033,
   height: 496
@@ -871,7 +893,7 @@ var Cards =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "sc-197jrn4-0"
-})(["width:100%;", ";padding:", ";margin:0 auto;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium);
+})(["width:100%;", ";padding:", ";margin:0 auto;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium);
 
 var Title =
 /*#__PURE__*/
@@ -1062,13 +1084,14 @@ function CodeBlock(_ref) {
 /*!******************************!*\
   !*** ./components/image.jsx ***!
   \******************************/
-/*! exports provided: default, asImage */
+/*! exports provided: default, asImage, Container */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Image; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "asImage", function() { return asImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
@@ -1601,6 +1624,89 @@ styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a.withConfig({
 
 /***/ }),
 
+/***/ "./components/welcome-banner.jsx":
+/*!***************************************!*\
+  !*** ./components/welcome-banner.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WelcomeBanner; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/styles */ "./config/styles.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/img */ "./assets/img/index.js");
+
+var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/components/welcome-banner.jsx";
+
+
+
+
+function WelcomeBanner() {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledBanner, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerImage, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_assets_img__WEBPACK_IMPORTED_MODULE_4__["Portrait"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BannerContent, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "Welcome!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "My name is Sidney Liebrand. I am a Dutch front-end developer working at ", _config__WEBPACK_IMPORTED_MODULE_3__["employer"].name, " in ", _config__WEBPACK_IMPORTED_MODULE_3__["employer"].city, ".")));
+}
+
+var BannerImage =
+/*#__PURE__*/
+styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  componentId: "sc-1638dnr-0"
+})(["position:relative;flex:1 1 420px;margin:auto;> *{margin:0;border-radius:100%;overflow:hidden;}"]);
+
+var BannerContent =
+/*#__PURE__*/
+styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  componentId: "sc-1638dnr-1"
+})(["flex:2 1 auto;margin:auto 0 auto ", ";line-height:1.2;> *:first-child{margin-top:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].large);
+
+var StyledBanner =
+/*#__PURE__*/
+styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].section.withConfig({
+  componentId: "sc-1638dnr-2"
+})(["position:relative;margin:0 auto;display:flex;flex-flow:row nowrap;padding:", " ", ";width:100%;", ";@media all and (max-width:560px){flex-flow:column nowrap;align-items:center;justify-content:center;&::after{content:'';display:block;width:30%;position:absolute;bottom:0;left:35%;height:4px;", ";border-radius:8px;}", "{flex:1 1 auto;width:100%;margin:0;margin-bottom:", ";max-width:280px;}", "{text-align:center;margin-left:0;}}"], _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_2__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_2__["colors"].withVar('primary', 'background-color'), BannerImage, _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].large, BannerContent);
+
+/***/ }),
+
 /***/ "./config.js":
 /*!*******************!*\
   !*** ./config.js ***!
@@ -1619,7 +1725,10 @@ var _module$exports;
 
 var env = "development";
 var production = env === 'production';
-module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), _module$exports);
+module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), (0, _defineProperty2.default)(_module$exports, "employer", {
+  name: 'Floorplanner',
+  city: 'Rotterdam'
+}), _module$exports);
 
 /***/ }),
 
@@ -30644,13 +30753,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
 /* harmony import */ var _components_application__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/application */ "./components/application.jsx");
 /* harmony import */ var _components_blog_card__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/blog/card */ "./components/blog/card.jsx");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _components_welcome_banner__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/welcome-banner */ "./components/welcome-banner.jsx");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_18__);
 
 
 
 
 var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/index.jsx";
+
 
 
 
@@ -30691,19 +30802,19 @@ function Page() {
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_application__WEBPACK_IMPORTED_MODULE_15__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_17___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_18___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, _config__WEBPACK_IMPORTED_MODULE_13__["hostname"], " \xA0\u2022\xA0 homepage"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
@@ -30711,7 +30822,7 @@ function Page() {
     content: "Sidney Liebrand",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
@@ -30719,13 +30830,19 @@ function Page() {
     content: "Home of Sidney Liebrand, a front-end developer with a sharp eye for detail. Find blog posts and tools written by Sidney right here.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_blog_card__WEBPACK_IMPORTED_MODULE_16__["Cards"], {
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_welcome_banner__WEBPACK_IMPORTED_MODULE_17__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_blog_card__WEBPACK_IMPORTED_MODULE_16__["Cards"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
     },
     __self: this
   }, posts.map(function (post) {
@@ -30734,7 +30851,7 @@ function Page() {
     }, post, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 33
       },
       __self: this
     }));
