@@ -584,7 +584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout */ "./components/layout/index.js");
 /* harmony import */ var _layout_post__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./layout/post */ "./components/layout/post.jsx");
@@ -882,6 +882,7 @@ function Card(_ref) {
     },
     __self: this
   }, children), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    tabIndex: -1,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
@@ -893,13 +894,13 @@ var Cards =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "sc-197jrn4-0"
-})(["width:100%;", ";padding:", ";margin:0 auto;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium);
+})(["width:100%;", ";padding:", " 0;margin-top:", ";margin:0 auto;"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].post.withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large);
 
 var Title =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.withConfig({
   componentId: "sc-197jrn4-1"
-})(["", ";line-height:1;"], Object(_config_styles__WEBPACK_IMPORTED_MODULE_3__["fluid"])('font-size', '1.3rem', '1.5rem'));
+})(["", ";margin-top:0;line-height:1;"], Object(_config_styles__WEBPACK_IMPORTED_MODULE_3__["fluid"])('font-size', '1.3rem', '1.5rem'));
 
 var Excerpt =
 /*#__PURE__*/
@@ -909,9 +910,11 @@ styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
 
 var Container =
 /*#__PURE__*/
-styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
+styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.attrs({
+  tabIndex: 0
+}).withConfig({
   componentId: "sc-197jrn4-3"
-})(["position:relative;display:flex;flex-flow:column nowrap;cursor:pointer;text-decoration:none;color:", ";& + &{margin-top:", ";padding-top:", ";}", "{margin-left:auto;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].color, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _button__WEBPACK_IMPORTED_MODULE_4__["StyledButton"]);
+})(["position:relative;display:flex;flex-flow:column nowrap;cursor:pointer;text-decoration:none;color:", ";padding:", ";outline:none;&:not(:active):focus{", ";", "{transition:none;opacity:0.8;}}& + &{margin-top:", ";padding-top:", ";}", "{margin-left:auto;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].color, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].fmtVar('primary', 'inset 0 0 0 2px ??', 'box-shadow'), _button__WEBPACK_IMPORTED_MODULE_4__["StyledButton"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].medium, _button__WEBPACK_IMPORTED_MODULE_4__["StyledButton"]);
 
 /***/ }),
 
@@ -990,7 +993,7 @@ var StyledButton =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
   componentId: "q4rscb-0"
-})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";border-radius:2px;height:auto;", ";border:1px solid rgba(0,0,0,0.1);", ";cursor:pointer;transition:all 100ms ease-out;&:hover{opacity:0.9;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('primary', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('white', 'color'));
+})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";border-radius:2px;height:auto;", ";border:1px solid rgba(0,0,0,0.1);", ";cursor:pointer;transition:all 100ms ease-out;outline:none;&:hover,&:not(:active):focus{opacity:0.8;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('primary', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('white', 'color'));
 
 /***/ }),
 
@@ -1276,7 +1279,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config/styles */ "./config/styles.js");
 
@@ -1324,7 +1327,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../logo */ "./components/logo.jsx");
 /* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../navigation */ "./components/navigation.jsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../config/styles */ "./config/styles.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -1400,7 +1403,7 @@ var Inner =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "gefaab-2"
-})(["", ";padding:0 0 0 ", ";margin:0 auto;height:calc(100% - 2px);display:grid;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].medium);
+})(["", ";padding:0 0 0 ", ";margin:0 auto;height:100%;display:grid;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].medium);
 
 /***/ }),
 
@@ -1547,7 +1550,7 @@ var Container =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "jhtjut-1"
-})(["overflow:hidden;position:relative;height:calc(100% - ", ");max-width:100%;max-width:100px;min-width:50px;margin:auto 0;cursor:pointer;flex:0 1 100px;"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium);
+})(["overflow:hidden;position:relative;height:calc(100% - ", ");max-width:100%;max-width:100px;min-width:50px;margin:auto 0;cursor:pointer;flex:0 1 100px;outline:none;&:not(:active):focus{opacity:0.8;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium);
 
 /***/ }),
 
@@ -1620,7 +1623,7 @@ var Anchor =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a.withConfig({
   componentId: "pfay7k-2"
-})(["font-weight:", ";position:relative;text-decoration:none;padding:0 ", ";display:flex;align-items:center;justify-content:center;height:100%;user-select:none;font-size:1rem;cursor:", ";pointer-events:", ";border-radius:4px;color:", ";&:first-child{margin-left:0;}&:last-child{margin-right:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'default', 'pointer'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'none', 'all'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].black));
+})(["font-weight:", ";position:relative;text-decoration:none;padding:0 ", ";display:flex;align-items:center;justify-content:center;height:100%;user-select:none;font-size:1rem;cursor:", ";pointer-events:", ";", ";outline:none;&:not(:active):focus{opacity:0.7;}&:first-child{margin-left:0;}&:last-child{margin-right:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'default', 'pointer'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'none', 'all'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'));
 
 /***/ }),
 
@@ -1638,9 +1641,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/styles */ "./config/styles.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/img */ "./assets/img/index.js");
+
 
 var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/components/welcome-banner.jsx";
 
@@ -1684,20 +1688,20 @@ function WelcomeBanner() {
       lineNumber: 16
     },
     __self: this
-  }, "My name is Sidney Liebrand. I am a Dutch front-end developer working at ", _config__WEBPACK_IMPORTED_MODULE_3__["employer"].name, " in ", _config__WEBPACK_IMPORTED_MODULE_3__["employer"].city, ".")));
+  }, _config__WEBPACK_IMPORTED_MODULE_3__["description"])));
 }
 
 var BannerImage =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   componentId: "sc-1638dnr-0"
-})(["position:relative;flex:1 1 420px;margin:auto;> *{margin:0;border-radius:100%;overflow:hidden;}"]);
+})(["position:relative;flex:1 0 220px;margin:auto;> *{margin:0;border-radius:100%;overflow:hidden;}"]);
 
 var BannerContent =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   componentId: "sc-1638dnr-1"
-})(["flex:2 1 auto;margin:auto 0 auto ", ";line-height:1.2;> *:first-child{margin-top:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].large);
+})(["flex:1 1 auto;margin:auto 0 auto ", ";line-height:1.2;> *:first-child{margin-top:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_2__["spacing"].large);
 
 var StyledBanner =
 /*#__PURE__*/
@@ -1707,10 +1711,10 @@ styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].section.withConfig({
 
 /***/ }),
 
-/***/ "./config.js":
-/*!*******************!*\
-  !*** ./config.js ***!
-  \*******************/
+/***/ "./config/index.js":
+/*!*************************!*\
+  !*** ./config/index.js ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1719,16 +1723,35 @@ styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].section.withConfig({
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
+var _defineEnumerableProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineEnumerableProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js"));
+
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js"));
 
-var _module$exports;
+var _description, _module$exports, _mutatorMap;
 
 var env = "development";
 var production = env === 'production';
-module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), (0, _defineProperty2.default)(_module$exports, "employer", {
+
+var squish = function squish(str) {
+  return str.trim().replace(/\s{2,}/g, ' ');
+};
+
+module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), (0, _defineProperty2.default)(_module$exports, "owner", {
+  firstName: 'Sidney',
+  lastName: 'Liebrand',
+
+  get fullName() {
+    return [this.firstName, this.lastName].filter(function (x) {
+      return x;
+    }).join(' ');
+  }
+
+}), (0, _defineProperty2.default)(_module$exports, "employer", {
   name: 'Floorplanner',
   city: 'Rotterdam'
-}), _module$exports);
+}), _description = "description", _mutatorMap = {}, _mutatorMap[_description] = _mutatorMap[_description] || {}, _mutatorMap[_description].get = function () {
+  return squish("\n            My name is ".concat(this.owner.fullName, ".\n            I am a Dutch front-end developer working at ").concat(this.employer.name, "\n            in ").concat(this.employer.city, ". This is the place where I post content\n            and publish gimmicky web tools.\n        "));
+}, (0, _defineEnumerableProperties2.default)(_module$exports, _mutatorMap), _module$exports);
 
 /***/ }),
 
@@ -1793,8 +1816,10 @@ function themeable(obj) {
       fmtVar: function fmtVar(name, fmt) {
         var property = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : name;
         property = var2css(property);
-        var def = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
-        return "\n                        ".concat(property, ": ").concat(obj[name], ";\n                        ").concat(property, ": ").concat(fmt.replace('??', def), ";\n                    ");
+        var cssVar = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
+        var rawProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, obj[name]) : obj[name];
+        var cssVarProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, cssVar) : cssVar;
+        return "\n                        ".concat(property, ": ").concat(rawProp, ";\n                        ").concat(property, ": ").concat(cssVarProp, ";\n                    ");
       },
 
       get definitions() {
@@ -2403,6 +2428,49 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineEnumerableProperties; });
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _defineEnumerableProperties(obj, descs) {
+  for (var key in descs) {
+    var desc = descs[key];
+    desc.configurable = desc.enumerable = true;
+    if ("value" in desc) desc.writable = true;
+
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default()(obj, key, desc);
+  }
+
+  if (_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default.a) {
+    var objectSymbols = _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default()(descs);
+
+    for (var i = 0; i < objectSymbols.length; i++) {
+      var sym = objectSymbols[i];
+      var desc = descs[sym];
+      desc.configurable = desc.enumerable = true;
+      if ("value" in desc) desc.writable = true;
+
+      _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default()(obj, sym, desc);
+    }
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -23768,7 +23836,7 @@ var meta = {
   title: 'A collection of Vim key binds',
   author: 'Sidney Liebrand',
   date: '16-09-2017 13:11:03',
-  excerpt: 'In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I’ve used Vim for about two months now and I’m still learning a lot. In this post I‘m going to take you through a part of my .vimrc that describes my non-plugin key binds.',
+  excerpt: 'In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I\'ve used Vim for about two months now and I\'m still learning a lot. In this post I\'m going to take you through a part of my .vimrc that describes my non-plugin key binds.',
   words: 1495
 };
 
@@ -24106,7 +24174,7 @@ function MDXContent(_ref) {
       lineNumber: 91
     },
     __self: this
-  }, "I\u2019ve already discussed the keys ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "I've already discussed the keys ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24266,7 +24334,7 @@ function MDXContent(_ref) {
       lineNumber: 113
     },
     __self: this
-  }, "These ones are very new to me and I have only added them recently. I\u2019m still thinking that when I\ndid this about a month ago, I was completely and utterly disoriented without the arrow keys in insert mode.\nI simply didn\u2019t understand how to move out of some situations in insert mode and I hadn\u2019t discovered ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "These ones are very new to me and I have only added them recently. I'm still thinking that when I\ndid this about a month ago, I was completely and utterly disoriented without the arrow keys in insert mode.\nI simply didn't understand how to move out of some situations in insert mode and I hadn't discovered ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24454,7 +24522,7 @@ function MDXContent(_ref) {
       lineNumber: 149
     },
     __self: this
-  }, "3"), "\n(while you don\u2019t ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "3"), "\n(while you don't ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24481,7 +24549,7 @@ function MDXContent(_ref) {
       lineNumber: 151
     },
     __self: this
-  }, "Run macro\u2019s with Q")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "Run macro's with Q")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 152
@@ -24503,7 +24571,7 @@ function MDXContent(_ref) {
       lineNumber: 156
     },
     __self: this
-  }, "This one is a bit different, I\u2019m not unbinding ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "This one is a bit different, I'm not unbinding ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24517,7 +24585,7 @@ function MDXContent(_ref) {
       lineNumber: 156
     },
     __self: this
-  }, "don\u2019t have to"), ". The clumsiness of this\nbind leads me to never accidentally press it anyway. To explain, for recording a macro use ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "don't have to"), ". The clumsiness of this\nbind leads me to never accidentally press it anyway. To explain, for recording a macro use ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24622,7 +24690,7 @@ function MDXContent(_ref) {
       lineNumber: 167
     },
     __self: this
-  }, "yy"), " for. So to make it consistent with its bro\u2019s,\nI remapped it to ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "yy"), " for. So to make it consistent with its bro's,\nI remapped it to ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -24655,7 +24723,7 @@ function MDXContent(_ref) {
       lineNumber: 172
     },
     __self: this
-  }, "by far"), " the most flexible text editor I\u2019ve used. It allows me to spend my days in\na terminal with joy and helps me work faster than I could with any conventional text editor.\nCustom key binds were not my first goal but as I started to get more comfortable I found some things to be awkward.\nIt is the process of finding and removing these awkward binds and turning them into something useful that will\ntransform you into a text editing machine."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "by far"), " the most flexible text editor I've used. It allows me to spend my days in\na terminal with joy and helps me work faster than I could with any conventional text editor.\nCustom key binds were not my first goal but as I started to get more comfortable I found some things to be awkward.\nIt is the process of finding and removing these awkward binds and turning them into something useful that will\ntransform you into a text editing machine."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 177
@@ -24832,7 +24900,7 @@ function MDXContent(_ref) {
       lineNumber: 55
     },
     __self: this
-  }, "multiple programming languages"), " using a single mapping blew my mind but as with anything,\nit requires some more battle testing to see if it works in common scenario\u2019s."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "multiple programming languages"), " using a single mapping blew my mind but as with anything,\nit requires some more battle testing to see if it works in common scenario's."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
@@ -24969,7 +25037,7 @@ function MDXContent(_ref) {
       lineNumber: 79
     },
     __self: this
-  }, "Let\u2019s wrap it in an issue"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Let's wrap it in an issue"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 80
@@ -24985,7 +25053,7 @@ function MDXContent(_ref) {
       lineNumber: 81
     },
     __self: this
-  }), "issue"), ".\nUnfortunately it didn\u2019t make it since it was too workflow specific."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }), "issue"), ".\nUnfortunately it didn't make it since it was too workflow specific."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 85
@@ -25063,13 +25131,13 @@ function MDXContent(_ref) {
       lineNumber: 99
     },
     __self: this
-  }, "\"this song is awesome\""), ".\nI believe I\u2019ll be using it for a long time to come for quickly testing and showing some code."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "\"this song is awesome\""), ".\nI believe I'll be using it for a long time to come for quickly testing and showing some code."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: this
-  }, "This also gave me the chance to write my first non-organization bound PR for a project which I like and now also use.\nSomething which I wanted to do for a long time but couldn\u2019t really find the right project to contribute to.\nI want to thank ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "This also gave me the chance to write my first non-organization bound PR for a project which I like and now also use.\nSomething which I wanted to do for a long time but couldn't really find the right project to contribute to.\nI want to thank ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://medium.com/@metakirby5"
@@ -25085,7 +25153,7 @@ function MDXContent(_ref) {
       lineNumber: 106
     },
     __self: this
-  }, "That\u2019s it! If you want a fullscreen workflow with codi.vim, you have it.\nIf you want to persist the code in the buffer, you have it.\nIf you have a great idea, comment on this post!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "That's it! If you want a fullscreen workflow with codi.vim, you have it.\nIf you want to persist the code in the buffer, you have it.\nIf you have a great idea, comment on this post!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109
@@ -25208,7 +25276,7 @@ function MDXContent(_ref) {
       lineNumber: 43
     },
     __self: this
-  }, "The part where FZF comes in is the \"search for the feature\" part. Having to go to their website\nto find a feature isn\u2019t bad or slow per se but I am a very lazy developer and I like to keep\nthings where I spend most of my time ", "\u2014", " inside a terminal."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "The part where FZF comes in is the \"search for the feature\" part. Having to go to their website\nto find a feature isn't bad or slow per se but I am a very lazy developer and I like to keep\nthings where I spend most of my time ", "\u2014", " inside a terminal."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
@@ -25237,7 +25305,7 @@ function MDXContent(_ref) {
       lineNumber: 51
     },
     __self: this
-  }, "caniuse"), " command and displays results based on the feature you\u2019re looking for."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "caniuse"), " command and displays results based on the feature you're looking for."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
@@ -25413,7 +25481,7 @@ function MDXContent(_ref) {
       lineNumber: 89
     },
     __self: this
-  }, "The above display might seem a bit intimidating at first, but the output isn\u2019t hard to understand\nif you know what each column indicates. In the leftmost column, we have a 2 letter W3C status, e.g.\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "The above display might seem a bit intimidating at first, but the output isn't hard to understand\nif you know what each column indicates. In the leftmost column, we have a 2 letter W3C status, e.g.\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -25460,7 +25528,7 @@ function MDXContent(_ref) {
       lineNumber: 97
     },
     __self: this
-  }, "'-+ie"), " and it finds all the features that aren\u2019t supported\nin the previous version but are in the current version. The quote mark is required for FZF\nto search for this as a single word rather than 4 single characters."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "'-+ie"), " and it finds all the features that aren't supported\nin the previous version but are in the current version. The quote mark is required for FZF\nto search for this as a single word rather than 4 single characters."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
@@ -25750,7 +25818,7 @@ function MDXContent(_ref) {
       lineNumber: 47
     },
     __self: this
-  }, "vital"), " part of my workflow.\nEver since I started using them I can\u2019t imagine myself functioning\nwithout them anymore."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "vital"), " part of my workflow.\nEver since I started using them I can't imagine myself functioning\nwithout them anymore."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
@@ -25775,7 +25843,7 @@ function MDXContent(_ref) {
       lineNumber: 55
     },
     __self: this
-  }, "After finding the file you\u2019re looking for, hitting ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("kbd", {
+  }, "After finding the file you're looking for, hitting ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("kbd", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
@@ -25801,7 +25869,7 @@ function MDXContent(_ref) {
       lineNumber: 59
     },
     __self: this
-  }, "Of course this is only a simple example. The possibilities with FZF are endless.\nThere are countless ways in which you can use it filter input and use that in\nanother command. We\u2019ll dive more into that later."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "Of course this is only a simple example. The possibilities with FZF are endless.\nThere are countless ways in which you can use it filter input and use that in\nanother command. We'll dive more into that later."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
@@ -25956,7 +26024,7 @@ function MDXContent(_ref) {
       lineNumber: 84
     },
     __self: this
-  }, "Both these tools can be combined in various scenario\u2019s that would have otherwise\ntaken multiple long commands to execute. This ranges from killing processes to\nmanaging plugins to being able to find (in) files."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Both these tools can be combined in various scenario's that would have otherwise\ntaken multiple long commands to execute. This ranges from killing processes to\nmanaging plugins to being able to find (in) files."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
@@ -26037,7 +26105,7 @@ function MDXContent(_ref) {
       lineNumber: 102
     },
     __self: this
-  }, "At this point you\u2019ll realize that you\u2019re not actually searching for something\nanymore. You find yourself looking for ways to perform your search instead :/\nThis is only one of many scenarios however. Another common one is:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "At this point you'll realize that you're not actually searching for something\nanymore. You find yourself looking for ways to perform your search instead :/\nThis is only one of many scenarios however. Another common one is:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 105
@@ -26203,7 +26271,7 @@ function MDXContent(_ref) {
       lineNumber: 133
     },
     __self: this
-  }, "After that you\u2019ll most likely run a command like: ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "After that you'll most likely run a command like: ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -26567,7 +26635,7 @@ function MDXContent(_ref) {
       lineNumber: 178
     },
     __self: this
-  }, "/bin"), " entry, I see a list of executables inside that folder.\nEither find what you\u2019re looking for or go back."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "/bin"), " entry, I see a list of executables inside that folder.\nEither find what you're looking for or go back."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 180
@@ -26607,7 +26675,7 @@ function MDXContent(_ref) {
       lineNumber: 185
     },
     __self: this
-  }, "Additionally, I\u2019ve written a post before on how to ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "Additionally, I've written a post before on how to ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://medium.com/@sidneyliebrand/combining-caniuse-with-fzf-fb93ad235bae"
@@ -26674,7 +26742,7 @@ function MDXContent(_ref) {
       lineNumber: 198
     },
     __self: this
-  }, "ciu"), ") I wrote to actually provide the data and format it properly.\nThe data is fetched once then cached for a day.\nSo you\u2019ll have fresh data on a daily basis :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "ciu"), ") I wrote to actually provide the data and format it properly.\nThe data is fetched once then cached for a day.\nSo you'll have fresh data on a daily basis :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 201
@@ -26732,7 +26800,7 @@ function MDXContent(_ref) {
       lineNumber: 212
     },
     __self: this
-  }, "Finding files wasn\u2019t too much of an issue here. There is a long list of Vim plugins\nthat offer file searching using fuzzy matching or ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "Finding files wasn't too much of an issue here. There is a long list of Vim plugins\nthat offer file searching using fuzzy matching or ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://en.wikipedia.org/wiki/Most_Recently_Used"
@@ -26861,7 +26929,7 @@ function MDXContent(_ref) {
       lineNumber: 237
     },
     __self: this
-  }, "FZF will not use ripgrep by default so you\u2019ll have to modify ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "FZF will not use ripgrep by default so you'll have to modify ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -26996,7 +27064,7 @@ function MDXContent(_ref) {
       lineNumber: 256
     },
     __self: this
-  }, "ripgrep"), ",\nI\u2019d rather use that over installing another dependency. ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strike", {
+  }, "ripgrep"), ",\nI'd rather use that over installing another dependency. ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strike", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 257
@@ -27212,7 +27280,7 @@ function MDXContent(_ref) {
       lineNumber: 303
     },
     __self: this
-  }, "Hopefully you are also able to reduce some of the strain in your workflow with\nFZF using some of the tips above. If you are using FZF in another way, leave a\ncomment! I\u2019d love to hear about it and learn what others are doing with these\ntwo fantastic tools."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Hopefully you are also able to reduce some of the strain in your workflow with\nFZF using some of the tips above. If you are using FZF in another way, leave a\ncomment! I'd love to hear about it and learn what others are doing with these\ntwo fantastic tools."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 307
@@ -27318,7 +27386,7 @@ function MDXContent(_ref) {
       lineNumber: 32
     },
     __self: this
-  }, "So far I haven\u2019t been bothered too much by recruiters but every once in a while some moron decides to call me at work in the middle of the day.\nThey probably don\u2019t even care about the fact that I\u2019m already working happily and full-time at a company, they just call me up and say something like:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("blockquote", {
+  }, "So far I haven't been bothered too much by recruiters but every once in a while some moron decides to call me at work in the middle of the day.\nThey probably don't even care about the fact that I'm already working happily and full-time at a company, they just call me up and say something like:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("blockquote", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -27375,7 +27443,7 @@ function MDXContent(_ref) {
       lineNumber: 47
     },
     __self: this
-  }, "I can\u2019t recall what he said exactly but I do remember that he called to \"check up\" on me and see \"how I was doing\".\nWhat a mug ", "\u2014", " I thought and I killed the conversation quickly because he just went on and on about stuff I didn\u2019t care about.\nI was just trying to wake up and eat my breakfast..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I can't recall what he said exactly but I do remember that he called to \"check up\" on me and see \"how I was doing\".\nWhat a mug ", "\u2014", " I thought and I killed the conversation quickly because he just went on and on about stuff I didn't care about.\nI was just trying to wake up and eat my breakfast..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
@@ -27401,7 +27469,7 @@ function MDXContent(_ref) {
       lineNumber: 53
     },
     __self: this
-  }, "But this guy didn\u2019t actually stop there! Oh no, of course not... This was the moment when he thought it would be a fantastic idea to start calling ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "But this guy didn't actually stop there! Oh no, of course not... This was the moment when he thought it would be a fantastic idea to start calling ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -27439,7 +27507,7 @@ function MDXContent(_ref) {
       lineNumber: 63
     },
     __self: this
-  }, "This guy however... had pissed me off so much by now that when the next call hit,\nI walked out of the office, answered the phone and just started shouting that\nhe\u2019d better piss off and never call again. Then I ended the call without even\nlistening to what he had to say."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "This guy however... had pissed me off so much by now that when the next call hit,\nI walked out of the office, answered the phone and just started shouting that\nhe'd better piss off and never call again. Then I ended the call without even\nlistening to what he had to say."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -27459,7 +27527,7 @@ function MDXContent(_ref) {
       lineNumber: 68
     },
     __self: this
-  }, "raging at him,"), "\nhe too decided it was time to call it a loss. I am not proud of this behavior\nbut when you treat me like a dog I\u2019ll treat you like a tree and piss all over you."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "raging at him,"), "\nhe too decided it was time to call it a loss. I am not proud of this behavior\nbut when you treat me like a dog I'll treat you like a tree and piss all over you."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
@@ -27477,13 +27545,13 @@ function MDXContent(_ref) {
       lineNumber: 75
     },
     __self: this
-  }, "This time, I was better prepared though.\nI saw the location \"Amsterdam\" with a number that I hadn't blocked.\nI don\u2019t have any friends in Amsterdam whose number I don't already\nhave so I figured the only logical explanation was that this was another recruiter."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "This time, I was better prepared though.\nI saw the location \"Amsterdam\" with a number that I hadn't blocked.\nI don't have any friends in Amsterdam whose number I don't already\nhave so I figured the only logical explanation was that this was another recruiter."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
     },
     __self: this
-  }, "See my first quote for what he opened with.\nI told him \"Ahhh ", "\u2014", " you\u2019re a recruiter, aren\u2019t you?\".\nHe stuttered while trying to come up with a tactical answer to this simple question."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "See my first quote for what he opened with.\nI told him \"Ahhh ", "\u2014", " you're a recruiter, aren't you?\".\nHe stuttered while trying to come up with a tactical answer to this simple question."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 82
@@ -27502,7 +27570,7 @@ function MDXContent(_ref) {
       lineNumber: 85
     },
     __self: this
-  }, "He backed off instantly and I gave him his farewell without exploding in his face.\nDespite the fact that we had a semi-normal ten second conversation,\nwhy do recruiters call in the middle of the day? Why can\u2019t they just leave me\n(or anyone for that matter) alone at work and call in the evening?\nBetter yet, why don\u2019t they stop calling all together if you\u2019re\nalready working somewhere?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "He backed off instantly and I gave him his farewell without exploding in his face.\nDespite the fact that we had a semi-normal ten second conversation,\nwhy do recruiters call in the middle of the day? Why can't they just leave me\n(or anyone for that matter) alone at work and call in the evening?\nBetter yet, why don't they stop calling all together if you're\nalready working somewhere?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
@@ -27534,7 +27602,7 @@ function MDXContent(_ref) {
       lineNumber: 97
     },
     __self: this
-  }, "what the hell."), " How does one even come up with the idea\nto call on the number of the company that you\u2019re trying to rip a piece out of?\nHe must have been pretty desperate and probably didn\u2019t have the resources to buy\nmy number online. And then to continue with such stalker behavior as well, sigh... \uD83D\uDD95"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "what the hell."), " How does one even come up with the idea\nto call on the number of the company that you're trying to rip a piece out of?\nHe must have been pretty desperate and probably didn't have the resources to buy\nmy number online. And then to continue with such stalker behavior as well, sigh... \uD83D\uDD95"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
@@ -27546,19 +27614,19 @@ function MDXContent(_ref) {
       lineNumber: 102
     },
     __self: this
-  }, "Despite all the cumbersome experiences I\u2019ve had with them I do still have faith that there are recruiters out there that haven\u2019t gone mad.\nThose that actually try to do what is best for both employer and employee."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Despite all the cumbersome experiences I've had with them I do still have faith that there are recruiters out there that haven't gone mad.\nThose that actually try to do what is best for both employer and employee."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104
     },
     __self: this
-  }, "Most however, are just plain leeches that only move people for their own benefit.\nThey usually don\u2019t know what you do or which technologies you are familiar with.\nSometimes not even where to move you at the moment they decide to contact you.\nAnd even if they do provide some level of detail, it\u2019s not their brilliant research.\nIt\u2019s some algorithm which scrapes web pages for public information."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Most however, are just plain leeches that only move people for their own benefit.\nThey usually don't know what you do or which technologies you are familiar with.\nSometimes not even where to move you at the moment they decide to contact you.\nAnd even if they do provide some level of detail, it's not their brilliant research.\nIt's some algorithm which scrapes web pages for public information."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109
     },
     __self: this
-  }, "I just ignore them and if that doesn\u2019t work, I pick up the phone,\ndominate the conversation and end it in roughly ten seconds making sure to opt-out\nof any call-list in the process."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I just ignore them and if that doesn't work, I pick up the phone,\ndominate the conversation and end it in roughly ten seconds making sure to opt-out\nof any call-list in the process."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 112
@@ -27687,7 +27755,7 @@ function MDXContent(_ref) {
       lineNumber: 36
     },
     __self: this
-  }, "I\u2019ve always used ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "I've always used ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://rvm.io"
@@ -27697,7 +27765,7 @@ function MDXContent(_ref) {
       lineNumber: 36
     },
     __self: this
-  }), "RVM"), " in the past without problem, the shell took about half a\nsecond to load and that was acceptable. I mean, you can\u2019t have it all right :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }), "RVM"), " in the past without problem, the shell took about half a\nsecond to load and that was acceptable. I mean, you can't have it all right :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -27777,13 +27845,13 @@ function MDXContent(_ref) {
       lineNumber: 60
     },
     __self: this
-  }, "After installing, you\u2019ll only have the core of ASDF.\nWe\u2019ll need to extend it by adding plugins to it and using those to install versions\nof the language we want to use."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "After installing, you'll only have the core of ASDF.\nWe'll need to extend it by adding plugins to it and using those to install versions\nof the language we want to use."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
     },
     __self: this
-  }, "The list of plugins you\u2019ll install will differ from what I use.\nI am a front end developer that works with Ruby / Rails as well as React.\nFrom time to time I also muck around in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "The list of plugins you'll install will differ from what I use.\nI am a front end developer that works with Ruby / Rails as well as React.\nFrom time to time I also muck around in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://crystal-lang.org/"
@@ -28013,7 +28081,7 @@ function MDXContent(_ref) {
       lineNumber: 109
     },
     __self: this
-  }, "It means that you haven\u2019t set or installed any versions for that language.\nIf you haven\u2019t installed a version, run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "It means that you haven't set or installed any versions for that language.\nIf you haven't installed a version, run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -28033,7 +28101,7 @@ function MDXContent(_ref) {
       lineNumber: 113
     },
     __self: this
-  }, "If the plugin still doesn\u2019t work, run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "If the plugin still doesn't work, run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -28094,7 +28162,7 @@ function MDXContent(_ref) {
       lineNumber: 120
     },
     __self: this
-  }, "asdf local ruby ruby-2.4.1"), ".\nIf a language is already specified, I\u2019d rather not bother typing it again.\nRemoving the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "asdf local ruby ruby-2.4.1"), ".\nIf a language is already specified, I'd rather not bother typing it again.\nRemoving the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -28121,7 +28189,7 @@ function MDXContent(_ref) {
       lineNumber: 124
     },
     __self: this
-  }, "Extra\u2019s"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Extra's"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
@@ -28151,7 +28219,7 @@ function MDXContent(_ref) {
       lineNumber: 128
     },
     __self: this
-  }, "~/.default-gems file"), ". I love this one as I\u2019ll never have to run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "~/.default-gems file"), ". I love this one as I'll never have to run ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -28164,7 +28232,7 @@ function MDXContent(_ref) {
       lineNumber: 129
     },
     __self: this
-  }, "What RVM additionally offers that I have not seen in ASDF is the option to create a gemset.\nThis was and still is a useful feature if you\u2019re doing Ruby projects involving lots of different\ngems or even testing with specific gems. I rarely felt the need to create a gemset myself.\nThus not having this feature did not have a lot of impact on my workflow (yet).\nI\u2019m not sure if NVM adds any extra functionality, either way I think ASDF will fill the\ngaps because of how it was designed and how it can be extended."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "What RVM additionally offers that I have not seen in ASDF is the option to create a gemset.\nThis was and still is a useful feature if you're doing Ruby projects involving lots of different\ngems or even testing with specific gems. I rarely felt the need to create a gemset myself.\nThus not having this feature did not have a lot of impact on my workflow (yet).\nI'm not sure if NVM adds any extra functionality, either way I think ASDF will fill the\ngaps because of how it was designed and how it can be extended."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 135
@@ -28196,14 +28264,14 @@ function MDXContent(_ref) {
       lineNumber: 138
     },
     __self: this
-  }, "As for my shell time, it\u2019s back where it was with only RVM. But nothing messes with my ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "As for my shell time, it's back where it was with only RVM. But nothing messes with my ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 138
     },
     __self: this
-  }, "cd"), " command anymore.\nI also don\u2019t have to keep adding these noisy ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "cd"), " command anymore.\nI also don't have to keep adding these noisy ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -28233,13 +28301,13 @@ function MDXContent(_ref) {
       lineNumber: 143
     },
     __self: this
-  }, "capistrano"), " to deploy using RVM for example, you won\u2019t be able to do that using ASDF just yet.\nBut as mentioned above, someone somewhere will fix that gap or you could give it a shot yourself!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "capistrano"), " to deploy using RVM for example, you won't be able to do that using ASDF just yet.\nBut as mentioned above, someone somewhere will fix that gap or you could give it a shot yourself!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 145
     },
     __self: this
-  }, "I hope you\u2019ve learned something from this post and also that you will choose to switch to ASDF.\nNot because it\u2019s better per-se but because it\u2019s universal and extensible and you now no longer have\nto worry about version managers! Install a plugin and you\u2019re done! A plugin system and a management system,\nbundled in 3 simple commands with a common interface. ASDF and I will be friends for a long time :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I hope you've learned something from this post and also that you will choose to switch to ASDF.\nNot because it's better per-se but because it's universal and extensible and you now no longer have\nto worry about version managers! Install a plugin and you're done! A plugin system and a management system,\nbundled in 3 simple commands with a common interface. ASDF and I will be friends for a long time :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 149
@@ -28366,7 +28434,7 @@ function MDXContent(_ref) {
       lineNumber: 31
     },
     __self: this
-  }, "Update 08\u201311\u20132018:"), " Thanks you ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "Update 08\u201311\u20132018:"), " Thank you ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://medium.com/@abitrolly"
@@ -28376,7 +28444,7 @@ function MDXContent(_ref) {
       lineNumber: 31
     },
     __self: this
-  }), "Anatoli Babenia"), "\nfor pointing to the base 60 parsing \u2018feature\u2019 in the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }), "Anatoli Babenia"), "\nfor pointing to the base 60 parsing 'feature' in the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://docs.docker.com/compose/compose-file/compose-file-v2/#ports"
@@ -28600,7 +28668,7 @@ function MDXContent(_ref) {
       lineNumber: 87
     },
     __self: this
-  }, "nil"), " value in YAML, it\u2019s called ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "nil"), " value in YAML, it's called ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "http://yaml.org/type/null.html"
@@ -28651,14 +28719,14 @@ function MDXContent(_ref) {
       lineNumber: 98
     },
     __self: this
-  }, "Since that moment I\u2019ve been wondering what ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "Since that moment I've been wondering what ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 98
     },
     __self: this
-  }, "more"), " is there to YAML.\nI\u2019ve written literally ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, "more"), " is there to YAML.\nI've written literally ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://github.com/SidOfc/browserino/tree/master/spec/files"
@@ -28678,13 +28746,13 @@ function MDXContent(_ref) {
       lineNumber: 102
     },
     __self: this
-  }), "my gems"), "\nbut I\u2019ve never really wondered what the language could really do."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }), "my gems"), "\nbut I've never really wondered what the language could really do."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 106
     },
     __self: this
-  }, "What I also noticed is that there aren\u2019t all that many YAML posts out there,\nsome resources I used while gathering information for this post:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("ul", {
+  }, "What I also noticed is that there aren't all that many YAML posts out there,\nsome resources I used while gathering information for this post:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 108
@@ -29111,7 +29179,7 @@ function MDXContent(_ref) {
       lineNumber: 209
     },
     __self: this
-  }, "Strings"), ". While I didn\u2019t have thousands of tests written in YAML at the\ntime, I thought \"Why not?\". The answer was that indeed, the Ruby parser understands symbols written\nin YAML, and treats them as such when parsing in Ruby."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "Strings"), ". While I didn't have thousands of tests written in YAML at the\ntime, I thought \"Why not?\". The answer was that indeed, the Ruby parser understands symbols written\nin YAML, and treats them as such when parsing in Ruby."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 212
@@ -29177,26 +29245,26 @@ function MDXContent(_ref) {
       lineNumber: 227
     },
     __self: this
-  }, "I only recently gave this some thought, if I were to port my gem to Python for whatever reason,\nI couldn\u2019t \"conveniently\" use this YAML anymore and for anyone wanting to use the gem\u2019s YAML\noutside of Ruby, it would contain useless ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "I only recently gave this some thought, if I were to port my gem to Python for whatever reason,\nI couldn't \"conveniently\" use this YAML anymore and for anyone wanting to use the gem's YAML\noutside of Ruby, it would contain useless ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 229
     },
     __self: this
-  }, ":"), " characters at the start of every \"symbol\".\nSo yeah, while awesome, use with caution! I\u2019m considering rewriting my gem\u2019s YAML to just\nuse strings instead of symbols because of this \"exclusive\" Ruby feature :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, ":"), " characters at the start of every \"symbol\".\nSo yeah, while awesome, use with caution! I'm considering rewriting my gem's YAML to just\nuse strings instead of symbols because of this \"exclusive\" Ruby feature :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 232
     },
     __self: this
-  }, "Multiline strings? YAML\u2019s got your back!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Multiline strings? YAML's got your back!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 233
     },
     __self: this
-  }, "Another topic often discussed in programming languages in general is how to handle multiline\nstrings, various languages have different solutions to the same problem. YAML has it\u2019s own\ntwo solutions. The pipe (", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "Another topic often discussed in programming languages in general is how to handle multiline\nstrings, various languages have different solutions to the same problem. YAML has it's own\ntwo solutions. The pipe (", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -29282,7 +29350,7 @@ function MDXContent(_ref) {
       lineNumber: 268
     },
     __self: this
-  }, "Unlike its friend JSON, YAML doesn\u2019t mind if you don\u2019t put your strings between quotes.\nThe following will output exactly what you would expect:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "Unlike its friend JSON, YAML doesn't mind if you don't put your strings between quotes.\nThe following will output exactly what you would expect:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 270
@@ -29326,7 +29394,7 @@ function MDXContent(_ref) {
       lineNumber: 279
     },
     __self: this
-  }, "Keys don\u2019t have to be quoted either, so removing the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "Keys don't have to be quoted either, so removing the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -29474,7 +29542,7 @@ function MDXContent(_ref) {
       lineNumber: 310
     },
     __self: this
-  }, "If you expect your program to see these values as strings, the solution is to quote\nthe string or to cast the value as we\u2019ll see in the next section."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "If you expect your program to see these values as strings, the solution is to quote\nthe string or to cast the value as we'll see in the next section."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 312
@@ -29687,14 +29755,14 @@ function MDXContent(_ref) {
       lineNumber: 353
     },
     __self: this
-  }, "In the above example we see that the Python parser throws an error because it can\u2019t find the\ncorrect constructor for the tag. When Ruby finds a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "In the above example we see that the Python parser throws an error because it can't find the\ncorrect constructor for the tag. When Ruby finds a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 354
     },
     __self: this
-  }, "language specific"), " tag that it doesn\u2019t know\nhow to use, it is simply ignored. I think both languages have a different point of view where\nPython is more \"demanding\" about what kind of YAML you feed it and Ruby tries to \"cushion\" your\nexperience whenever it can."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "language specific"), " tag that it doesn't know\nhow to use, it is simply ignored. I think both languages have a different point of view where\nPython is more \"demanding\" about what kind of YAML you feed it and Ruby tries to \"cushion\" your\nexperience whenever it can."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 358
@@ -29738,7 +29806,7 @@ function MDXContent(_ref) {
       lineNumber: 366
     },
     __self: this
-  }, "We\u2019ve already seen some weird behavior with some unquoted string values magically turning\ninto booleans but there is more! YAML parses numbers in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "We've already seen some weird behavior with some unquoted string values magically turning\ninto booleans but there is more! YAML parses numbers in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -29842,7 +29910,7 @@ function MDXContent(_ref) {
       lineNumber: 389
     },
     __self: this
-  }, "ii:jj"), " format. I am not sure why this is but my guess is what\nwe\u2019re going to talk about next."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "ii:jj"), " format. I am not sure why this is but my guess is what\nwe're going to talk about next."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 391
@@ -29909,7 +29977,7 @@ function MDXContent(_ref) {
       lineNumber: 407
     },
     __self: this
-  }, "Aside from string keys, YAML won\u2019t complain if you want to use floats:\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "Aside from string keys, YAML won't complain if you want to use floats:\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -30048,14 +30116,14 @@ function MDXContent(_ref) {
       lineNumber: 435
     },
     __self: this
-  }, "We\u2019ve already seen what kind of beast YAML actually is under the hood, I actually learned new things\nmyself ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "We've already seen what kind of beast YAML actually is under the hood, I actually learned new things\nmyself ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 436
     },
     __self: this
-  }, "while writing this post"), " since I ran every example through both the Python and Ruby REPL at the\nsame time (Thank you tmux pane-synchronization \u2665\uFE0F) and it doesn\u2019t stop there! Another\nseemingly-trivial-yet-missing-from-JSON feature would be the fact that you can add ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
+  }, "while writing this post"), " since I ran every example through both the Python and Ruby REPL at the\nsame time (Thank you tmux pane-synchronization \u2665\uFE0F) and it doesn't stop there! Another\nseemingly-trivial-yet-missing-from-JSON feature would be the fact that you can add ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
@@ -30068,7 +30136,7 @@ function MDXContent(_ref) {
       lineNumber: 439
     },
     __self: this
-  }, "In JSON, comments aren\u2019t supported but of course, YAML has our back and lets us do pretty much\nwhatever we want, a comment starts with a # sign:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "In JSON, comments aren't supported but of course, YAML has our back and lets us do pretty much\nwhatever we want, a comment starts with a # sign:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 441
@@ -30300,7 +30368,7 @@ function MDXContent(_ref) {
       lineNumber: 491
     },
     __self: this
-  }), "pry"), " for Ruby and Python\u2019s builtin REPL.\nThe Ruby parser used was ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }), "pry"), " for Ruby and Python's builtin REPL.\nThe Ruby parser used was ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     parentName: "p"
   }, {
     "href": "https://ruby-doc.org/stdlib-2.4.2/libdoc/yaml/rdoc/YAML.html"
@@ -30333,7 +30401,7 @@ function MDXContent(_ref) {
       lineNumber: 499
     },
     __self: this
-  }, "Post update"), ": During the process of updating this post, I used pry for Ruby (MRI) 2.5.1 and Python\u2019s (3.6.7) builtin REPL. The same libraries were used for testing."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "Post update"), ": During the process of updating this post, I used pry for Ruby (MRI) 2.5.1 and Python's (3.6.7) builtin REPL. The same libraries were used for testing."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 500
@@ -30345,13 +30413,13 @@ function MDXContent(_ref) {
       lineNumber: 501
     },
     __self: this
-  }, "I think YAML is great! Every experience I\u2019ve had so far with YAML has been a positive one, wether it includes writing thousands of lines or debugging an issue. Even writing this post was a pleasure, I just took my time, opened my favorite REPL\u2019s with pane-sync on to reduce typing and started compiling information and examples, sometimes with side-effects I didn\u2019t even anticipate which led to interesting results."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I think YAML is great! Every experience I've had so far with YAML has been a positive one, wether it includes writing thousands of lines or debugging an issue. Even writing this post was a pleasure, I just took my time, opened my favorite REPL's with pane-sync on to reduce typing and started compiling information and examples, sometimes with side-effects I didn't even anticipate which led to interesting results."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 502
     },
     __self: this
-  }, "I\u2019m pretty sure I\u2019ve missed some things considering what we\u2019ve just witnessed earlier in the Casting Values section, there are probably lots more of these nuances between various other parsers."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I'm pretty sure I've missed some things considering what we've just witnessed earlier in the Casting Values section, there are probably lots more of these nuances between various other parsers."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 503
@@ -30488,7 +30556,7 @@ function MDXContent(_ref) {
       lineNumber: 34
     },
     __self: this
-  }, "git"), " to see the unchanged file but this usually takes me way to far back to be of any use.\nThis is when I usually realize that I can\u2019t get back to that point by using any kind of \"undo\" functionality."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "git"), " to see the unchanged file but this usually takes me way to far back to be of any use.\nThis is when I usually realize that I can't get back to that point by using any kind of \"undo\" functionality."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
@@ -30547,7 +30615,7 @@ function MDXContent(_ref) {
       lineNumber: 40
     },
     __self: this
-  }, "unloaded."), "\nTo understand exactly what this means, I\u2019ll give a small explanation."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "unloaded."), "\nTo understand exactly what this means, I'll give a small explanation."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
@@ -30593,7 +30661,7 @@ function MDXContent(_ref) {
       lineNumber: 47
     },
     __self: this
-  }, "Persistent undo solves this by storing the changes in a file instead of in-memory and linked to the loaded buffer, allowing undo to go back and forth beyond just the set of changes since the file was last opened.\nYou could go back to yesterday\u2019s changes or those of two weeks ago for example."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "Persistent undo solves this by storing the changes in a file instead of in-memory and linked to the loaded buffer, allowing undo to go back and forth beyond just the set of changes since the file was last opened.\nYou could go back to yesterday's changes or those of two weeks ago for example."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -30641,7 +30709,7 @@ function MDXContent(_ref) {
       lineNumber: 74
     },
     __self: this
-  }, "~/.config/vim-persisted-undo/"), " to store the files.\nCreates the directory if it doesn\u2019t exist and sets the necessary undodir and undofile options."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "~/.config/vim-persisted-undo/"), " to store the files.\nCreates the directory if it doesn't exist and sets the necessary undodir and undofile options."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
@@ -30653,7 +30721,7 @@ function MDXContent(_ref) {
       lineNumber: 77
     },
     __self: this
-  }, "Now let\u2019s go through a simple exercise to see if this works."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("ol", {
+  }, "Now let's go through a simple exercise to see if this works."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("ol", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 78
@@ -30666,7 +30734,7 @@ function MDXContent(_ref) {
       lineNumber: 79
     },
     __self: this
-  }, "After you\u2019ve added the snippet or enabled this feature manually, exit Vim and run the following command in the terminal:vim sample.txt."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
+  }, "After you've added the snippet or enabled this feature manually, exit Vim and run the following command in the terminal:vim sample.txt."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("li", {
     parentName: "ol",
     __source: {
       fileName: _jsxFileName,
@@ -30699,13 +30767,13 @@ function MDXContent(_ref) {
       lineNumber: 85
     },
     __self: this
-  }, "That\u2019s it! You now have access to any edit you made at any point in time for any particular file.\nIf you accidentally close a buffer, just re-open it and your undo tree will be like it was before closing it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "That's it! You now have access to any edit you made at any point in time for any particular file.\nIf you accidentally close a buffer, just re-open it and your undo tree will be like it was before closing it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
     },
     __self: this
-  }, "I hope that you enjoyed this post and got something useful out of it.\nIf there is anything I missed I\u2019d love to hear about it in the comments.\nLikewise if I\u2019m wrong or anything is unclear, I\u2019ll happily stand corrected."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I hope that you enjoyed this post and got something useful out of it.\nIf there is anything I missed I'd love to hear about it in the comments.\nLikewise if I'm wrong or anything is unclear, I'll happily stand corrected."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
@@ -30748,7 +30816,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blog_switching_to_asdf_version_manager_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blog/switching-to-asdf-version-manager.mdx */ "./pages/blog/switching-to-asdf-version-manager.mdx");
 /* harmony import */ var _blog_the_greatnesses_and_gotchas_of_yaml_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blog/the-greatnesses-and-gotchas-of-yaml.mdx */ "./pages/blog/the-greatnesses-and-gotchas-of-yaml.mdx");
 /* harmony import */ var _blog_vim_tip_persistent_undo_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blog/vim-tip-persistent-undo.mdx */ "./pages/blog/vim-tip-persistent-undo.mdx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
 /* harmony import */ var _components_application__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/application */ "./components/application.jsx");
@@ -30819,7 +30887,7 @@ function Page() {
     __self: this
   }, _config__WEBPACK_IMPORTED_MODULE_13__["hostname"], " \xA0\u2022\xA0 homepage"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     name: "author",
-    content: "Sidney Liebrand",
+    content: _config__WEBPACK_IMPORTED_MODULE_13__["owner"].fullName,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -30827,7 +30895,7 @@ function Page() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     name: "description",
-    content: "Home of Sidney Liebrand, a front-end developer with a sharp eye for detail. Find blog posts and tools written by Sidney right here.",
+    content: _config__WEBPACK_IMPORTED_MODULE_13__["description"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -30836,13 +30904,13 @@ function Page() {
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_welcome_banner__WEBPACK_IMPORTED_MODULE_17__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 27
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_blog_card__WEBPACK_IMPORTED_MODULE_16__["Cards"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
   }, posts.map(function (post) {
@@ -30851,7 +30919,7 @@ function Page() {
     }, post, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 30
       },
       __self: this
     }));
@@ -31106,7 +31174,7 @@ function color2rgba(color) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Findex.jsx ***!
   \*******************************************************************************************************************************/
@@ -31129,5 +31197,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout */ "./components/layout/index.js");
 /* harmony import */ var _layout_post__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./layout/post */ "./components/layout/post.jsx");
@@ -332,7 +332,7 @@ var StyledButton =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
   componentId: "q4rscb-0"
-})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";border-radius:2px;height:auto;", ";border:1px solid rgba(0,0,0,0.1);", ";cursor:pointer;transition:all 100ms ease-out;&:hover{opacity:0.9;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('primary', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('white', 'color'));
+})(["appearance:none;line-height:1.3;font-size:0.9rem;font-family:", ";padding:", " ", ";border-radius:2px;height:auto;", ";border:1px solid rgba(0,0,0,0.1);", ";cursor:pointer;transition:all 100ms ease-out;outline:none;&:hover,&:not(:active):focus{opacity:0.8;}"], _config_styles__WEBPACK_IMPORTED_MODULE_3__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].regular, _config_styles__WEBPACK_IMPORTED_MODULE_3__["spacing"].large, _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('primary', 'background-color'), _config_styles__WEBPACK_IMPORTED_MODULE_3__["colors"].withVar('white', 'color'));
 
 /***/ }),
 
@@ -442,7 +442,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    ", "\n\n    * {\n        box-sizing: border-box;\n\n        &::selection {\n            background-color: ", ";\n            color: ", ";\n        }\n    }\n\n    :root {\n        ", ";\n        ", ";\n    }\n\n    html {", "}\n\n    body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        font-family: ", ", serif;\n        line-height: 1.6;\n        font-weight: ", ";\n    }\n\n    #__next {\n        height: 100%;\n        height: 100vh;\n        ", ";\n    }\n\n    article, aside, details, figcaption, figure, footer,\n    header, main, mark, nav, section {\n        display: block;\n    }\n\n    h1, h2, h3, h4, h5, h6 {\n        ", ";\n        line-height: 1.1;\n        font-weight: ", ";\n        margin: 0 0 ", ";\n        ", "\n    }\n\n    h1 {", "}\n    h2 {", "}\n    h3 {", "}\n    h4 {", "}\n    h5 {", "}\n    h6 {", "}\n\n    p {\n        font-size: 1.15rem;\n        margin-top: 0;\n        margin-bottom: ", ";\n    }\n\n    li {\n        font-size: 1.15rem;\n        margin-bottom: ", ";\n    }\n\n    blockquote {\n        font-size: 1.15rem;\n    }\n\n    pre,\n    code,\n    kbd {\n        padding: 0.5rem 1rem;\n        border-radius: 4px;\n        background-color: ", ";\n        ", ";\n    }\n\n    code,\n    kbd {\n        font-size: 0.8em;\n        padding: 0.2rem 0.4rem 0.15rem;\n        border-radius: 4px;\n    }\n\n    pre code {\n        font-size: 0.9rem;\n        padding: 0;\n        background-color: transparent;\n        display: block;\n    }\n\n    kbd {\n        background-image: none;\n        border: 1px solid ", ";\n    }\n\n    a, a > code {\n        position: relative;\n        ", ";\n        text-decoration: none;\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    ", "\n\n    * {\n        box-sizing: border-box;\n\n        &::selection {\n            background-color: ", ";\n            color: ", ";\n        }\n    }\n\n    :root {\n        ", ";\n        ", ";\n    }\n\n    html {", "}\n\n    body {\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        font-family: ", ", serif;\n        line-height: 1.6;\n        font-weight: ", ";\n    }\n\n    #__next {\n        height: 100%;\n        height: 100vh;\n        ", ";\n    }\n\n    article, aside, details, figcaption, figure, footer,\n    header, main, mark, nav, section {\n        display: block;\n    }\n\n    h1, h2, h3, h4, h5, h6 {\n        ", ";\n        line-height: 1.1;\n        font-weight: ", ";\n        margin: 0 0 ", ";\n        ", "\n    }\n\n    h1 {", "}\n    h2 {", "}\n    h3 {", "}\n    h4 {", "}\n    h5 {", "}\n    h6 {", "}\n\n    p {\n        font-size: 1.15rem;\n        margin-top: 0;\n        margin-bottom: ", ";\n    }\n\n    li {\n        font-size: 1.15rem;\n        margin-bottom: ", ";\n    }\n\n    blockquote {\n        font-size: 1.15rem;\n    }\n\n    pre,\n    code,\n    kbd {\n        padding: 0.5rem 1rem;\n        border-radius: 4px;\n        background-color: ", ";\n        ", ";\n    }\n\n    code,\n    kbd {\n        font-size: 0.8em;\n        padding: 0.2rem 0.4rem 0.15rem;\n        border-radius: 4px;\n    }\n\n    pre code {\n        font-size: 0.9rem;\n        padding: 0;\n        background-color: transparent;\n        display: block;\n    }\n\n    kbd {\n        background-image: none;\n        border: 1px solid ", ";\n    }\n\n    a, a > code {\n        position: relative;\n        ", ";\n        text-decoration: none;\n        outline: none;\n\n        &:not(:active):focus {\n            opacity: 0.8;\n            ", ";\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -469,7 +469,7 @@ function generateFontFaces(family, weights) {
   return mapped.join();
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].definitions, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].definitions, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].white, 0.05), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'color')));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["createGlobalStyle"])(_templateObject(), generateFontFaces(_config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["lighten"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.9), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, 0.3), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].definitions, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].definitions, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '0.8rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].fontFamily, _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.light, _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.bold, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].small, Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('margin-top', _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].large), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.5rem', '2.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.4rem', '2.3rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.3rem', '2.1rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.2rem', '1.8rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1.1rem', '1.5rem'), Object(_config_styles__WEBPACK_IMPORTED_MODULE_4__["fluid"])('font-size', '1rem', '1.2rem'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["darken"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].white, 0.05), _config_styles__WEBPACK_IMPORTED_MODULE_4__["page"].withVar('color'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["rgba"])(_config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].dimgray, 0.2), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('primary', 'color'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].fmtVar('primary', '-0.06ex 0 ??, 0.06ex 0 ??', 'text-shadow')));
 
 /***/ }),
 
@@ -522,7 +522,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config/styles */ "./config/styles.js");
 
@@ -570,7 +570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../logo */ "./components/logo.jsx");
 /* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../navigation */ "./components/navigation.jsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _config_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../config/styles */ "./config/styles.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -646,7 +646,7 @@ var Inner =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "gefaab-2"
-})(["", ";padding:0 0 0 ", ";margin:0 auto;height:calc(100% - 2px);display:grid;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].medium);
+})(["", ";padding:0 0 0 ", ";margin:0 auto;height:100%;display:grid;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;"], _config_styles__WEBPACK_IMPORTED_MODULE_6__["page"].withVar('width', 'max-width'), _config_styles__WEBPACK_IMPORTED_MODULE_6__["spacing"].medium);
 
 /***/ }),
 
@@ -793,7 +793,7 @@ var Container =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   componentId: "jhtjut-1"
-})(["overflow:hidden;position:relative;height:calc(100% - ", ");max-width:100%;max-width:100px;min-width:50px;margin:auto 0;cursor:pointer;flex:0 1 100px;"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium);
+})(["overflow:hidden;position:relative;height:calc(100% - ", ");max-width:100%;max-width:100px;min-width:50px;margin:auto 0;cursor:pointer;flex:0 1 100px;outline:none;&:not(:active):focus{opacity:0.8;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium);
 
 /***/ }),
 
@@ -866,14 +866,14 @@ var Anchor =
 /*#__PURE__*/
 styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a.withConfig({
   componentId: "pfay7k-2"
-})(["font-weight:", ";position:relative;text-decoration:none;padding:0 ", ";display:flex;align-items:center;justify-content:center;height:100%;user-select:none;font-size:1rem;cursor:", ";pointer-events:", ";border-radius:4px;color:", ";&:first-child{margin-left:0;}&:last-child{margin-right:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'default', 'pointer'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'none', 'all'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].primary, _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].black));
+})(["font-weight:", ";position:relative;text-decoration:none;padding:0 ", ";display:flex;align-items:center;justify-content:center;height:100%;user-select:none;font-size:1rem;cursor:", ";pointer-events:", ";", ";outline:none;&:not(:active):focus{opacity:0.7;}&:first-child{margin-left:0;}&:last-child{margin-right:0;}"], _config_styles__WEBPACK_IMPORTED_MODULE_4__["font"].weights.medium, _config_styles__WEBPACK_IMPORTED_MODULE_4__["spacing"].medium, Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'default', 'pointer'), Object(_utilities__WEBPACK_IMPORTED_MODULE_3__["toggleOnProp"])('active', 'none', 'all'), _config_styles__WEBPACK_IMPORTED_MODULE_4__["colors"].withVar('black', 'color'));
 
 /***/ }),
 
-/***/ "./config.js":
-/*!*******************!*\
-  !*** ./config.js ***!
-  \*******************/
+/***/ "./config/index.js":
+/*!*************************!*\
+  !*** ./config/index.js ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -882,16 +882,35 @@ styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a.withConfig({
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
+var _defineEnumerableProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineEnumerableProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js"));
+
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js"));
 
-var _module$exports;
+var _description, _module$exports, _mutatorMap;
 
 var env = "development";
 var production = env === 'production';
-module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), (0, _defineProperty2.default)(_module$exports, "employer", {
+
+var squish = function squish(str) {
+  return str.trim().replace(/\s{2,}/g, ' ');
+};
+
+module.exports = (_module$exports = {}, (0, _defineProperty2.default)(_module$exports, env, true), (0, _defineProperty2.default)(_module$exports, "env", env), (0, _defineProperty2.default)(_module$exports, "hostname", production ? 'https://sidneyliebrand.io' : 'http://localhost:3000'), (0, _defineProperty2.default)(_module$exports, "owner", {
+  firstName: 'Sidney',
+  lastName: 'Liebrand',
+
+  get fullName() {
+    return [this.firstName, this.lastName].filter(function (x) {
+      return x;
+    }).join(' ');
+  }
+
+}), (0, _defineProperty2.default)(_module$exports, "employer", {
   name: 'Floorplanner',
   city: 'Rotterdam'
-}), _module$exports);
+}), _description = "description", _mutatorMap = {}, _mutatorMap[_description] = _mutatorMap[_description] || {}, _mutatorMap[_description].get = function () {
+  return squish("\n            My name is ".concat(this.owner.fullName, ".\n            I am a Dutch front-end developer working at ").concat(this.employer.name, "\n            in ").concat(this.employer.city, ". This is the place where I post content\n            and publish gimmicky web tools.\n        "));
+}, (0, _defineEnumerableProperties2.default)(_module$exports, _mutatorMap), _module$exports);
 
 /***/ }),
 
@@ -956,8 +975,10 @@ function themeable(obj) {
       fmtVar: function fmtVar(name, fmt) {
         var property = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : name;
         property = var2css(property);
-        var def = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
-        return "\n                        ".concat(property, ": ").concat(obj[name], ";\n                        ").concat(property, ": ").concat(fmt.replace('??', def), ";\n                    ");
+        var cssVar = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
+        var rawProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, obj[name]) : obj[name];
+        var cssVarProp = fmt.includes('??') ? fmt.replace(/\?{2}/g, cssVar) : cssVar;
+        return "\n                        ".concat(property, ": ").concat(rawProp, ";\n                        ").concat(property, ": ").concat(cssVarProp, ";\n                    ");
       },
 
       get definitions() {
@@ -1577,6 +1598,49 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineEnumerableProperties.js ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineEnumerableProperties; });
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _defineEnumerableProperties(obj, descs) {
+  for (var key in descs) {
+    var desc = descs[key];
+    desc.configurable = desc.enumerable = true;
+    if ("value" in desc) desc.writable = true;
+
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default()(obj, key, desc);
+  }
+
+  if (_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default.a) {
+    var objectSymbols = _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_0___default()(descs);
+
+    for (var i = 0; i < objectSymbols.length; i++) {
+      var sym = objectSymbols[i];
+      var desc = descs[sym];
+      desc.configurable = desc.enumerable = true;
+      if ("value" in desc) desc.writable = true;
+
+      _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_1___default()(obj, sym, desc);
+    }
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -23197,7 +23261,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../store */ "./store.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../config */ "./config/index.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../utilities */ "./utilities.js");
 /* harmony import */ var _components_application__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/application */ "./components/application.jsx");
@@ -23214,6 +23278,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/_app.js";
+
 
 
 
@@ -23310,33 +23375,33 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(RootedContainer, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
         rel: "alternate",
         type: "application/atom+xml",
-        title: "Sidney Liebrand's blog",
+        title: "".concat(_config__WEBPACK_IMPORTED_MODULE_15__["owner"].fullName, "'s blog"),
         href: "/atom.xml",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
         rel: "alternate",
         type: "application/rss+xml",
-        title: "Sidney Liebrand's blog",
+        title: "".concat(_config__WEBPACK_IMPORTED_MODULE_15__["owner"].fullName, "'s blog"),
         href: "/feed.xml",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23344,7 +23409,7 @@ function (_App) {
         href: "".concat(_config__WEBPACK_IMPORTED_MODULE_15__["hostname"]).concat(route.slice(1) ? route : ''),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 66
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23353,7 +23418,7 @@ function (_App) {
         href: "/static/apple-touch-icon.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 70
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23363,7 +23428,7 @@ function (_App) {
         href: "/static/favicon-32x32.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 75
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23373,7 +23438,7 @@ function (_App) {
         href: "/static/favicon-16x16.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 81
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23383,7 +23448,7 @@ function (_App) {
         href: "/static/favicon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 87
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23393,7 +23458,7 @@ function (_App) {
         crossOrigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 93
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("link", {
@@ -23401,7 +23466,7 @@ function (_App) {
         href: "/static/site.webmanifest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23409,7 +23474,7 @@ function (_App) {
         httpEquiv: "content-type",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23417,7 +23482,7 @@ function (_App) {
         httpEquiv: "content-language",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23425,7 +23490,7 @@ function (_App) {
         content: "index, follow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 102
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("meta", {
@@ -23433,19 +23498,19 @@ function (_App) {
         content: "width=device-width, initial-scale=1.0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 103
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_global_css__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 108
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ComponentWithMDX, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 109
         },
         __self: this
       })));
