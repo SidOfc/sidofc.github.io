@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/codi-vim-fullscreen-buffer.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/recruiters-who-call-during-working-hours.js"],{
 
 /***/ "./assets/img/avatar.jpg":
 /*!*******************************!*\
@@ -6733,21 +6733,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fcodi-vim-fullscreen-buffer&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fcodi-vim-fullscreen-buffer.mdx!./":
-/*!****************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fcodi-vim-fullscreen-buffer&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fcodi-vim-fullscreen-buffer.mdx ***!
-  \****************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx!./":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/codi-vim-fullscreen-buffer", function() {
-      var page = __webpack_require__(/*! ./pages/blog/codi-vim-fullscreen-buffer.mdx */ "./pages/blog/codi-vim-fullscreen-buffer.mdx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/recruiters-who-call-during-working-hours", function() {
+      var page = __webpack_require__(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx")
       if(true) {
-        module.hot.accept(/*! ./pages/blog/codi-vim-fullscreen-buffer.mdx */ "./pages/blog/codi-vim-fullscreen-buffer.mdx", function() {
-          if(!next.router.components["/blog/codi-vim-fullscreen-buffer"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/blog/codi-vim-fullscreen-buffer.mdx */ "./pages/blog/codi-vim-fullscreen-buffer.mdx")
-          next.router.update("/blog/codi-vim-fullscreen-buffer", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx", function() {
+          if(!next.router.components["/blog/recruiters-who-call-during-working-hours"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog/recruiters-who-call-during-working-hours.mdx */ "./pages/blog/recruiters-who-call-during-working-hours.mdx")
+          next.router.update("/blog/recruiters-who-call-during-working-hours", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -13847,10 +13847,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/blog/codi-vim-fullscreen-buffer.mdx":
-/*!***************************************************!*\
-  !*** ./pages/blog/codi-vim-fullscreen-buffer.mdx ***!
-  \***************************************************/
+/***/ "./pages/blog/recruiters-who-call-during-working-hours.mdx":
+/*!*****************************************************************!*\
+  !*** ./pages/blog/recruiters-who-call-during-working-hours.mdx ***!
+  \*****************************************************************/
 /*! exports provided: meta, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13863,11 +13863,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/index.es.js");
-/* harmony import */ var _components_layout_post__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/layout/post */ "./components/layout/post.jsx");
-/* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/img */ "./assets/img/index.js");
+/* harmony import */ var _assets_img__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img */ "./assets/img/index.js");
+/* harmony import */ var _components_layout_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/layout/post */ "./components/layout/post.jsx");
 
 
-var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/codi-vim-fullscreen-buffer.mdx";
+var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/recruiters-who-call-during-working-hours.mdx";
 
 /* @jsx mdx */
 
@@ -13877,11 +13877,11 @@ var _jsxFileName = "/home/sidofc/Dev/sidneyliebrand.io/pages/blog/codi-vim-fulls
 
 
 var meta = {
-  title: 'Codi.vim + fullscreen buffer',
+  title: 'Recruiters who call during working hours',
   author: 'Sidney Liebrand',
-  date: '27-08-2018 07:55:24',
-  excerpt: 'Learn how to set up Codi.vim to create a fullscreen scratch buffer that also works with Vim splits. We will take a look at wrapping the <code>Codi</code> command and improving the buffer name(s) as seen in <code>:ls</code>.',
-  words: 860
+  date: '31-08-2018 22:41:19',
+  excerpt: 'Any kind of cold-call from some random recruiter or sales rep is annoying enough as is. Imagine my frustration when I got a call from a recruiter who called on the <strong>company phone</strong> in the middle of a working day!',
+  words: 1157
 };
 
 var makeShortcode = function makeShortcode(name) {
@@ -13890,7 +13890,7 @@ var makeShortcode = function makeShortcode(name) {
     return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 16
       },
       __self: this
     }));
@@ -13910,365 +13910,300 @@ function MDXContent(_ref) {
     mdxType: "MDXLayout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 27
     },
     __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_components_layout_post__WEBPACK_IMPORTED_MODULE_4__["Title"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, meta, {
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_components_layout_post__WEBPACK_IMPORTED_MODULE_5__["Title"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, meta, {
     mdxType: "Title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 30
     },
     __self: this
-  })), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["CodiBanner"], {
-    wide: true,
-    mdxType: "CodiBanner",
+  })), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_4__["RecruiterTableFlip"], {
+    width: "800",
+    height: "409",
+    mdxType: "RecruiterTableFlip",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "So far I haven't been bothered too much by recruiters but every once in a while some moron decides to call me at work in the middle of the day.\nThey probably don't even care about the fact that I'm already working happily and full-time at a company, they just call me up and say something like:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("blockquote", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    parentName: "blockquote",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "Hi Sidney! My name is ", "[insert random name]", " and I want to talk to you!\n", "\u2014", " every recruiter ever")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "The first time I got a call like this, it came from the ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, "company phone."), "\nSomeone had asked specifically for ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }, "Recently I discovered ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/metakirby5/codi.vim"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), "codi.vim"), " on ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://vimawesome.com/?q=cat%3Aother"
-  }, {
+  }, "my"), " help with a certain issue.\nWhile uncommon to get a phone call like this, I thought it was probably something small and took the phone."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
-  }), "vimawesome.com"), ".\nIt sells itself as an \"interactive scratchpad for hackers\".\nAfter playing around with it for 5 minutes I was completely sold."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I had a small conversation with this guy, he had all kinds of \"interests\" in all my \"skills\".\nHe was unclear about what he wanted exactly.\nI actually ended up giving him my phone number \uD83E\uDD26\u200D\u2642\uFE0F \uD83E\uDD26\u200D\u2642\uFE0F \uD83E\uDD26\u200D\u2642\uFE0F so that he would at least stop bothering me at that moment."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 44
     },
     __self: this
-  }, "I pair program on a weekly basis using various different languages.\nI used to turn to a REPL for help but this quickly becomes annoying when trying to write multi-line expressions.\nMaking a typo in the middle of a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
+  }, "Big. Freaking. Mistake."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 45
     },
     __self: this
-  }, "do ... end"), " block in Ruby is quite costly:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["PryMultilineTypo"], {
-    mdxType: "PryMultilineTypo",
+  }, "He called me again some three to four months later.\nI think I was awake for roughly ten minutes and just getting ready to eat my breakfast and have a cup of coffee before heading off to work."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 47
     },
     __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I can't recall what he said exactly but I do remember that he called to \"check up\" on me and see \"how I was doing\".\nWhat a mug ", "\u2014", " I thought and I killed the conversation quickly because he just went on and on about stuff I didn't care about.\nI was just trying to wake up and eat my breakfast..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: this
-  }, "Another thing to note here is that code and results are printed sequentially.\nThis means that any code you write goes off-screen at least twice as fast because the result is printed below it."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Then after another three to four months he started calling me during ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "working hours."), "\nI never answered simply because I see \"Amsterdam\" as location on my phone and already know it is a recruiter.\nHe actually tried calling me multiple times a week at which point I ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: this
-  }, "In case of errors and stack traces it can become a lot worse as well.\nCodi solves all of this by allowing you to type in one pane and it prints the results in a separate pane side-by-side:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["RubyDemo"], {
-    mdxType: "RubyDemo",
+  }, "blocked his number"), "."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "But this guy didn't actually stop there! Oh no, of course not... This was the moment when he thought it would be a fantastic idea to start calling ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, "anonymously."), "\nAs in \"No Number\". Yeah..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
     __self: this
-  }, "This feature, and the fact that I can toggle this buffer for ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "Keep hanging up"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "This was my tactic, I had ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
-  }, "multiple programming languages"), " using a single mapping blew my mind but as with anything,\nit requires some more battle testing to see if it works in common scenario's."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, "Battle testing"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "This is where I found out that when used with a split, it will not be fullscreen but rather split the current buffer:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["SplitBehavior"], {
-    mdxType: "SplitBehavior",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "zero interest"), " in speaking with a guy like that again.\nUp until now, all his efforts had been a tremendous waste of my time and focus.\nHonestly, I thought he would get the hint after pressing \"Decline\" on about 6 more calls.\nBoy was I wrong..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
     },
     __self: this
-  }, "At this point I started experimenting with a small ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://gist.github.com/SidOfc/5218a7a9f12ed2105a9b052ca8e6707e"
-  }, {
+  }, "First, let me tell you that I am not the type of guy to explode on someone.\nUsually I am quite calm and controlled. I see no benefit in destructive arguments,\nI much rather prefer a constructive discussion."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
-  }), "vimscript snippet"), " in my .vimrc.\nExcluding comments and blanks it is 10 LoC.\nIt wraps the default ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, "Codi"), " command in a function which creates an empty buffer in a new tab with the right filetype set before finally running ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, "Codi"), " itself.\nThis creates the fullscreen split that I wanted:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["WrappedSplitBehavior"], {
-    mdxType: "WrappedSplitBehavior",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "This guy however... had pissed me off so much by now that when the next call hit,\nI walked out of the office, answered the phone and just started shouting that\nhe'd better piss off and never call again. Then I ended the call without even\nlistening to what he had to say."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
     },
     __self: this
-  }, "Problem solved, or maybe not?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "To my surprise, he actually listened. After ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "cutting conversations,\nblocking his number, ignoring him"), " and finally even ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: this
-  }, "All good so far, but upon closing the buffer, the contents of the buffer are deleted.\nWhile automatically clearing the scratchpad is nice, sometimes I want to go back and forth between the code and the scratchpad to add additional code or compare the existing code with the scratchpad code."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "raging at him,"), "\nhe too decided it was time to call it a loss. I am not proud of this behavior\nbut when you treat me like a dog I'll treat you like a tree and piss all over you."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
-  }, "This required a ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://gist.github.com/SidOfc/3f94244a8b08406710b6669052f66d62"
-  }, {
+  }, "One down, infinite more to go"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 72
     },
     __self: this
-  }), "second iteration"), " of the original vimscript snippet.\nThis time I did not want to delete the buffer but hide it instead, keeping the code that was already written in it.\nAfter hiding the buffer, its ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, "tabpagenr()"), " is stored in a dictionary keyed by the filetype of the buffer."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Unfortunately, the battle did not end there. I did say \"first time\"\nat the start of the post and as you have guessed correctly,\nI received another call recently."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
     },
     __self: this
-  }, "Then, when toggling codi for a filetype that is stored, switch to that tab instead of opening a new one (there is even a check if that tab actually exists):"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])(_assets_img__WEBPACK_IMPORTED_MODULE_5__["WrappedSplitBehavior2"], {
-    mdxType: "WrappedSplitBehavior2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }, "And there we go! Aside from the fact that the buffer now remains, the name is also ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }, "scratch::ruby"), ".\nThis is a bit more descriptive than having just ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, "[Scratch]"), " in ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, ":ls"), " output when multiple codi buffers of a different filetype are active."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "This time, I was better prepared though.\nI saw the location \"Amsterdam\" with a number that I hadn't blocked.\nI don't have any friends in Amsterdam whose number I don't already\nhave so I figured the only logical explanation was that this was another recruiter."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
     },
     __self: this
-  }, "Let's wrap it in an issue"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "See my first quote for what he opened with.\nI told him \"Ahhh ", "\u2014", " you're a recruiter, aren't you?\".\nHe stuttered while trying to come up with a tactical answer to this simple question."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 82
     },
     __self: this
-  }, "It was a fun experience tweaking this plugin to my liking.\nI thought this feature would be so awesome that I even proposed it in an ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/metakirby5/codi.vim/issues/9://github.com/metakirby5/codi.vim/issues/94"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  }), "issue"), ".\nUnfortunately it didn't make it since it was too workflow specific."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }, "As you may have been able to see in the issue though, the code in that snippet is ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+  }, "Failing miserably he replied: \"Well, you sure are direct...\" to which I replied:\n\"I'll be even more direct. I have ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strong", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, "zero"), " interest in what you have to offer so\nI'm going to hang up now okay?\"."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 85
     },
     __self: this
-  }, "slighty"), " different from the example gist linked in this post.\nThe main difference is this line which resizes codi to 50% of the buffer width whenever a new instance is spawned:"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("pre", {
+  }, "He backed off instantly and I gave him his farewell without exploding in his face.\nDespite the fact that we had a semi-normal ten second conversation,\nwhy do recruiters call in the middle of the day? Why can't they just leave me\n(or anyone for that matter) alone at work and call in the evening?\nBetter yet, why don't they stop calling all together if you're\nalready working somewhere?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 91
     },
     __self: this
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("code", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "pre"
-  }, {
-    "className": "language-vim"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }), "\" since it is fullscreen, I'd like a 50/50 split\nlet g:codi#width = winwidth(winnr()) / 2\n")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "I mean, what is wrong with you recruiters..."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 92
     },
     __self: this
-  }, "The author thought it would be a nice addition to have percentage width support and for the snippets to live elsewhere for others to use in their .vimrc.\nSo I went ahead and ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://github.com/metakirby5/codi.vim/pull/95"
-  }, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93
-    },
-    __self: this
-  }), "wrote a PR"), " for that instead, this is why you see\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("inlineCode", {
-    parentName: "p",
+  }, "I always think to myself that even if most recruiters are just leeches moving\npeople from job A to job B, taking a grain of their monthly pay in the process,\nthey would at least respect the fact that who they are calling may already have\na full-time job and instead, call after working hours if at all?"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 96
     },
     __self: this
-  }, "let g:codi#width = 50.0"), " in the gists :)"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
+  }, "The worst offender here is still the first man-child who actually called on the\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
+    parentName: "p",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 97
     },
     __self: this
-  }, "Conclusion"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: this
-  }, "All in all it was a great experience discovering this plugin.\nIt is like one of those rare cases with a song where after a few seconds ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strong", {
+  }, "company phone"), ". I mean ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
     parentName: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 97
     },
     __self: this
-  }, "you just know"), " ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("em", {
-    parentName: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99
-    },
-    __self: this
-  }, "\"this song is awesome\""), ".\nI believe I'll be using it for a long time to come for quickly testing and showing some code."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "what the hell."), " How does one even come up with the idea\nto call on the number of the company that you're trying to rip a piece out of?\nHe must have been pretty desperate and probably didn't have the resources to buy\nmy number online. And then to continue with such stalker behavior as well, sigh... \uD83D\uDD95"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: this
-  }, "This also gave me the chance to write my first non-organization bound PR for a project which I like and now also use.\nSomething which I wanted to do for a long time but couldn't really find the right project to contribute to.\nI want to thank ", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    parentName: "p"
-  }, {
-    "href": "https://medium.com/@metakirby5"
-  }, {
+  }, "Conclusion"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 102
     },
     __self: this
-  }), "Ethan Chan"), " for his awesome plugin and for being a kind and friendly maintainer!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Despite all the cumbersome experiences I've had with them I do still have faith that there are recruiters out there that haven't gone mad.\nThose that actually try to do what is best for both employer and employee."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 104
     },
     __self: this
-  }, "That's it! If you want a fullscreen workflow with codi.vim, you have it.\nIf you want to persist the code in the buffer, you have it.\nIf you have a great idea, comment on this post!"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+  }, "Most however, are just plain leeches that only move people for their own benefit.\nThey usually don't know what you do or which technologies you are familiar with.\nSometimes not even where to move you at the moment they decide to contact you.\nAnd even if they do provide some level of detail, it's not their brilliant research.\nIt's some algorithm which scrapes web pages for public information."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109
     },
     __self: this
+  }, "I just ignore them and if that doesn't work, I pick up the phone,\ndominate the conversation and end it in roughly ten seconds making sure to opt-out\nof any call-list in the process."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
   }, "Until next time."), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 113
+    },
+    __self: this
+  }, "Sidney Liebrand", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }), "\n", Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("strong", {
+    parentName: "p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, "Unrecruitable")), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__["mdx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
     },
     __self: this
   }, "\uD83D\uDC4B"));
@@ -14492,14 +14427,14 @@ function color2rgba(color) {
 
 /***/ }),
 
-/***/ 4:
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog%2Fcodi-vim-fullscreen-buffer&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fcodi-vim-fullscreen-buffer.mdx ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ 3:
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2Fcodi-vim-fullscreen-buffer&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fcodi-vim-fullscreen-buffer.mdx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Fcodi-vim-fullscreen-buffer&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Fcodi-vim-fullscreen-buffer.mdx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Frecruiters-who-call-during-working-hours&absolutePagePath=%2Fhome%2Fsidofc%2FDev%2Fsidneyliebrand.io%2Fpages%2Fblog%2Frecruiters-who-call-during-working-hours.mdx!./");
 
 
 /***/ }),
@@ -14515,5 +14450,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=codi-vim-fullscreen-buffer.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=recruiters-who-call-during-working-hours.js.map
