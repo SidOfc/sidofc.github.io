@@ -1025,7 +1025,7 @@ function themeable(obj) {
         var cssVar = "var(--".concat(parents.concat(var2css(name)).join('-'), ")");
         var rawProp = fmt ? fmt.replace(/\?{2}/g, obj[name]) : obj[name];
         var cssVarProp = fmt ? fmt.replace(/\?{2}/g, cssVar) : cssVar;
-        return "\n                        ".concat(property, ": ").concat(rawProp, ";\n                        ").concat(property, ": ").concat(cssVarProp, ";\n                    ");
+        return "\n                        ".concat(property, ": ").concat(rawProp, ";\n                        // ").concat(property, ": ").concat(cssVarProp, ";\n                    ");
       },
 
       get definitions() {
