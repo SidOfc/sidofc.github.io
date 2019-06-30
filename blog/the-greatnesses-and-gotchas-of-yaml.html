@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="en"><head prefix="dc: http://purl.org/dc/elements/1.1# og: http://ogp.me/ns#"><meta charset="utf-8" /><link href="/atom.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/atom+xml" /><link href="/feed.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/rss+xml" /><link href="http://localhost:4567/blog/the-greatnesses-and-gotchas-of-yaml" rel="canonical" /><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" /><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicon.ico" rel="icon" sizes="48x48" type="image/icon" /><link href="/site.webmanifest" rel="manifest" /><meta content="#651eea" name="theme-color" /><meta content="index, follow" name="robots" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="http://localhost:4567/blog/the-greatnesses-and-gotchas-of-yaml" name="og:url" /><meta content="Sidney Liebrand" name="author" /><meta content="Sidney Liebrand" name="dc:author" /><meta content="Sidney Liebrand" name="dc:creator" /><meta content="YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!" name="description" /><meta content="YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!" name="dc:description" /><meta content="YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!" name="og:description" /><title>The greatnesses and gotchas of YAML</title><meta content="The greatnesses and gotchas of YAML" name="og:title" /><meta content="The greatnesses and gotchas of YAML" name="dc:title" /><style type="text/css">@charset UTF-8;html{min-height:100%;background-repeat:no-repeat;background-size:20%;font-size:14px}@media screen and (min-width:280px){html{font-size:calc(14px + 6*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){html{font-size:20px}}body{margin:0;padding:0;min-height:100%;font-family:serif,Apple Color Emoji,Noto Color Emoji;line-height:1.6;font-weight:300}.figure-img{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;transition:opacity .25s ease-in-out;overflow:hidden;border-radius:4px}*{box-sizing:border-box}::-moz-selection{background-color:#f5f0fe;color:#3d0e94}::selection{background-color:#f5f0fe;color:#3d0e94}article,aside,details,figcaption,figure,footer,header,main,mark,nav,section{display:block}h1,h2,h3,h4,h5,h6{color:#000;line-height:1;font-weight:600;margin:2rem 0 .25rem}h1:not(:first-child),h2:not(:first-child),h3:not(:first-child),h4:not(:first-child),h5:not(:first-child),h6:not(:first-child){margin-top:2rem}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:.5rem}h1{font-size:26px}@media screen and (min-width:280px){h1{font-size:calc(26px + 18*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h1{font-size:44px}}h2{font-size:22px}@media screen and (min-width:280px){h2{font-size:calc(22px + 12*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h2{font-size:34px}}h3{font-size:20px}@media screen and (min-width:280px){h3{font-size:calc(20px + 10*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h3{font-size:30px}}h4{font-size:18px}@media screen and (min-width:280px){h4{font-size:calc(18px + 8*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h4{font-size:26px}}h5{font-size:16px}@media screen and (min-width:280px){h5{font-size:calc(16px + 6*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h5{font-size:22px}}h6{font-size:1rem}p{font-size:1.15rem;margin-top:2rem;margin-bottom:2rem}p:first-child{margin-top:0}p:last-child{margin-bottom:0}li{margin-bottom:1rem}blockquote,li{font-size:1.15rem}code,kbd,pre{padding:.5rem 1rem;border-radius:4px;background-color:#f2f2f2;color:#444}code,kbd{font-size:.8em;padding:.2rem .4rem .15rem;border-radius:4px}pre code{font-size:.9rem;padding:0;background-color:transparent;display:block}kbd{background-image:none;border:1px solid rgba(85,85,85,.2)}a,a>code{position:relative;color:#651eea;text-decoration:none;outline:none;transition:text-shadow .05s linear}a:hover,a:not(:active):focus,a>code:hover,a>code:not(:active):focus{text-shadow:-.06ex 0 #651eea,.06ex 0 #651eea}figure{margin:2rem 0}figcaption{margin-top:.25rem;text-align:center;opacity:.8;font-size:.9rem;line-height:1}blockquote{font-style:italic;margin-top:2rem;margin-bottom:2rem;padding:0 2rem;border-left:4px solid #555}blockquote p{opacity:.8}@media (max-width:420px){blockquote{padding:1rem 0;border:4px solid #555;border-right:none;border-left:none}}strong{font-weight:600}img{max-width:100%}ol,ul{list-style:none;padding:0}ol li,ul li{position:relative;padding-left:1.5rem}ol li:before,ul li:before{position:absolute;line-height:1;padding-top:.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:"•";color:#555}ol{counter-reset:ol-li-counter}ol li:before{padding-top:.4rem;font-size:.9em;font-weight:600;counter-increment:ol-li-counter;content:counter(ol-li-counter) .}small{font-size:.9rem;line-height:1}.application{position:relative;min-height:100%;min-height:100vh;width:100%;display:grid;grid-template-columns:auto;grid-template-rows:3.125rem 1fr auto}.logo{display:inline-block;-ms-flex:0 1 6rem;flex:0 1 6rem;margin:0;fill:#651eea}.header{position:relative;height:3.125rem;width:100%}.header__inner{position:fixed;top:0;left:0;right:0;height:3.125rem;background-color:#fff;box-shadow:0 0 .25rem rgba(0,0,0,.15);z-index:100}.header__content{position:relative;width:100%;max-width:54rem;padding:0 0 0 1rem;margin:0 auto}.header__content,.header__nav{height:100%;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex}.header__nav{margin-left:auto}.header__nav-item{padding:0 1rem}.header__nav-item figure{margin:0;min-width:2rem}.main{position:relative;min-height:100%;min-height:100vh;color:#444;z-index:10}.page{margin:0 auto;width:54rem;max-width:calc(100% - 2rem);max-width:calc(100vw - 2rem);padding:1rem}.footer{color:#444;text-align:center;padding:.25rem 1rem}.article>:not(.wide){max-width:44rem;margin-left:auto;margin-right:auto}.article__title{margin-bottom:.25rem;font-size:34px}@media screen and (min-width:280px){.article__title{font-size:calc(34px + 26*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){.article__title{font-size:60px}}.article__title+p{margin-top:0}.article__title+small{display:block}div.highlight{overflow:hidden;overflow-x:auto;border-radius:4px}div.highlight pre.highlight{margin:0}.posts{width:100%;max-width:44rem;margin:0 auto;padding:1rem 0}.post-card{position:relative;display:block;margin:0 auto;cursor:pointer;text-decoration:none;outline:none}.post-card:hover{text-shadow:none}.post-card+.post-card{margin-top:2rem}.post-card:not(:active):focus{opacity:1;text-shadow:none;box-shadow:inset 0 0 0 2px #651eea}.post-card__container{padding:1rem;display:-ms-flexbox;display:flex;-ms-flex-flow:column nowrap;flex-flow:column nowrap;color:#444;outline:none}.post-card__title{margin-top:0;font-size:20px}@media screen and (min-width:280px){.post-card__title{font-size:calc(20px + 8*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){.post-card__title{font-size:28px}}.post-card__excerpt{margin-top:.5rem;margin-bottom:1rem;line-height:1.44}.post-card__view-post{margin-left:auto}.turbolinks-progress-bar{background-color:#651eea;transition:all .3s ease-in-out!important;opacity:.1!important;height:3.125rem}.button{display:inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1;font-weight:300;font-size:.9rem;font-family:serif,Apple Color Emoji,Noto Color Emoji;padding:.625rem 2rem;border-radius:2px;height:auto;border:1px solid rgba(0,0,0,.1);background-color:#651eea;color:#fff;cursor:pointer;transition:all .1s ease-out;outline:none}.button:hover,.button:not(:active):focus{opacity:.8}.welcome-banner{position:relative;display:-ms-flexbox;display:flex;width:100%;max-width:54rem;margin:0 auto;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-align:center;align-items:center;padding:2rem 1rem}.welcome-banner__graphic{-ms-flex:1 0 auto;flex:1 0 auto;width:100%;max-width:220px;overflow:hidden;margin:0;border-radius:100%}.welcome-banner__content{line-height:1.44;-ms-flex:1 1 auto;flex:1 1 auto;margin:auto 0 auto 2rem}@media (max-width:42rem){.welcome-banner{-ms-flex-flow:column nowrap;flex-flow:column nowrap}.welcome-banner:after{content:"";display:block;width:30%;position:absolute;bottom:-2px;left:35%;height:4px;background-color:#651eea;border-radius:8px}.welcome-banner__graphic{-ms-flex:1 1 auto;flex:1 1 auto;width:100%;max-width:220px;margin:0 auto}.welcome-banner__content{margin-left:0;text-align:center}}.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight,.highlight .w{color:#f8f8f2;background-color:#272822}.highlight code{color:#f8f8f2}.highlight .err{color:#272822;background-color:#f92672}.highlight .c,.highlight .c1,.highlight .cd,.highlight .cm,.highlight .cs{color:#75715e}.highlight .cp,.highlight .nt{color:#f4bf75}.highlight .o,.highlight .ow{color:#f8f8f2}.highlight .p,.highlight .pi{color:#a2a2a2}.highlight .gi{color:#a6e22e}.highlight .gd{color:#f92672}.highlight .gh{color:#66d9ef;background-color:#272822;font-weight:700}.highlight .k,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kv{color:#a57bf3}.highlight .kc,.highlight .kd,.highlight .kt{color:#fd971f}.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .sx{color:#a6e22e}.highlight .sr{color:#a1efe4}.highlight .se,.highlight .si{color:#c63}.highlight .nc,.highlight .nn,.highlight .no{color:#f4bf75}.highlight .na{color:#66d9ef}.highlight .il,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .mx,.highlight .ss{color:#a6e22e}</style><script defer="true" type="text/javascript" src="/js/application-8c726ee35.js"></script></head><body><div class="application"><header class="header"><div class="header__inner"><div class="header__content"><a class="logo" href="/"><figure><div style="position:relative"><svg class="figure-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.29 114.44" preserveAspectRatio="xMidYMid slice"><path d="M33.43,96.21c18.22,0,25-17.14,8.48-26.76C29,61.94,11.44,60.75,3.93,46S3.07,12.14,17.4,4.71c15.35-8,36.69-5.08,51.36,3L62.4,24.49C53.63,19.59,41,16,31.08,19.76c-9.33,3.55-10.69,13.62-3.22,20.08,7.83,6.77,19.62,7.95,28.53,13,11.12,6.31,17.37,16.65,17.32,29.41-.12,27.84-27.22,34.19-50.28,31.69-6-.65-22.15-3.42-23.36-9.38C-.67,100.91,4.59,92,5.88,88.44A53,53,0,0,0,33.43,96.21Z" /><path d="M162,112.11H93.31V2.77h21.91V94.09H162Z" /><path d="M229.15,98.15c0,20.64-31.72,20.67-31.62,0C197.63,78,229.15,77.92,229.15,98.15Z" /><path d="M267,112.11v-18H290.8V20.78H267v-18h69.42v18H312.7V94.09h23.67v18Z" /><path d="M350.5,57.35c0-25.51,8.42-57,39.39-57.06,31.32-.09,39.4,31.31,39.4,57.06,0,24.69-7.42,55.53-37.19,57C359.55,115.88,350.5,84,350.5,57.35Zm22.08,0c0,12.19-.62,38.21,17.31,38.15s17.3-25.85,17.32-38.15.62-38.12-17.32-38.16S372.58,45.23,372.58,57.35Z" /></svg>
+<div style="padding-bottom:26.57%;visibility:hidden"></div></div></figure></a><nav class="header__nav"><a class="header__nav-item" href="https://github.com/SidOfc" rel="noopener,noreferrer" target="_blank" title="Sidney Liebrand's github profile"><figure><div style="position:relative"><svg class="figure-img" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+<div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">The greatnesses and gotchas of YAML</h1><small>By Sidney Liebrand on Dec 23rd, 2017 &bull; 12 min read</small><p><strong>Update 08–11–2018:</strong> Thank you <a href="https://medium.com/@abitrolly">Anatoli Babenia</a>
+for pointing to the base 60 parsing 'feature' in the <a href="https://docs.docker.com/compose/compose-file/compose-file-v2/#ports"><code>docker-compose</code></a> documentation.
+It led to me finding another great resource and added it along with some new content
+to this post.</p>
+
+<figure><div style="position:relative"><img class="figure-img" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/yaml-homepage-df9b8bb91.png" alt="https://yaml.org homepage" /><div style="padding-bottom:41.22%;visibility:hidden"></div></div><figcaption>https://yaml.org homepage</figcaption></figure>
+
+<p>In this post I want to talk about <a href="http://yaml.org/">YAML</a>.
+Like the very popular <a href="http://json.org/">JSON</a> format, it is a file format
+that allows you to store data in a structured way. Last week I had a
+discussion with a colleague about an unexpected output value when parsing
+YAML to a Ruby hash. The YAML data looks like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">some_key</span><span class="pi">:</span>
+  <span class="na">some_other_key</span><span class="pi">:</span> <span class="s">nil</span>
+</code></pre></div></div>
+
+<p>When parsed in Ruby, it looks like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s1">'some_key'</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s1">'some_other_key'</span> <span class="o">=&gt;</span> <span class="s1">'nil'</span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>And the equivalent Python output:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'some_key'</span><span class="p">:</span> <span class="p">{</span><span class="s">'some_other_key'</span><span class="p">:</span> <span class="s">'nil'</span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>The confusion was about the value of <code>some_other_key</code> which we
+both thought would become <code>nil</code> instead of <code>'nil'</code>. I mentioned to my
+colleague that if he wanted to get a nil value, he might as well
+leave it completely empty:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">some_key</span><span class="pi">:</span>
+  <span class="na">some_other_key</span><span class="pi">:</span>
+</code></pre></div></div>
+
+<p>Which indeed, leads to the expected result in Ruby:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s1">'some_key'</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s1">'some_other_key'</span> <span class="o">=&gt;</span> <span class="kp">nil</span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>And of course, in Python too:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'some_key'</span><span class="p">:</span> <span class="p">{</span><span class="s">'some_other_key'</span><span class="p">:</span> <span class="bp">None</span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>At this point we became curious, I mean, there must be <em>some</em> kind of <code>nil</code> value,
+right? So we ventured to Google and well, found an answer in no time at all :)
+There is a <code>nil</code> value in YAML, it's called <a href="http://yaml.org/type/null.html"><code>null</code></a>!</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">some_key</span><span class="pi">:</span>
+  <span class="na">some_other_key</span><span class="pi">:</span> <span class="no">null</span>
+</code></pre></div></div>
+
+<p>Also yields the expected result for both Ruby and Python.</p>
+
+<h2 id="and-this-was-only-the-start">And this was only the start…</h2>
+
+<p>Since that moment I've been wondering what <em>more</em> is there to YAML.
+I've written literally <a href="https://github.com/SidOfc/browserino/tree/master/spec/files">thousands of lines of YAML</a>
+test data for one of <a href="http://github.com/sidofc/browserino">my gems</a>
+but I've never really wondered what the language could really do.</p>
+
+<p>What I also noticed is that there aren't all that many YAML posts out there,
+some resources I used while gathering information for this post:</p>
+
+<ul>
+  <li>
+    <p><a href="https://learnxinyminutes.com/docs/yaml/">https://learnxinyminutes.com/docs/yaml/</a></p>
+  </li>
+  <li>
+    <p><a href="https://yaml.org/">https://yaml.org/</a></p>
+  </li>
+  <li>
+    <p><a href="https://codebeautify.org/yaml-validator">https://codebeautify.org/yaml-validator</a></p>
+  </li>
+  <li>
+    <p><a href="https://docs.saltstack.com/en/latest/topics/yaml/">https://docs.saltstack.com/en/latest/topics/yaml/</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.yaml.org/spec/1.2/spec.html">https://www.yaml.org/spec/1.2/spec.html</a></p>
+  </li>
+  <li>
+    <p><a href="https://stackoverflow.com/a/1729545/2224331">https://stackoverflow.com/a/1729545/2224331</a></p>
+  </li>
+  <li>
+    <p><a href="https://stackoverflow.com/a/16986339/2224331">https://stackoverflow.com/a/16986339/2224331</a></p>
+  </li>
+  <li>
+    <p><a href="https://json.org/">https://json.org/</a></p>
+  </li>
+  <li>
+    <p><a href="https://pyyaml.org/wiki/PyYAMLDocumentation">https://pyyaml.org/wiki/PyYAMLDocumentation</a></p>
+  </li>
+  <li>
+    <p><a href="http://blog.teamlazerbeez.com/2009/04/15/yaml-gotchas/">http://blog.teamlazerbeez.com/2009/04/15/yaml-gotchas/</a></p>
+  </li>
+</ul>
+
+<p>So I would like to share some of the features of YAML that you might not know about and also,
+share some differences between YAML parsers (the Ruby and Python parsers).</p>
+
+<h2 id="inheritance">Inheritance</h2>
+
+<p>One cool feature, which I first saw when bootstrapping a sample Rails application was that you
+can define "defaults" using anchors. In Rails, the <code>config/database.yml</code> file contains the
+following content by default:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">default</span><span class="pi">:</span> <span class="nl">&amp;default</span>
+  <span class="na">adapter</span><span class="pi">:</span> <span class="s">sqlite3</span>
+  <span class="na">pool</span><span class="pi">:</span> <span class="s">5</span>
+  <span class="na">timeout</span><span class="pi">:</span> <span class="s">5000</span>
+
+<span class="na">development</span><span class="pi">:</span>
+  <span class="s">&lt;&lt;</span><span class="pi">:</span> <span class="nv">*default</span>
+  <span class="na">database</span><span class="pi">:</span> <span class="s">db/development.sqlite3</span>
+
+<span class="na">test</span><span class="pi">:</span>
+  <span class="s">&lt;&lt;</span><span class="pi">:</span> <span class="nv">*default</span>
+  <span class="na">database</span><span class="pi">:</span> <span class="s">db/test.sqlite3</span>
+
+<span class="na">production</span><span class="pi">:</span>
+  <span class="s">&lt;&lt;</span><span class="pi">:</span> <span class="nv">*default</span>
+  <span class="na">database</span><span class="pi">:</span> <span class="s">db/production.sqlite3</span>
+</code></pre></div></div>
+
+<p>As you can see, there is a <code>default</code> key followed by <code>&amp;default</code>. The <code>&amp;default</code> keyword here represents
+the anchor. Then, in another YAML node, you can inherit properties from that anchor by adding a
+special key <code>&lt;&lt;</code> followed by <code>*default</code> in this case. To overwrite a default value, simply add the key
+you want to overwrite with its new value below the <code>&lt;&lt;:* default</code> line.</p>
+
+<h2 id="write-json-in-your-yaml">Write JSON in your YAML</h2>
+
+<p>Another handy thing to know is that you can write JSON inside YAML, this is pretty neat and to be
+expected as <a href="https://stackoverflow.com/questions/1726802/what-is-the-difference-between-yaml-and-json-when-to-prefer-one-over-the-other/1729545#1729545">YAML is a superset of JSON</a> (or well, since version 1.2 it is at least).</p>
+
+<p>The following YAML:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">key</span><span class="pi">:</span> <span class="pi">{</span><span class="s2">"</span><span class="s">some"</span><span class="pi">:</span> <span class="s2">"</span><span class="s">json"</span><span class="pi">}</span>
+<span class="na">another</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">1</span><span class="pi">,</span> <span class="nv">2</span><span class="pi">,</span> <span class="nv">3</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>Parsed in Ruby this results in:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"hello"</span><span class="o">=&gt;</span><span class="p">{</span><span class="s2">"some"</span><span class="o">=&gt;</span><span class="s2">"json"</span><span class="p">},</span> <span class="s2">"another"</span><span class="o">=&gt;</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<h2 id="yaml-keys-as-ruby-symbols">YAML keys as Ruby symbols</h2>
+
+<p>This one I looked for specifically when I started a major rewrite of one of my gems and decided
+to migrate test data out of Ruby into YAML. I was curious to see if YAML could actually store
+Ruby <em>Symbols</em> instead of <em>Strings</em>. While I didn't have thousands of tests written in YAML at the
+time, I thought "Why not?". The answer was that indeed, the Ruby parser understands symbols written
+in YAML, and treats them as such when parsing in Ruby.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">:my_symbol_key</span><span class="pi">:</span> <span class="s">:or_value</span>
+</code></pre></div></div>
+
+<p>In Ruby, evaluates to the following:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="ss">:my_symbol_key</span><span class="o">=&gt;</span><span class="ss">:or_value</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Whereas the same YAML parsed in Python outputs:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">':my_symbol_key'</span><span class="p">:</span> <span class="s">':or_value'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>I only recently gave this some thought, if I were to port my gem to Python for whatever reason,
+I couldn't "conveniently" use this YAML anymore and for anyone wanting to use the gem's YAML
+outside of Ruby, it would contain useless <code>:</code> characters at the start of every "symbol".
+So yeah, while awesome, use with caution! I'm considering rewriting my gem's YAML to just
+use strings instead of symbols because of this "exclusive" Ruby feature :)</p>
+
+<h2 id="multiline-strings-yamls-got-your-back">Multiline strings? YAML's got your back!</h2>
+
+<p>Another topic often discussed in programming languages in general is how to handle multiline
+strings, various languages have different solutions to the same problem. YAML has it's own
+two solutions. The pipe (<code>|</code>) character and the greater than (<code>&gt;</code>) sign.</p>
+
+<p>The pipe notation, also referred to as "literal block":</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">literal</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="no">This block of text will be the value of the 'literal' key,</span>
+    <span class="no">with line breaks being preserved.</span>
+
+    <span class="no">It continues until de-dented, leading indentation is</span>
+    <span class="no">stripped.</span>
+
+        <span class="no">Any lines that are 'more-indented' keep the rest</span>
+        <span class="no">of their indentation -</span>
+        <span class="no">these lines will be indented by 4 spaces.</span>
+</code></pre></div></div>
+
+<p>The greater than sign notation, also referred to as "folded block":</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">folded</span><span class="pi">:</span> <span class="pi">&gt;</span>
+    <span class="no">This block of text will be the value of 'folded', but this</span>
+    <span class="no">time, all newlines will be replaced with a single space.</span>
+
+    <span class="no">Blank lines, like above, are converted</span>
+    <span class="no">to a newline character.</span>
+
+        <span class="no">'More-indented' lines keep their newlines, too -</span>
+        <span class="no">this text will appear over two lines.</span>
+</code></pre></div></div>
+
+<p><a href="https://learnxinyminutes.com/docs/yaml/">Both snippets came from here.</a> This post also contains
+a lot of other great YAML examples you should definitely check out!</p>
+
+<h2 id="quoted-strings-begone">Quoted strings, begone!</h2>
+
+<p>Unlike its friend JSON, YAML doesn't mind if you don't put your strings between quotes.
+The following will output exactly what you would expect:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">some_key</span><span class="pi">:</span> <span class="s">with a string value</span>
+</code></pre></div></div>
+
+<p>In Ruby and Python, the results are the same (output in Ruby):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"some_key"</span><span class="o">=&gt;</span><span class="s2">"with a string value"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Keys don't have to be quoted either, so removing the <code>_</code> from <code>some_key</code> results
+in the following in both Ruby and Python (output in Ruby):</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"some key"</span><span class="o">=&gt;</span><span class="s2">"with a string value"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>While this makes copying certain values easier YAML tries to be smart about some
+(more than you might think) of them. When a key with a value of either <code>yes</code>, <code>Yes</code>,
+<code>YES</code>, <code>on</code>, <code>On</code> or <code>ON</code> is present, the resulting value when parsing this YAML will be
+a boolean. The same is true for values <code>no</code>, <code>No</code>, <code>NO</code>, <code>off</code>, <code>Off</code> and <code>OFF</code>.</p>
+
+<p>The following example shows Ruby syntax but Python 3.6 parsed it exactly the same.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># All the following equal true</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: Yes"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: yes"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: YES"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: on"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: On"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: ON"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key"=&gt;true}</span>
+
+<span class="c1"># All the following equal false</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: no"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: No"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: NO"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: off"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: Off"</span><span class="p">)</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: OFF"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key"=&gt;false}</span>
+</code></pre></div></div>
+
+<p>If you expect your program to see these values as strings, the solution is to quote
+the string or to cast the value as we'll see in the next section.</p>
+
+<h2 id="casting-values">Casting values</h2>
+
+<p>If you want to ensure that a key has a value of a specific type, you can cast values
+explicitly: <code>key: !!str 0.5</code> =&gt; <code>{"key" =&gt; "0.5"}</code> in both Ruby and Python. Likewise
+key: <code>!!float '0.5'</code> =&gt; <code>{"key" =&gt; 0.5}</code> as well.</p>
+
+<p>Some parsers actually implement <em>language specific</em> tags. These can be used to create specific data structures for that given language:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">key</span><span class="pi">:</span> <span class="kt">!!python/tuple</span> <span class="pi">[</span><span class="nv">1</span><span class="pi">,</span> <span class="nv">2</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>Results in the following in Python:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'key'</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}</span>
+</code></pre></div></div>
+
+<p>What REALLY surprised me here was that the <em>Ruby parser turned it into an Array instead:</em></p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"key"</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<p>So I thought to myself, <em>"What if I change <code>!!python/tuple</code> to <code>!!ruby/array?</code>".</em>
+So I went on ahead and updated the snippet:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">key</span><span class="pi">:</span> <span class="kt">!!ruby/array</span> <span class="pi">[</span><span class="nv">1</span><span class="pi">,</span> <span class="nv">2</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>And as expected, Ruby returns the correct result:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"key"</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<p>Our friend Python on the other hand, has some issues here:</p>
+
+<pre><code class="language-plain">...snipped...
+yaml.constructor.ConstructorError: could not determine a
+constructor for the tag 'tag:yaml.org,2002:ruby/array'
+  in "&lt;unicode string&gt;", line 1, column 6:
+    key: !!ruby/array [1, 2]
+</code></pre>
+
+<p>In the above example we see that the Python parser throws an error because it can't find the
+correct constructor for the tag. When Ruby finds a <em>language specific</em> tag that it doesn't know
+how to use, it is simply ignored. I think both languages have a different point of view where
+Python is more "demanding" about what kind of YAML you feed it and Ruby tries to "cushion" your
+experience whenever it can.</p>
+
+<p>So thank you Ruby (at least MRI Ruby) for supporting and treating
+these Pythonic types as if they were your own ♥️</p>
+
+<h2 id="integer-notation">Integer notation</h2>
+
+<p>This is a small one, and part of multiple programming languages to improve readability of
+large integers / binary numbers. YAML allows the usage of _ characters to "group" numbers,
+e.g. <code>1000000000</code> vs <code>1_000_000_000</code>. I think the latter is many more times more readable and
+therefore think that YAML deserves a honorable mention for including this awesome feat! 👍</p>
+
+<h2 id="sexagesimal-numbers">Sexagesimal numbers?</h2>
+
+<p>We've already seen some weird behavior with some unquoted string values magically turning
+into booleans but there is more! YAML parses numbers in <code>ii:jj</code> format in base 60! For example, in Ruby:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: 12:30:00"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key"=&gt;45000}</span>
+</code></pre></div></div>
+
+<p>While the result is <a href="http://yaml.org/type/float.html">following the spec</a>, it is more often than
+not undesired. It becomes more interesting when the digit starts with a leading <code>0</code>. In Ruby:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: 01:30:00"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key"=&gt;5400}</span>
+</code></pre></div></div>
+
+<p>Whereas in Python:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="s">"key: 01:30:00"</span><span class="p">)</span>
+  <span class="c1"># =&gt; {'key': '01:30:00'}
+</span></code></pre></div></div>
+
+<p>Ruby seems to be trying to "fix" this by trimming the leading <code>0</code> and parsing the rest in base 60 whereas
+Python sees that this value is not valid <code>ii:jj</code> format. I am not sure why this is but my guess is what
+we're going to talk about next.</p>
+
+<h2 id="octal-numbers">Octal numbers</h2>
+
+<p>If your YAML contains integer values that start with a <code>0</code> and do not contain digits greater than <code>7</code>,
+they will be parsed as octal values. In Ruby:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># parsed as octal</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: 0123"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key": 83}</span>
+
+<span class="c1"># parsed 'normally'</span>
+<span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"key: 01238"</span><span class="p">)</span>
+<span class="c1"># =&gt; {"key": "01238"}</span>
+</code></pre></div></div>
+
+<p>Python does exactly the same thing in this case. To get back to the previous example, I think Python
+sees the value <code>01:30:00</code> as an invalid octal number and therefore chooses to parse it as a string.</p>
+
+<h2 id="complex-keys">Complex keys</h2>
+
+<p>Aside from string keys, YAML won't complain if you want to use floats:
+<code>1.1: hello there</code> =&gt; <code>{1.1 =&gt; "hello there"}</code> but this is still a simple key.
+It <em>will</em> complain about using a list or hash as key: <code>[1, 2, 3]: hello there</code> =&gt; <code>error</code>.
+Both the Ruby and Python parsers give an error when trying either.</p>
+
+<p>The solution is to use a <em>language specific</em> tag. This can be used to create keys that are complex
+data types such as a Ruby Array or Python Tuple.</p>
+
+<p>A complex key is created by first inserting a question mark followed by a space, followed by the
+<em>language specific</em> tag and the final value of the key. Then, on a new line, the value is added as usual,
+starting with a colon followed by a space character and the value of the key:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s">---</span>
+  <span class="s">? !!python/tuple [1, 2]</span>
+  <span class="pi">:</span> <span class="s">hello</span>
+</code></pre></div></div>
+
+<p>In Python, this will result in:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span> <span class="s">'hello'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ruby on the other hand, has no "Tuple" type (nor did I expect it to understand the python tags)
+and uses the thing that most closely resembles it, an Array:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="s2">"hello"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>So while it is a bit awkward and not very portable, still something useful to know just in case :)</p>
+
+<h2 id="comments">Comments</h2>
+
+<p>We've already seen what kind of beast YAML actually is under the hood, I actually learned new things
+myself <em>while writing this post</em> since I ran every example through both the Python and Ruby REPL at the
+same time (Thank you tmux pane-synchronization ♥️) and it doesn't stop there! Another
+seemingly-trivial-yet-missing-from-JSON feature would be the fact that you can add <code># comments</code>.</p>
+
+<p>In JSON, comments aren't supported but of course, YAML has our back and lets us do pretty much
+whatever we want, a comment starts with a # sign:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">some</span><span class="pi">:</span> <span class="s">yaml</span>
+<span class="c1"># oh noes! A comment</span>
+<span class="na">no</span><span class="pi">:</span> <span class="s">problem</span>
+</code></pre></div></div>
+
+<p>Both Ruby and Python simply ignore the comment:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"key"</span><span class="o">=&gt;</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">"key2"</span><span class="o">=&gt;</span><span class="s2">"no problem"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>In short, this post described the following features:</p>
+
+<ul>
+  <li>
+    <p>Inheritance / defaults</p>
+  </li>
+  <li>
+    <p>Write JSON within YAML</p>
+  </li>
+  <li>
+    <p>Ruby Symbols as keys</p>
+  </li>
+  <li>
+    <p>Multiline strings</p>
+  </li>
+  <li>
+    <p>Quoted strings</p>
+  </li>
+  <li>
+    <p>Casting values</p>
+  </li>
+  <li>
+    <p>Integer notation</p>
+  </li>
+  <li>
+    <p>Sexagesimal numbers?</p>
+  </li>
+  <li>
+    <p>Octal numbers</p>
+  </li>
+  <li>
+    <p>Complex keys</p>
+  </li>
+  <li>
+    <p>Comments</p>
+  </li>
+</ul>
+
+<p>YAML is certainly a versatile marku…lang… yeah never mind that :) But seriously though, YAML is indeed very versatile, it can do lots of things as you have hopefully seen in the examples.</p>
+
+<p>The REPLS used for testing were <a href="https://github.com/pry/pry">pry</a> for Ruby and Python's builtin REPL.
+The Ruby parser used was <a href="https://ruby-doc.org/stdlib-2.4.2/libdoc/yaml/rdoc/YAML.html">Yaml</a> on Ruby (MRI) 2.4.1 and for Python, <a href="https://pyyaml.org/wiki/PyYAMLDocumentation">pyyaml</a> was used on Python 3.6.2.</p>
+
+<p><strong>Post update</strong>: During the process of updating this post, I used pry for Ruby (MRI) 2.5.1 and Python's (3.6.7) builtin REPL. The same libraries were used for testing.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I think YAML is great! Every experience I've had so far with YAML has been a positive one, wether it includes writing thousands of lines or debugging an issue. Even writing this post was a pleasure, I just took my time, opened my favorite REPL's with pane-sync on to reduce typing and started compiling information and examples, sometimes with side-effects I didn't even anticipate which led to interesting results.</p>
+
+<p>I'm pretty sure I've missed some things considering what we've just witnessed earlier in the Casting Values section, there are probably lots more of these nuances between various other parsers.</p>
+
+<p>From this point on, I hope that your YAML experience will also be great, it is a powerful tool to be able to wield, and I also hope you learned something new.</p>
+
+<p>Cheers!</p>
+
+<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; http://localhost:4567 2019</small></footer></div></body></html>
