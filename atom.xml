@@ -7,7 +7,7 @@
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io"/>
   <link href="https://sidneyliebrand.io/atom.xml" rel="self"/>
-  <updated>2017-09-03T09:47:27Z</updated>
+  <updated>2019-06-10T02:36:22Z</updated>
   <author>
     <name>Sidney Liebrand</name>
   </author>
@@ -18,14 +18,6 @@
     <id>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</id>
     <published>2017-09-16T11:11:03Z</published>
     <updated>2017-09-16T11:11:03Z</updated>
-  </entry>
-  <entry>
-    <title>And your metered paywall isn't part of my story, Medium</title>
-    <summary>I've been greeted by the same "Your story isn't part of the metered paywall" message for a while now, and figured it was time to make a change in the right direction.</summary>
-    <link rel="alternate" href="https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story"/>
-    <id>https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story</id>
-    <published>2019-06-10T02:36:22Z</published>
-    <updated>2019-06-10T02:36:22Z</updated>
   </entry>
   <entry>
     <title>Recruiters who call during working hours</title>
@@ -82,5 +74,13 @@
     <id>https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</id>
     <published>2017-09-03T09:47:27Z</published>
     <updated>2017-09-03T09:47:27Z</updated>
+  </entry>
+  <entry>
+    <title>And your metered paywall isn't part of my story, Medium</title>
+    <summary>I've been greeted by the same "Your story isn't part of the metered paywall" message for a while now, and figured it was time to make a change in the right direction.</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium"/>
+    <id>https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</id>
+    <published>2019-06-10T02:36:22Z</published>
+    <updated>2019-06-10T02:36:22Z</updated>
   </entry>
 </feed>
