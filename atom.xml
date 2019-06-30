@@ -28,7 +28,7 @@
     <updated>2018-08-31T20:41:19Z</updated>
   </entry>
   <entry>
-    <title>Codi.vim + fullscreen buffer</title>
+    <title>Sidney Liebrand's digital home</title>
     <summary>Learn how to set up Codi.vim to create a fullscreen scratch buffer that also works with Vim splits. We will take a look at wrapping the &lt;code&gt;Codi&lt;/code&gt; command and improving the buffer name(s) as seen in &lt;code&gt;:ls&lt;/code&gt;.</summary>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer"/>
     <id>https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</id>
