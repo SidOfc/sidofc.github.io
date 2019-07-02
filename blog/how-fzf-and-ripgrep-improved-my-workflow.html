@@ -1,4 +1,529 @@
-<!DOCTYPE html><html lang="en"><head prefix="dc: http://purl.org/dc/elements/1.1# og: http://ogp.me/ns#"><meta charset="utf-8" /><link href="/atom.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/atom+xml" /><link href="/feed.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/rss+xml" /><link href="https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow" rel="canonical" /><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" /><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicon.ico" rel="icon" sizes="48x48" type="image/icon" /><link href="/site.webmanifest" rel="manifest" /><meta content="#651eea" name="theme-color" /><meta content="index, follow" name="robots" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow" name="og:url" /><meta content="Sidney Liebrand" name="author" /><meta content="Sidney Liebrand" name="dc:author" /><meta content="Sidney Liebrand" name="dc:creator" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="description" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="dc:description" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="og:description" /><title>How FZF and ripgrep improved my workflow</title><meta content="How FZF and ripgrep improved my workflow" name="og:title" /><meta content="How FZF and ripgrep improved my workflow" name="dc:title" /><style type="text/css">@charset UTF-8;html{min-height:100%;background-repeat:no-repeat;background-size:20%;font-size:14px}@media screen and (min-width:280px){html{font-size:calc(14px + 6*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){html{font-size:20px}}body{margin:0;padding:0;min-height:100%;font-family:serif,Apple Color Emoji,Noto Color Emoji;line-height:1.6;font-weight:300}.fig-ar-container{position:relative;overflow:hidden;border-radius:4px}.fig-ar-lock{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;transition:opacity .25s ease-in-out}*{box-sizing:border-box}::-moz-selection{background-color:#f5f0fe;color:#3d0e94}::selection{background-color:#f5f0fe;color:#3d0e94}article,aside,details,figcaption,figure,footer,header,main,mark,nav,section{display:block}h1,h2,h3,h4,h5,h6{color:#000;line-height:1;font-weight:600;margin:2rem 0 .25rem}h1:not(:first-child),h2:not(:first-child),h3:not(:first-child),h4:not(:first-child),h5:not(:first-child),h6:not(:first-child){margin-top:2rem}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:.5rem}h1{font-size:26px}@media screen and (min-width:280px){h1{font-size:calc(26px + 18*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h1{font-size:44px}}h2{font-size:22px}@media screen and (min-width:280px){h2{font-size:calc(22px + 12*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h2{font-size:34px}}h3{font-size:20px}@media screen and (min-width:280px){h3{font-size:calc(20px + 10*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h3{font-size:30px}}h4{font-size:18px}@media screen and (min-width:280px){h4{font-size:calc(18px + 8*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h4{font-size:26px}}h5{font-size:16px}@media screen and (min-width:280px){h5{font-size:calc(16px + 6*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){h5{font-size:22px}}h6{font-size:1rem}p{font-size:1.15rem;margin-top:2rem;margin-bottom:2rem}p:first-child{margin-top:0}p:last-child{margin-bottom:0}li{margin-bottom:1rem}blockquote,li{font-size:1.15rem}code,kbd,pre{padding:.5rem 1rem;border-radius:4px;background-color:#f2f2f2;color:#444}code,kbd{font-size:.8em;padding:.2rem .4rem .15rem;border-radius:4px}pre code{font-size:.9rem;padding:0;background-color:transparent;display:block}kbd{background-image:none;border:1px solid rgba(85,85,85,.2)}a,a>code{position:relative;color:#651eea;text-decoration:none;outline:none;transition:text-shadow .05s linear}a:hover,a:not(:active):focus,a>code:hover,a>code:not(:active):focus{text-shadow:-.06ex 0 #651eea,.06ex 0 #651eea}figure{margin:2rem 0}figcaption{margin-top:.25rem;text-align:center;opacity:.8;font-size:.9rem;line-height:1}blockquote{font-style:italic;margin-top:2rem;margin-bottom:2rem;padding:0 2rem;border-left:4px solid #555}blockquote p{opacity:.8}@media (max-width:420px){blockquote{padding:1rem 0;border:4px solid #555;border-right:none;border-left:none}}strong{font-weight:600}img{max-width:100%}ol,ul{list-style:none;padding:0}ol li,ul li{position:relative;padding-left:1.5rem}ol li:before,ul li:before{position:absolute;line-height:1;padding-top:.25rem;top:0;left:0;bottom:0;width:1.5rem;font-size:1.4em;content:"•";color:#555}ol{counter-reset:ol-li-counter}ol li:before{padding-top:.4rem;font-size:.9em;font-weight:600;counter-increment:ol-li-counter;content:counter(ol-li-counter) .}small{font-size:.9rem;line-height:1}.application{position:relative;min-height:100%;min-height:100vh;width:100%;display:grid;grid-template-columns:auto;grid-template-rows:3.125rem 1fr auto}.logo{display:inline-block;-ms-flex:0 1 6rem;flex:0 1 6rem;fill:#651eea}.logo,.logo figure{margin:0}.header{position:relative;height:3.125rem;width:100%}.header__inner{position:fixed;top:0;left:0;right:0;height:3.125rem;background-color:#fff;box-shadow:0 0 .25rem rgba(0,0,0,.15);z-index:100}.header__content{position:relative;width:100%;max-width:54rem;padding:0 0 0 1rem;margin:0 auto}.header__content,.header__nav{height:100%;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex}.header__nav{margin-left:auto}.header__nav-item{position:relative;padding:0 1rem;height:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;transition:all .2s ease-in-out}.header__nav-item:not(:active):focus:after{content:"";display:block;position:absolute;bottom:0;left:0;right:0;width:100%;height:4px;background-color:#651eea}.header__nav-item figure{margin:0;min-width:2rem}.main{position:relative;min-height:100%;min-height:100vh;color:#444;z-index:10}.page{margin:0 auto;width:54rem;max-width:calc(100% - 2rem);max-width:calc(100vw - 2rem);padding:1rem}.footer{color:#444;text-align:center;padding:.25rem 1rem}.article>:not(.wide){max-width:44rem;margin-left:auto;margin-right:auto}.article__title{margin-bottom:.25rem;font-size:34px}@media screen and (min-width:280px){.article__title{font-size:calc(34px + 26*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){.article__title{font-size:60px}}.article__title+p{margin-top:0}.article__title+small{font-size:1rem;line-height:1.6;display:block}div.highlight{overflow:hidden;overflow-x:auto;border-radius:4px}div.highlight pre.highlight{margin:0}.posts{width:100%;max-width:44rem;margin:0 auto;padding:1rem 0}.post-card{position:relative;display:block;margin:0 auto;cursor:pointer;text-decoration:none;outline:none}.post-card:hover{text-shadow:none}.post-card+.post-card{margin-top:2rem}.post-card:not(:active):focus{opacity:1;text-shadow:none;box-shadow:inset 0 0 0 2px #651eea}.post-card__container{padding:1rem;display:-ms-flexbox;display:flex;-ms-flex-flow:column nowrap;flex-flow:column nowrap;color:#444;outline:none}.post-card__title{margin-top:0;font-size:20px}@media screen and (min-width:280px){.post-card__title{font-size:calc(20px + 8*(100vw - 280px)/1160)}}@media screen and (min-width:1440px){.post-card__title{font-size:28px}}.post-card__excerpt{margin-top:.5rem;margin-bottom:1rem;line-height:1.44}.post-card__view-post{margin-left:auto}.turbolinks-progress-bar{background-color:#651eea;transition:all .3s ease-in-out!important;opacity:.1!important;height:3.125rem}.button{display:inline-block;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1;font-weight:300;font-size:.9rem;font-family:serif,Apple Color Emoji,Noto Color Emoji;padding:.625rem 2rem;border-radius:2px;height:auto;border:1px solid rgba(0,0,0,.1);background-color:#651eea;color:#fff;cursor:pointer;transition:all .1s ease-out;outline:none}.button:hover,.button:not(:active):focus{opacity:.8}.welcome-banner{position:relative;display:-ms-flexbox;display:flex;width:100%;max-width:54rem;margin:0 auto;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-align:center;align-items:center;padding:2rem 1rem}.welcome-banner__graphic{-ms-flex:1 0 auto;flex:1 0 auto;width:100%;max-width:220px;overflow:hidden;margin:0;border-radius:100%}.welcome-banner__content{line-height:1.44;-ms-flex:1 1 auto;flex:1 1 auto;margin:auto 0 auto 2rem}@media (max-width:42rem){.welcome-banner{-ms-flex-flow:column nowrap;flex-flow:column nowrap}.welcome-banner:after{content:"";display:block;width:30%;position:absolute;bottom:-2px;left:35%;height:4px;background-color:#651eea;border-radius:8px}.welcome-banner__graphic{-ms-flex:1 1 auto;flex:1 1 auto;width:100%;max-width:220px;margin:0 auto}.welcome-banner__content{margin-left:0;text-align:center}}.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight,.highlight .w{color:#f8f8f2;background-color:#272822}.highlight code{color:#f8f8f2}.highlight .err{color:#272822;background-color:#f92672}.highlight .c,.highlight .c1,.highlight .cd,.highlight .cm,.highlight .cs{color:#928f7f}.highlight .cp,.highlight .nt{color:#f4bf75}.highlight .o,.highlight .ow{color:#f8f8f2}.highlight .p,.highlight .pi{color:#a2a2a2}.highlight .gi{color:#a6e22e}.highlight .gd{color:#f92672}.highlight .gh{color:#66d9ef;background-color:#272822;font-weight:700}.highlight .k,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kv{color:#a57bf3}.highlight .kc,.highlight .kd,.highlight .kt{color:#fd971f}.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .sh,.highlight .sx{color:#a6e22e}.highlight .sr{color:#a1efe4}.highlight .se,.highlight .si{color:#c63}.highlight .nc,.highlight .nn,.highlight .no{color:#f4bf75}.highlight .na{color:#66d9ef}.highlight .il,.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .mx,.highlight .ss{color:#a6e22e}</style><script defer="true" type="text/javascript" src="/js/application-8c726ee35.js"></script></head><body><div class="application"><header class="header"><div class="header__inner"><div class="header__content"><a class="logo" href="/" title="Return to the home page"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.29 114.44" preserveAspectRatio="xMidYMid slice"><path d="M33.43,96.21c18.22,0,25-17.14,8.48-26.76C29,61.94,11.44,60.75,3.93,46S3.07,12.14,17.4,4.71c15.35-8,36.69-5.08,51.36,3L62.4,24.49C53.63,19.59,41,16,31.08,19.76c-9.33,3.55-10.69,13.62-3.22,20.08,7.83,6.77,19.62,7.95,28.53,13,11.12,6.31,17.37,16.65,17.32,29.41-.12,27.84-27.22,34.19-50.28,31.69-6-.65-22.15-3.42-23.36-9.38C-.67,100.91,4.59,92,5.88,88.44A53,53,0,0,0,33.43,96.21Z" /><path d="M162,112.11H93.31V2.77h21.91V94.09H162Z" /><path d="M229.15,98.15c0,20.64-31.72,20.67-31.62,0C197.63,78,229.15,77.92,229.15,98.15Z" /><path d="M267,112.11v-18H290.8V20.78H267v-18h69.42v18H312.7V94.09h23.67v18Z" /><path d="M350.5,57.35c0-25.51,8.42-57,39.39-57.06,31.32-.09,39.4,31.31,39.4,57.06,0,24.69-7.42,55.53-37.19,57C359.55,115.88,350.5,84,350.5,57.35Zm22.08,0c0,12.19-.62,38.21,17.31,38.15s17.3-25.85,17.32-38.15.62-38.12-17.32-38.16S372.58,45.23,372.58,57.35Z" /></svg>
+<!DOCTYPE html><html lang="en"><head prefix="dc: http://purl.org/dc/elements/1.1# og: http://ogp.me/ns#"><meta charset="utf-8" /><link href="/atom.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/atom+xml" /><link href="/feed.xml" rel="alternate" title="Sidney Liebrand's blog" type="application/rss+xml" /><link href="https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow" rel="canonical" /><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" type="image/png" /><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><link href="/favicon.ico" rel="icon" sizes="48x48" type="image/icon" /><link href="/site.webmanifest" rel="manifest" /><meta content="#651eea" name="theme-color" /><meta content="index, follow" name="robots" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow" name="og:url" /><meta content="Sidney Liebrand" name="author" /><meta content="Sidney Liebrand" name="dc:author" /><meta content="Sidney Liebrand" name="dc:creator" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="description" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="dc:description" /><meta content="In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting <strong>every. single. time.</strong>." name="og:description" /><title>How FZF and ripgrep improved my workflow</title><meta content="How FZF and ripgrep improved my workflow" name="og:title" /><meta content="How FZF and ripgrep improved my workflow" name="dc:title" /><style type="text/css">@charset "UTF-8";
+html {
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: 20%; }
+  html {
+    font-size: 14px; }
+    @media screen and (min-width: 280px) {
+      html {
+        font-size: calc(14px + 6 * ((100vw - 280px) / 1160)); } }
+    @media screen and (min-width: 1440px) {
+      html {
+        font-size: 20px; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: serif, Apple Color Emoji, Noto Color Emoji;
+  line-height: 1.6;
+  font-weight: 300; }
+
+.fig-ar-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px; }
+
+.fig-ar-lock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .25s ease-in-out; }
+
+* {
+  box-sizing: border-box; }
+  *::selection {
+    background-color: #f5f0fe;
+    color: #3d0e94; }
+
+article, aside, details, figcaption, figure, footer,
+header, main, mark, nav, section {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  line-height: 1;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  margin-top: 2rem; }
+  h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
+    margin-top: 2rem; }
+  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin-top: 0.5rem; }
+
+h1 {
+  font-size: 26px; }
+  @media screen and (min-width: 280px) {
+    h1 {
+      font-size: calc(26px + 18 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h1 {
+      font-size: 44px; } }
+
+h2 {
+  font-size: 22px; }
+  @media screen and (min-width: 280px) {
+    h2 {
+      font-size: calc(22px + 12 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h2 {
+      font-size: 34px; } }
+
+h3 {
+  font-size: 20px; }
+  @media screen and (min-width: 280px) {
+    h3 {
+      font-size: calc(20px + 10 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h3 {
+      font-size: 30px; } }
+
+h4 {
+  font-size: 18px; }
+  @media screen and (min-width: 280px) {
+    h4 {
+      font-size: calc(18px + 8 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h4 {
+      font-size: 26px; } }
+
+h5 {
+  font-size: 16px; }
+  @media screen and (min-width: 280px) {
+    h5 {
+      font-size: calc(16px + 6 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h5 {
+      font-size: 22px; } }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  p:first-child {
+    margin-top: 0; }
+  p:last-child {
+    margin-bottom: 0; }
+
+li {
+  font-size: 1.15rem;
+  margin-bottom: 1rem; }
+
+blockquote {
+  font-size: 1.15rem; }
+
+pre,
+code,
+kbd {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #444; }
+
+code,
+kbd {
+  font-size: 0.8em;
+  padding: 0.2rem 0.4rem 0.15rem;
+  border-radius: 4px; }
+
+pre code {
+  font-size: 0.9rem;
+  padding: 0;
+  background-color: transparent;
+  display: block; }
+
+kbd {
+  background-image: none;
+  border: 1px solid rgba(85, 85, 85, 0.2); }
+
+a, a > code {
+  position: relative;
+  color: #651eea;
+  text-decoration: none;
+  outline: none;
+  transition: text-shadow 0.05s linear; }
+  a:not(:active):focus, a:hover, a > code:not(:active):focus, a > code:hover {
+    text-shadow: -0.06ex 0 #651eea, 0.06ex 0 #651eea; }
+
+figure {
+  margin: 2rem 0; }
+
+figcaption {
+  margin-top: 0.25rem;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1; }
+
+blockquote {
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  border-left: 4px solid #555; }
+  blockquote p {
+    opacity: 0.8; }
+  @media all and (max-width: 420px) {
+    blockquote {
+      padding: 1rem 0;
+      border: none;
+      border-top: 4px solid #555;
+      border-bottom: 4px solid #555; } }
+
+strong {
+  font-weight: 600; }
+
+img {
+  max-width: 100%; }
+
+ul, ol {
+  list-style: none;
+  padding: 0; }
+  ul li, ol li {
+    position: relative;
+    padding-left: 1.5rem; }
+    ul li::before, ol li::before {
+      position: absolute;
+      line-height: 1;
+      padding-top: 0.25rem;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 1.5rem;
+      font-size: 1.4em;
+      content: '•';
+      color: #555; }
+
+ol {
+  counter-reset: ol-li-counter; }
+  ol li::before {
+    padding-top: 0.4rem;
+    font-size: 0.9em;
+    font-weight: 600;
+    counter-increment: ol-li-counter;
+    content: counter(ol-li-counter) "."; }
+
+small {
+  font-size: 0.9rem;
+  line-height: 1; }
+
+.application {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 3.125rem 1fr auto; }
+
+.logo {
+  display: inline-block;
+  flex: 0 1 6rem;
+  margin: 0;
+  fill: #651eea; }
+  .logo figure {
+    margin: 0; }
+
+.header {
+  position: relative;
+  height: 3.125rem;
+  width: 100%; }
+  .header__inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.125rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.15);
+    z-index: 100; }
+  .header__content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 54rem;
+    padding: 0 0 0 1rem;
+    margin: 0 auto;
+    align-items: center;
+    display: flex; }
+  .header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto; }
+  .header__nav-item {
+    position: relative;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out; }
+    .header__nav-item:not(:active):focus::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #651eea; }
+    .header__nav-item figure {
+      margin: 0;
+      min-width: 2rem; }
+
+.main {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  color: #444;
+  z-index: 10; }
+
+.page {
+  margin: 0 auto;
+  width: 54rem;
+  max-width: calc(100%  - 2rem);
+  max-width: calc(100vw - 2rem);
+  padding: 1rem; }
+
+.footer {
+  color: #444;
+  text-align: center;
+  padding: 0.25rem 1rem; }
+
+.article > *:not(.wide) {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.article__title {
+  margin-bottom: 0.25rem; }
+  .article__title {
+    font-size: 34px; }
+    @media screen and (min-width: 280px) {
+      .article__title {
+        font-size: calc(34px + 26 * ((100vw - 280px) / 1160)); } }
+    @media screen and (min-width: 1440px) {
+      .article__title {
+        font-size: 60px; } }
+  .article__title + p {
+    margin-top: 0; }
+  .article__title + small {
+    font-size: 1rem;
+    line-height: 1.6;
+    display: block; }
+
+div.highlight {
+  overflow: hidden;
+  overflow-x: auto;
+  border-radius: 4px; }
+  div.highlight pre.highlight {
+    margin: 0; }
+
+.posts {
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 0; }
+
+.post-card {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none; }
+  .post-card:hover {
+    text-shadow: none; }
+  .post-card + .post-card {
+    margin-top: 2rem; }
+  .post-card:not(:active):focus {
+    opacity: 1;
+    text-shadow: none;
+    box-shadow: #651eea 0px 0px 0px 2px inset; }
+  .post-card__container {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #444;
+    outline: none; }
+  .post-card__title {
+    margin-top: 0; }
+    .post-card__title {
+      font-size: 20px; }
+      @media screen and (min-width: 280px) {
+        .post-card__title {
+          font-size: calc(20px + 8 * ((100vw - 280px) / 1160)); } }
+      @media screen and (min-width: 1440px) {
+        .post-card__title {
+          font-size: 28px; } }
+  .post-card__excerpt {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.44; }
+  .post-card__view-post {
+    margin-left: auto; }
+
+.turbolinks-progress-bar {
+  background-color: #651eea;
+  transition: all .3s ease-in-out !important;
+  opacity: 0.1 !important;
+  height: 3.125rem; }
+
+.button {
+  display: inline-block;
+  appearance: none;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-family: serif, Apple Color Emoji, Noto Color Emoji;
+  padding: 0.625rem 2rem;
+  border-radius: 2px;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #651eea;
+  color: #fff;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+  outline: none; }
+  .button:hover, .button:not(:active):focus {
+    opacity: 0.8; }
+
+.welcome-banner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 2rem 1rem; }
+  .welcome-banner__graphic {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 220px;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 100%; }
+  .welcome-banner__content {
+    line-height: 1.44;
+    flex: 1 1 auto;
+    margin: auto 0 auto 2rem; }
+  @media all and (max-width: 42rem) {
+    .welcome-banner {
+      flex-flow: column nowrap; }
+      .welcome-banner::after {
+        content: '';
+        display: block;
+        width: 30%;
+        position: absolute;
+        bottom: -2px;
+        left: 35%;
+        height: 4px;
+        background-color: #651eea;
+        border-radius: 8px; }
+      .welcome-banner__graphic {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto; }
+      .welcome-banner__content {
+        margin-left: 0;
+        text-align: center; } }
+
+.highlight table td {
+  padding: 5px; }
+
+.highlight table pre {
+  margin: 0; }
+
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822; }
+
+.highlight code {
+  color: #f8f8f2; }
+
+.highlight .err {
+  color: #272822;
+  background-color: #f92672; }
+
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #928f7f; }
+
+.highlight .cp {
+  color: #f4bf75; }
+
+.highlight .nt {
+  color: #f4bf75; }
+
+.highlight .o, .highlight .ow {
+  color: #f8f8f2; }
+
+.highlight .p, .highlight .pi {
+  color: #a2a2a2; }
+
+.highlight .gi {
+  color: #a6e22e; }
+
+.highlight .gd {
+  color: #f92672; }
+
+.highlight .gh {
+  color: #66d9ef;
+  background-color: #272822;
+  font-weight: bold; }
+
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #a57bf3; }
+
+.highlight .kc {
+  color: #fd971f; }
+
+.highlight .kt {
+  color: #fd971f; }
+
+.highlight .kd {
+  color: #fd971f; }
+
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #a6e22e; }
+
+.highlight .sr {
+  color: #a1efe4; }
+
+.highlight .si {
+  color: #cc6633; }
+
+.highlight .se {
+  color: #cc6633; }
+
+.highlight .nn {
+  color: #f4bf75; }
+
+.highlight .nc {
+  color: #f4bf75; }
+
+.highlight .no {
+  color: #f4bf75; }
+
+.highlight .na {
+  color: #66d9ef; }
+
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #a6e22e; }
+
+.highlight .ss {
+  color: #a6e22e; }</style><script defer="true" type="text/javascript" src="/js/application-8c726ee35.js"></script></head><body><div class="application"><header class="header"><div class="header__inner"><div class="header__content"><a class="logo" href="/" title="Return to the home page"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.29 114.44" preserveAspectRatio="xMidYMid slice"><path d="M33.43,96.21c18.22,0,25-17.14,8.48-26.76C29,61.94,11.44,60.75,3.93,46S3.07,12.14,17.4,4.71c15.35-8,36.69-5.08,51.36,3L62.4,24.49C53.63,19.59,41,16,31.08,19.76c-9.33,3.55-10.69,13.62-3.22,20.08,7.83,6.77,19.62,7.95,28.53,13,11.12,6.31,17.37,16.65,17.32,29.41-.12,27.84-27.22,34.19-50.28,31.69-6-.65-22.15-3.42-23.36-9.38C-.67,100.91,4.59,92,5.88,88.44A53,53,0,0,0,33.43,96.21Z" /><path d="M162,112.11H93.31V2.77h21.91V94.09H162Z" /><path d="M229.15,98.15c0,20.64-31.72,20.67-31.62,0C197.63,78,229.15,77.92,229.15,98.15Z" /><path d="M267,112.11v-18H290.8V20.78H267v-18h69.42v18H312.7V94.09h23.67v18Z" /><path d="M350.5,57.35c0-25.51,8.42-57,39.39-57.06,31.32-.09,39.4,31.31,39.4,57.06,0,24.69-7.42,55.53-37.19,57C359.55,115.88,350.5,84,350.5,57.35Zm22.08,0c0,12.19-.62,38.21,17.31,38.15s17.3-25.85,17.32-38.15.62-38.12-17.32-38.16S372.58,45.23,372.58,57.35Z" /></svg>
 <div style="padding-bottom:26.57%;visibility:hidden"></div></div></figure></a><nav class="header__nav"><a class="header__nav-item" href="https://github.com/SidOfc" rel="noopener,noreferrer" target="_blank" title="Sidney Liebrand's github profile"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
 <div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">How FZF and ripgrep improved my workflow</h1><small>By Sidney Liebrand on Jun 24, 2018 &bull; 9 min read</small><p>Today I want to talk about <a href="https://github.com/junegunn/fzf">fzf</a> and <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>,
 two tools I use all the time when working in Vim and the terminal.
@@ -12,12 +537,12 @@ without them anymore.</p>
 filters each line from given input with a query that the user types.
 When the query changes, the results update in realtime.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/fzf-ls-example-7ab6059c8.webm" type="video/webm" /><source src="/img/posts/fzf-ls-example-0c7db903b.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>FZF + LS example</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/fzf-ls-example-04d2422c7.gif" alt="FZF + LS example" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>FZF + LS example</figcaption></figure>
 <p>After finding the file you're looking for, hitting <kbd>enter</kbd> prints the highlighted
 entry. You can combine this with your <code>$EDITOR</code> variable to search for a file and then edit
 it for example.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/open-changelog-neovim-d93578a6d.webm" type="video/webm" /><source src="/img/posts/open-changelog-neovim-73bb0810b.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Open CHANGELOG.md in NeoVim</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/open-changelog-neovim-c18b32f10.gif" alt="Open CHANGELOG.md in NeoVim" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Open CHANGELOG.md in NeoVim</figcaption></figure>
 <p>Of course this is only a simple example. The possibilities with FZF are endless.
 There are countless ways in which you can use it filter input and use that in
 another command. We'll dive more into that later.</p>
@@ -28,7 +553,7 @@ another command. We'll dive more into that later.</p>
 in rust and one of its primary goals is to be the <em>fastest</em> <code>grep</code> of them all.
 It performs amazing even in a larger code base.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/rg-ls-fzf-7bfd04386.webm" type="video/webm" /><source src="/img/posts/rg-ls-fzf-cdf4e3d54.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Ripgrep list files with FZF</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/rg-ls-fzf-48e56ad91.gif" alt="Ripgrep list files with FZF" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Ripgrep list files with FZF</figcaption></figure>
 <p>Ripgrep has many options to explore, there are way to many to list here.
 Some of the options I use most often with ripgrep are:</p>
 
@@ -88,7 +613,7 @@ to actually stop the process.</p>
 later migrated to <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/kp.fish">fish</a>) called <code>kp</code>.
 It lists processes using <code>ps -ef</code> and pipes it to <code>fzf</code>.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/kill-with-kp-5d9d8a3cd.webm" type="video/webm" /><source src="/img/posts/kill-with-kp-47dfa9335.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Killing processes using kp</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/kill-with-kp-533e4c06f.gif" alt="Killing processes using kp" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Killing processes using kp</figcaption></figure>
 <p>This command opens an FZF window with your processes. FZF has an option to allow
 selecting multiple entries (<code>-m flag</code>). When <kbd>enter</kbd> is pressed, both marked
 (light red <code>&gt;</code> symbols) processes will be shut down. When changing your query,
@@ -126,7 +651,7 @@ another for updating and one for deleting brew packages:</p>
 <p>Whenever I have to do anything with brew, it is completely painless and it
 works quite well for package discovery too.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/bip-interface-690bacd37.webm" type="video/webm" /><source src="/img/posts/bip-interface-1a368dcfd.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Brew Install Plugin interface</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/bip-interface-01f47047c.gif" alt="Brew Install Plugin interface" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Brew Install Plugin interface</figcaption></figure>
 
 <h2 id="finding-binaries">Finding binaries</h2>
 
@@ -139,7 +664,7 @@ and slowness in your terminal.</p>
 <p>My solution to this is a simple path explorer called <code>fp</code> (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/fp">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/fp.fish">fish</a>).
 It invokes FZF with a list of folders populated using <code>$PATH</code>.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/dirs-in-path-3a8277729.webm" type="video/webm" /><source src="/img/posts/dirs-in-path-00bf0595b.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Directories present in $PATH</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/dirs-in-path-5b6f6a103.gif" alt="Directories present in $PATH" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Directories present in $PATH</figcaption></figure>
 <p>Of course there are more than 3 paths in my list but I cropped the gif for brevity here.
 When I press <kbd>enter</kbd> on the <code>/bin</code> entry, I see a list of executables inside that folder.
 Either find what you're looking for or go back.</p>
@@ -153,7 +678,7 @@ the directory listing. Pressing <kbd>escape</kbd> in the overview will exit the 
 It allows me to quickly find out wether I should stay away from some Web API or not.
 this small tool also allows me to query features that have been added or deprecated recently.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/checking-caniuse-768e4b392.webm" type="video/webm" /><source src="/img/posts/checking-caniuse-762c67101.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>An example of looking for features using cani</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/checking-caniuse-9cb9459c4.gif" alt="An example of looking for features using cani" /><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>An example of looking for features using cani</figcaption></figure>
 <p>The <code>cani</code> command (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/cani">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/cani.fish">fish</a>) itself uses another <a href="https://github.com/SidOfc/dotfiles/blob/master/bin/ciu">ruby script</a>
 (<code>ciu</code>) I wrote to actually provide the data and format it properly.
 The data is fetched once then cached for a day.
@@ -188,7 +713,7 @@ The solution was to use the <code>:Files</code> command provided by FZF.vim. Thi
 using your <code>$FZF_DEFAULT_COMMAND</code> environment variable. It opens the currently
 highlighted file on <kbd>enter</kbd>.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/fzf-files-demo-f78e29cd2.webm" type="video/webm" /><source src="/img/posts/fzf-files-demo-247e3efaa.mp4" type="video/mp4" /></video><div style="padding-bottom:68.06%;visibility:hidden"></div></div><figcaption>FZF :Files demo</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/fzf-files-demo-3c37d93d2.gif" alt="FZF :Files demo" /><div style="padding-bottom:68.06%;visibility:hidden"></div></div><figcaption>FZF :Files demo</figcaption></figure>
 <p>Since I was already so used to the <kbd>ctrl</kbd>+<kbd>p</kbd> mapping from the CtrlP plugin,
 I mapped the <code>:Files</code> command to it: <code>nnoremap &lt;C-p&gt; :Files&lt;Cr&gt;</code>.</p>
 
@@ -214,7 +739,7 @@ inside the directory are listed (except those ignored in a <code>~/.rgignore</co
 <p>Last but not least I wanted to find files based on what was inside of a file.
 This is useful to see where a class or function is used for example.</p>
 
-<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/fzf-rg-demo-f91ebb0a0.webm" type="video/webm" /><source src="/img/posts/fzf-rg-demo-f30219e73.mp4" type="video/mp4" /></video><div style="padding-bottom:68.06%;visibility:hidden"></div></div><figcaption>FZF :Rg demo</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/fzf-rg-demo-30233a8ce.gif" alt="FZF :Rg demo" /><div style="padding-bottom:68.06%;visibility:hidden"></div></div><figcaption>FZF :Rg demo</figcaption></figure>
 <p>The name of this command is <code>:Ag</code> and as you can guess, it relies on <code>ag</code> to grep
 inside files. <code>ag</code> is a nice and fast tool too but since I am already using <code>ripgrep</code>,
 I'd rather use that over installing another dependency. <strike>*This means we'll have to
