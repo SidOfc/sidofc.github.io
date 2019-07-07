@@ -48,22 +48,23 @@ header, main, mark, nav, section {
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   line-height: 1;
+  font-family: sans-serif;
   font-weight: 600;
   margin: 0 0 0.25rem;
   margin-top: 2rem; }
   h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
     margin-top: 2rem; }
-  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  h1 + p, h1 + .highlighter-rouge, h2 + p, h2 + .highlighter-rouge, h3 + p, h3 + .highlighter-rouge, h4 + p, h4 + .highlighter-rouge, h5 + p, h5 + .highlighter-rouge, h6 + p, h6 + .highlighter-rouge {
     margin-top: 0.5rem; }
 
 h1 {
   font-size: 26px; }
   @media screen and (min-width: 280px) {
     h1 {
-      font-size: calc(26px + 18 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(26px + 16 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h1 {
-      font-size: 44px; } }
+      font-size: 42px; } }
 
 h2 {
   font-size: 22px; }
@@ -75,31 +76,31 @@ h2 {
       font-size: 34px; } }
 
 h3 {
-  font-size: 20px; }
-  @media screen and (min-width: 280px) {
-    h3 {
-      font-size: calc(20px + 10 * ((100vw - 280px) / 1160)); } }
-  @media screen and (min-width: 1440px) {
-    h3 {
-      font-size: 30px; } }
-
-h4 {
   font-size: 18px; }
   @media screen and (min-width: 280px) {
+    h3 {
+      font-size: calc(18px + 10 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h3 {
+      font-size: 28px; } }
+
+h4 {
+  font-size: 15px; }
+  @media screen and (min-width: 280px) {
     h4 {
-      font-size: calc(18px + 8 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(15px + 9 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h4 {
-      font-size: 26px; } }
+      font-size: 24px; } }
 
 h5 {
-  font-size: 16px; }
+  font-size: 13px; }
   @media screen and (min-width: 280px) {
     h5 {
-      font-size: calc(16px + 6 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(13px + 7 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h5 {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 h6 {
   font-size: 1rem; }
@@ -125,24 +126,30 @@ code,
 kbd {
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
   color: #444; }
 
 code,
 kbd {
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 0.2rem 0.4rem 0.15rem;
-  border-radius: 4px; }
+  border-radius: 4px;
+  vertical-align: middle; }
+
+kbd {
+  font-size: 0.6em;
+  background-color: #fcfcfc;
+  background-image: none;
+  border: 1px solid rgba(85, 85, 85, 0.3);
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  box-shadow: inset 0 -1px #555; }
 
 pre code {
   font-size: 0.9rem;
   padding: 0;
   background-color: transparent;
   display: block; }
-
-kbd {
-  background-image: none;
-  border: 1px solid rgba(85, 85, 85, 0.2); }
 
 a, a > code {
   position: relative;
@@ -212,7 +219,8 @@ ol {
     content: counter(ol-li-counter) "."; }
 
 small {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: sans-serif;
   line-height: 1; }
 
 .application {
@@ -311,16 +319,18 @@ small {
     font-size: 34px; }
     @media screen and (min-width: 280px) {
       .article__title {
-        font-size: calc(34px + 26 * ((100vw - 280px) / 1160)); } }
+        font-size: calc(34px + 11 * ((100vw - 280px) / 1160)); } }
     @media screen and (min-width: 1440px) {
       .article__title {
-        font-size: 60px; } }
+        font-size: 45px; } }
   .article__title + p {
     margin-top: 0; }
   .article__title + small {
-    font-size: 1rem;
-    line-height: 1.6;
     display: block; }
+
+.highlighter-rouge {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 div.highlight {
   overflow: hidden;
@@ -383,9 +393,9 @@ div.highlight {
   display: inline-block;
   appearance: none;
   line-height: 1;
-  font-weight: 300;
-  font-size: 0.9rem;
-  font-family: serif, Apple Color Emoji, Noto Color Emoji;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: sans-serif;
   padding: 0.625rem 2rem;
   border-radius: 2px;
   height: auto;
@@ -525,7 +535,7 @@ div.highlight {
 .highlight .ss {
   color: #a6e22e; }</style><script defer="true" type="text/javascript" src="/js/application-8c726ee35.js"></script></head><body><div class="application"><header class="header"><div class="header__inner"><div class="header__content"><a class="logo" href="/" title="Return to the home page"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.29 114.44" preserveAspectRatio="xMidYMid slice"><path d="M33.43,96.21c18.22,0,25-17.14,8.48-26.76C29,61.94,11.44,60.75,3.93,46S3.07,12.14,17.4,4.71c15.35-8,36.69-5.08,51.36,3L62.4,24.49C53.63,19.59,41,16,31.08,19.76c-9.33,3.55-10.69,13.62-3.22,20.08,7.83,6.77,19.62,7.95,28.53,13,11.12,6.31,17.37,16.65,17.32,29.41-.12,27.84-27.22,34.19-50.28,31.69-6-.65-22.15-3.42-23.36-9.38C-.67,100.91,4.59,92,5.88,88.44A53,53,0,0,0,33.43,96.21Z" /><path d="M162,112.11H93.31V2.77h21.91V94.09H162Z" /><path d="M229.15,98.15c0,20.64-31.72,20.67-31.62,0C197.63,78,229.15,77.92,229.15,98.15Z" /><path d="M267,112.11v-18H290.8V20.78H267v-18h69.42v18H312.7V94.09h23.67v18Z" /><path d="M350.5,57.35c0-25.51,8.42-57,39.39-57.06,31.32-.09,39.4,31.31,39.4,57.06,0,24.69-7.42,55.53-37.19,57C359.55,115.88,350.5,84,350.5,57.35Zm22.08,0c0,12.19-.62,38.21,17.31,38.15s17.3-25.85,17.32-38.15.62-38.12-17.32-38.16S372.58,45.23,372.58,57.35Z" /></svg>
 <div style="padding-bottom:26.57%;visibility:hidden"></div></div></figure></a><nav class="header__nav"><a class="header__nav-item" href="https://github.com/SidOfc" rel="noopener,noreferrer" target="_blank" title="Sidney Liebrand's github profile"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-<div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">Combining Caniuse with FZF</h1><small>By Sidney Liebrand on Sep 03, 2017 &bull; 5 min read</small><p>Do you love <a href="http://caniuse.com/">Caniuse</a> and <a href="https://github.com/junegunn/fzf">FZF</a>? I do! As a front end developer,
+<div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">Combining Caniuse with FZF</h1><small>By Sidney Liebrand on Sep 03, 2017 &nbsp;&bull;&nbsp; 5 min read</small><p>Do you love <a href="http://caniuse.com/">Caniuse</a> and <a href="https://github.com/junegunn/fzf">FZF</a>? I do! As a front end developer,
 every now and then I need to check the support of some feature across major browsers.
 For this I used to go to caniuse.com, search for the feature and make a decision based on that.</p>
 

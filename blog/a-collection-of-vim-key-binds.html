@@ -48,22 +48,23 @@ header, main, mark, nav, section {
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   line-height: 1;
+  font-family: sans-serif;
   font-weight: 600;
   margin: 0 0 0.25rem;
   margin-top: 2rem; }
   h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
     margin-top: 2rem; }
-  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  h1 + p, h1 + .highlighter-rouge, h2 + p, h2 + .highlighter-rouge, h3 + p, h3 + .highlighter-rouge, h4 + p, h4 + .highlighter-rouge, h5 + p, h5 + .highlighter-rouge, h6 + p, h6 + .highlighter-rouge {
     margin-top: 0.5rem; }
 
 h1 {
   font-size: 26px; }
   @media screen and (min-width: 280px) {
     h1 {
-      font-size: calc(26px + 18 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(26px + 16 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h1 {
-      font-size: 44px; } }
+      font-size: 42px; } }
 
 h2 {
   font-size: 22px; }
@@ -75,31 +76,31 @@ h2 {
       font-size: 34px; } }
 
 h3 {
-  font-size: 20px; }
-  @media screen and (min-width: 280px) {
-    h3 {
-      font-size: calc(20px + 10 * ((100vw - 280px) / 1160)); } }
-  @media screen and (min-width: 1440px) {
-    h3 {
-      font-size: 30px; } }
-
-h4 {
   font-size: 18px; }
   @media screen and (min-width: 280px) {
+    h3 {
+      font-size: calc(18px + 10 * ((100vw - 280px) / 1160)); } }
+  @media screen and (min-width: 1440px) {
+    h3 {
+      font-size: 28px; } }
+
+h4 {
+  font-size: 15px; }
+  @media screen and (min-width: 280px) {
     h4 {
-      font-size: calc(18px + 8 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(15px + 9 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h4 {
-      font-size: 26px; } }
+      font-size: 24px; } }
 
 h5 {
-  font-size: 16px; }
+  font-size: 13px; }
   @media screen and (min-width: 280px) {
     h5 {
-      font-size: calc(16px + 6 * ((100vw - 280px) / 1160)); } }
+      font-size: calc(13px + 7 * ((100vw - 280px) / 1160)); } }
   @media screen and (min-width: 1440px) {
     h5 {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 h6 {
   font-size: 1rem; }
@@ -125,24 +126,30 @@ code,
 kbd {
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
   color: #444; }
 
 code,
 kbd {
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 0.2rem 0.4rem 0.15rem;
-  border-radius: 4px; }
+  border-radius: 4px;
+  vertical-align: middle; }
+
+kbd {
+  font-size: 0.6em;
+  background-color: #fcfcfc;
+  background-image: none;
+  border: 1px solid rgba(85, 85, 85, 0.3);
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  box-shadow: inset 0 -1px #555; }
 
 pre code {
   font-size: 0.9rem;
   padding: 0;
   background-color: transparent;
   display: block; }
-
-kbd {
-  background-image: none;
-  border: 1px solid rgba(85, 85, 85, 0.2); }
 
 a, a > code {
   position: relative;
@@ -212,7 +219,8 @@ ol {
     content: counter(ol-li-counter) "."; }
 
 small {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: sans-serif;
   line-height: 1; }
 
 .application {
@@ -311,16 +319,18 @@ small {
     font-size: 34px; }
     @media screen and (min-width: 280px) {
       .article__title {
-        font-size: calc(34px + 26 * ((100vw - 280px) / 1160)); } }
+        font-size: calc(34px + 11 * ((100vw - 280px) / 1160)); } }
     @media screen and (min-width: 1440px) {
       .article__title {
-        font-size: 60px; } }
+        font-size: 45px; } }
   .article__title + p {
     margin-top: 0; }
   .article__title + small {
-    font-size: 1rem;
-    line-height: 1.6;
     display: block; }
+
+.highlighter-rouge {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 div.highlight {
   overflow: hidden;
@@ -383,9 +393,9 @@ div.highlight {
   display: inline-block;
   appearance: none;
   line-height: 1;
-  font-weight: 300;
-  font-size: 0.9rem;
-  font-family: serif, Apple Color Emoji, Noto Color Emoji;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: sans-serif;
   padding: 0.625rem 2rem;
   border-radius: 2px;
   height: auto;
@@ -525,7 +535,7 @@ div.highlight {
 .highlight .ss {
   color: #a6e22e; }</style><script defer="true" type="text/javascript" src="/js/application-8c726ee35.js"></script></head><body><div class="application"><header class="header"><div class="header__inner"><div class="header__content"><a class="logo" href="/" title="Return to the home page"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 429.29 114.44" preserveAspectRatio="xMidYMid slice"><path d="M33.43,96.21c18.22,0,25-17.14,8.48-26.76C29,61.94,11.44,60.75,3.93,46S3.07,12.14,17.4,4.71c15.35-8,36.69-5.08,51.36,3L62.4,24.49C53.63,19.59,41,16,31.08,19.76c-9.33,3.55-10.69,13.62-3.22,20.08,7.83,6.77,19.62,7.95,28.53,13,11.12,6.31,17.37,16.65,17.32,29.41-.12,27.84-27.22,34.19-50.28,31.69-6-.65-22.15-3.42-23.36-9.38C-.67,100.91,4.59,92,5.88,88.44A53,53,0,0,0,33.43,96.21Z" /><path d="M162,112.11H93.31V2.77h21.91V94.09H162Z" /><path d="M229.15,98.15c0,20.64-31.72,20.67-31.62,0C197.63,78,229.15,77.92,229.15,98.15Z" /><path d="M267,112.11v-18H290.8V20.78H267v-18h69.42v18H312.7V94.09h23.67v18Z" /><path d="M350.5,57.35c0-25.51,8.42-57,39.39-57.06,31.32-.09,39.4,31.31,39.4,57.06,0,24.69-7.42,55.53-37.19,57C359.55,115.88,350.5,84,350.5,57.35Zm22.08,0c0,12.19-.62,38.21,17.31,38.15s17.3-25.85,17.32-38.15.62-38.12-17.32-38.16S372.58,45.23,372.58,57.35Z" /></svg>
 <div style="padding-bottom:26.57%;visibility:hidden"></div></div></figure></a><nav class="header__nav"><a class="header__nav-item" href="https://github.com/SidOfc" rel="noopener,noreferrer" target="_blank" title="Sidney Liebrand's github profile"><figure><div class="fig-ar-container"><svg class="fig-ar-lock" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-<div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">A collection of Vim key binds</h1><small>By Sidney Liebrand on Sep 16, 2017 &bull; 7 min read</small><figure class="wide"><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/vimrc-movement-key-binds-c741efc23.png" alt="A screenshot of my vimrc movement key bindings" /><div style="padding-bottom:35.0%;visibility:hidden"></div></div><figcaption>A screenshot of my vimrc movement key bindings</figcaption></figure>
+<div style="padding-bottom:100.0%;visibility:hidden"></div></div></figure></a></nav></div></div></header><main class="main"><article class="page article"><h1 class="article__title">A collection of Vim key binds</h1><small>By Sidney Liebrand on Sep 16, 2017 &nbsp;&bull;&nbsp; 7 min read</small><figure class="wide"><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/vimrc-movement-key-binds-c741efc23.png" alt="A screenshot of my vimrc movement key bindings" /><div style="padding-bottom:35.0%;visibility:hidden"></div></div><figcaption>A screenshot of my vimrc movement key bindings</figcaption></figure>
 
 <p>Vim is installed on almost every unix system known to man,
 therefore knowing how it works will allow you to work pretty much anywhere.
@@ -534,17 +544,17 @@ Why would you create customized mappings that only work on your machine?</p>
 <h2 id="ease-of-use">Ease of use</h2>
 
 <p>Key binds in Vim are not always the most intuitive to use.
-Take for instance, moving up or down a paragraph which are bound to <code>{</code> and <code>}</code> respectively.
-I find these binds quite awkward, but like <code>w</code>, they allow you to move a lot faster
-than using line wise <code>j</code> or <code>k</code>. For that reason, I rebound them to <code>J</code> and <code>K</code> instead (note their case).
+Take for instance, moving up or down a paragraph which are bound to <kbd>{</kbd> and <kbd>}</kbd> respectively.
+I find these binds quite awkward, but like <kbd>w</kbd>, they allow you to move a lot faster
+than using line wise <kbd>j</kbd> or <kbd>k</kbd>. For that reason, I rebound them to <kbd>J</kbd> and <kbd>K</kbd> instead (note their case).
 Since they apply no useful action in normal mode and they are more easily combined with the <kbd>shift</kbd>
-key than <code>{</code> and <code>}</code> it made sense to me to map them to something easier to reach.</p>
+key than <kbd>{</kbd> and <kbd>}</kbd> it made sense to me to map them to something easier to reach.</p>
 
 <h2 id="consistency">Consistency</h2>
 
-<p>Some of the key binds are actually inconsistent. Given that there is <code>D</code> for deleting from cursor to
-end of line and <code>C</code> to change from cursor to end of line, but for some reason, <code>Y</code> does not share the
-"from cursor to end of line" behavior. We can fix this by overwriting the map and binding <code>Y</code> to <code>y$</code>
+<p>Some of the key binds are actually inconsistent. Given that there is <kbd>D</kbd> for deleting from cursor to
+end of line and <kbd>C</kbd> to change from cursor to end of line, but for some reason, <kbd>Y</kbd> does not share the
+"from cursor to end of line" behavior. We can fix this by overwriting the map and binding <kbd>Y</kbd> to <code>y$</code>
 instead (visit <code>:h Y</code> in Vim), which <em>will</em> make it copy from cursor to end of line.</p>
 
 <h2 id="end-bad-habits">End bad habits</h2>
@@ -559,7 +569,7 @@ based on the negative impulse :)</p>
 
 <p>So without further ado, here are my non-plugin key binds.</p>
 
-<p><strong>Pairing braces</strong></p>
+<h3 id="pairing-braces">Pairing braces</h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inoremap <span class="p">&lt;&gt;</span> <span class="p">&lt;&gt;&lt;</span>Left<span class="p">&gt;</span>
 inoremap <span class="p">()</span> <span class="p">()&lt;</span>Left<span class="p">&gt;</span>
@@ -574,11 +584,11 @@ inoremap `` ``<span class="p">&lt;</span>Left<span class="p">&gt;</span>
 I close it off and move my cursor between them. This ensures that I always have matching braces and I don't
 actually have to go back and add them later (especially useful in nesting situations).</p>
 
-<p>What this does is when you type <code>&lt;</code> followed by <code>&gt;</code> for example, vim will replace it with the same characters,
+<p>What this does is when you type <kbd>&lt;</kbd> followed by <kbd>&gt;</kbd> for example, vim will replace it with the same characters,
 but it will also "insert" <code>&lt;Left&gt;</code> or rather, insert an arrow keypress left which leaves you in this position:
 <code>&lt;|&gt;</code> where the bar represents the cursor. You can now type away without having to worry about that closing brace!</p>
 
-<p><strong>Navigational keys</strong></p>
+<h3 id="navigational-keys">Navigational keys</h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="p">&lt;</span>Up<span class="p">&gt;</span>    <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
 nmap <span class="p">&lt;</span>Down<span class="p">&gt;</span>  <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
@@ -597,18 +607,18 @@ noremap L     $
 noremap <span class="p">&lt;</span>C<span class="p">-</span><span class="k">x</span><span class="p">&gt;</span> <span class="p">:</span><span class="k">bp</span><span class="p">&lt;</span>Bar<span class="p">&gt;</span><span class="k">bd</span> #<span class="p">&lt;</span>Cr<span class="p">&gt;</span>
 </code></pre></div></div>
 
-<p>I've already discussed the keys <code>J</code> and <code>K</code> which are used for moving up and down by paragraph.
-Likewise <code>H</code> maps to <code>^</code> which takes you to the first <em>non-whitespace</em> character of the current line
-and <code>L</code> maps to <code>$</code> which takes you to the <em>end</em> of the current line.
-I like to think of these mappings as stronger versions of the regular <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> motions in Vim.</p>
+<p>I've already discussed the keys <kbd>J</kbd> and <kbd>K</kbd> which are used for moving up and down by paragraph.
+Likewise <kbd>H</kbd> maps to <kbd>^</kbd> which takes you to the first <em>non-whitespace</em> character of the current line
+and <kbd>L</kbd> maps to <kbd>$</kbd> which takes you to the <em>end</em> of the current line.
+I like to think of these mappings as stronger versions of the regular <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, <kbd>l</kbd> motions in Vim.</p>
 
-<p>The last mapping to discuss here is <code>&lt;C-x&gt;</code>. What this does is open the previous buffer in the current
+<p>The last mapping to discuss here is <kbd>ctrl</kbd>+<kbd>x</kbd>. What this does is open the previous buffer in the current
 pane and close the buffer visible before that. This means that if I open <code>filea.txt</code> and then open
-<code>fileb.txt</code> in the same pane, pressing <code>&lt;C-x&gt;</code> will show me filea.txt and close the buffer containing <code>fileb.txt</code>.
+<code>fileb.txt</code> in the same pane, pressing <kbd>ctrl</kbd>+<kbd>x</kbd> will show me filea.txt and close the buffer containing <code>fileb.txt</code>.
 I like this because I work with split panes a lot and I don't always want my split to disappear when
 I'm done working with a file. Now it will show me the file I had open before that.</p>
 
-<p><strong>Insert mode navigational keys</strong></p>
+<h3 id="insert-mode-navigational-keys">Insert mode navigational keys</h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imap <span class="p">&lt;</span>Up<span class="p">&gt;</span>    <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
 imap <span class="p">&lt;</span>Down<span class="p">&gt;</span>  <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
@@ -623,16 +633,16 @@ inoremap <span class="p">&lt;</span>C<span class="p">-</span><span class="k">l</
 
 <p>These ones are very new to me and I have only added them recently. I'm still thinking that when I
 did this about a month ago, I was completely and utterly disoriented without the arrow keys in insert mode.
-I simply didn't understand how to move out of some situations in insert mode and I hadn't discovered <code>&lt;C-o&gt;</code> yet either.
+I simply didn't understand how to move out of some situations in insert mode and I hadn't discovered <kbd>ctrl</kbd>+<kbd>o</kbd> yet either.
 I ended up using the hjkl combo I knew for moving around and prefixing it with control,
-so in insert mode, <code>&lt;C-l&gt;</code> moves me one character to the right, as <code>l</code> would do in normal mode.</p>
+so in insert mode, <kbd>ctrl</kbd>+<kbd>l</kbd> moves me one character to the right, as <kbd>l</kbd> would do in normal mode.</p>
 
 <p>Insert mode is not really the mode you want to be in most of the time, unless you are actually writing code that is.
 But it is annoying to have to switch out of insert mode <em>just</em> to use a normal mode command to move to the right place.
-I found that using <code>&lt;C-o&gt;</code> followed by a command used too many keypresses for the same operation and thus I
+I found that using <kbd>ctrl</kbd>+<kbd>o</kbd> followed by a command used too many keypresses for the same operation and thus I
 ended up with the <code>&lt;C-[direction]&gt;</code> keys for movement in insert mode.</p>
 
-<p><strong>Tab and Shift-Tab to indent and de-indent</strong></p>
+<h3 id="kbdtabkbd-and-kbdshiftkbdkbdtabkbd-to-indent-and-de-indent"><kbd>tab</kbd> and <kbd>shift</kbd>+<kbd>tab</kbd> to indent and de-indent</h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="p">&gt;&gt;</span> <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
 nmap <span class="p">&lt;&lt;</span> <span class="p">&lt;</span>Nop<span class="p">&gt;</span>
@@ -645,11 +655,11 @@ vnoremap <span class="p">&lt;</span>Tab<span class="p">&gt;</span>   <span class
 vnoremap <span class="p">&lt;</span>S<span class="p">-</span>Tab<span class="p">&gt;</span> <span class="p">&lt;&lt;&lt;</span>Esc<span class="p">&gt;</span>gv
 </code></pre></div></div>
 
-<p>Yet another pair of inconvenient binds are used for indenting and de-indenting code, <code>&gt;&gt;</code> and <code>&lt;&lt;</code> respectively.
+<p>Yet another pair of inconvenient binds are used for indenting and de-indenting code, <kbd>&gt;&gt;</kbd> and <kbd>&lt;&lt;</kbd> respectively.
 Like with the default paragraph binds I think these can be better by just using the bindings I already know and use:
-<code>&lt;Tab&gt;</code> and <code>&lt;S-Tab&gt;</code>. These binds are to be used in normal or visual mode as we have a special purpose for <code>&lt;S-Tab&gt;</code> in insert mode.</p>
+<kbd>tab</kbd> and <kbd>shift</kbd>+<kbd>tab</kbd>. These binds are to be used in normal or visual mode as we have a special purpose for <kbd>shift</kbd>+<kbd>tab</kbd> in insert mode.</p>
 
-<p><strong>Avoiding the Esc key</strong></p>
+<h3 id="avoiding-the-kbdesckbd-key">Avoiding the <kbd>esc</kbd> key</h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inoremap <span class="p">&lt;</span>S<span class="p">-</span>Tab<span class="p">&gt;</span> <span class="p">&lt;</span>Esc<span class="p">&gt;</span>
 onoremap <span class="p">&lt;</span>S<span class="p">-</span>Tab<span class="p">&gt;</span> <span class="p">&lt;</span>Esc<span class="p">&gt;</span>
@@ -657,31 +667,31 @@ onoremap <span class="p">&lt;</span>S<span class="p">-</span>Tab<span class="p">
 
 <p>While there is no such real thing like completely avoiding the escape key, I can manage pretty
 well without it with these simple binds. The first one will take you out of insert mode when
-you hit <code>&lt;S-Tab&gt;</code>. Since it does nothing useful, it might as well save one of my fingers some serious wear.
-The second map is used in operator pending mode, which is when you say <code>d3</code>,
-the next thing that follows is the operator to finish the command. This means that if I press <code>d3&lt;S-Tab&gt;</code>
-I will no longer be in operator pending mode, handy for when you accidentally typed <code>4</code> instead of <code>3</code>
+you hit <kbd>shift</kbd>+<kbd>tab</kbd>. Since it does nothing useful, it might as well save one of my fingers some serious wear.
+The second map is used in operator pending mode, which is when you type <kbd>d</kbd><kbd>3</kbd>,
+the next thing that follows is the operator to finish the command. This means that if I press <kbd>d</kbd><kbd>3</kbd><kbd>shift</kbd>+<kbd>tab</kbd>
+I will no longer be in operator pending mode, handy for when you accidentally typed <kbd>4</kbd> instead of <kbd>3</kbd>
 (while you don't <em>see</em> this, you just <em>feel</em> it).</p>
 
-<p><strong>Run macro's with Q</strong></p>
+<h3 id="run-macros-with-kbdqkbd">Run macro's with <kbd>Q</kbd></h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nnoremap Q @<span class="k">q</span>
 </code></pre></div></div>
 
-<p>This one is a bit different, I'm not unbinding <code>@q</code> here as I simply <em>don't have to</em>. The clumsiness of this
-bind leads me to never accidentally press it anyway. To explain, for recording a macro use <code>qq</code>,
-to stop recording use <code>q</code> and to play it, simply use <code>Q</code> — much better than pressing <code>@q</code>.
+<p>This one is a bit different, I'm not unbinding <kbd>@</kbd><kbd>q</kbd> here as I simply <em>don't have to</em>. The clumsiness of this
+bind leads me to never accidentally press it anyway. To explain, for recording a macro use <kbd>qq</kbd>,
+to stop recording use <kbd>q</kbd> and to play it, simply use <kbd>Q</kbd> — much better than pressing <kbd>@</kbd><kbd>q</kbd>.
 Note that this might not be handy if you use a lot of macros and registers.
 I mostly remember and use one macro at a time for the moment so this bind fits my needs.</p>
 
-<p><strong>Consistent Y</strong></p>
+<h3 id="consistent-kbdykbd">Consistent <kbd>Y</kbd></h3>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nnoremap Y <span class="k">y</span>$
 </code></pre></div></div>
 
-<p>So unlike our friends <code>C</code> and <code>D</code> which change and delete <em>from cursor to end of line</em> respectively,
-<code>Y</code> seems to have some issues, it basically does a <code>yy</code> which we already have… <code>yy</code> for. So to make it consistent with its bro's,
-I remapped it to <code>y$</code>. Additional explanation can be found in the help section: <code>:h Y</code>.</p>
+<p>So unlike our friends <kbd>C</kbd> and <kbd>D</kbd> which change and delete <em>from cursor to end of line</em> respectively,
+<kbd>Y</kbd> seems to have some issues, it basically does a <kbd>y</kbd><kbd>y</kbd> which we already have… <kbd>y</kbd><kbd>y</kbd> for. So to make it consistent with its bro's,
+I remapped it to <kbd>y</kbd><kbd>$</kbd>. Additional explanation can be found in the help section: <code>:h Y</code>.</p>
 
 <h2 id="wrapping-up">Wrapping up</h2>
 
