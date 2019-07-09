@@ -10,7 +10,7 @@ After playing around with it for 5 minutes I was completely sold.</p>
 I used to turn to a REPL for help but this quickly becomes annoying when trying to write multi-line expressions.
 Making a typo in the middle of a <code>do ... end</code> block in Ruby is quite costly:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/pry-multiline-typo-e3d4e40e0.gif" alt="Multiline expression typo in Pry" /><div style="padding-bottom:24.2%;visibility:hidden"></div></div><figcaption>Multiline expression typo in Pry</figcaption></figure>
+<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/pry-multiline-typo-22c997ce1.webm" type="video/webm" /><source src="/img/posts/pry-multiline-typo-9844105f3.mp4" type="video/mp4" /></video><div style="padding-bottom:24.2%;visibility:hidden"></div></div><figcaption>Multiline expression typo in Pry</figcaption></figure>
 
 <p>Another thing to note here is that code and results are printed sequentially.
 This means that any code you write goes off-screen at least twice as fast because the result is printed below it.</p>
@@ -18,7 +18,7 @@ This means that any code you write goes off-screen at least twice as fast becaus
 <p>In case of errors and stack traces it can become a lot worse as well.
 Codi solves all of this by allowing you to type in one pane and it prints the results in a separate pane side-by-side:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/ruby-demo-18f54f7ee.gif" alt="Demo of Ruby in Codi.vim" /><div style="padding-bottom:13.65%;visibility:hidden"></div></div><figcaption>Demo of Ruby in Codi.vim</figcaption></figure>
+<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/ruby-demo-7c6bc86a0.webm" type="video/webm" /><source src="/img/posts/ruby-demo-942ed3771.mp4" type="video/mp4" /></video><div style="padding-bottom:13.65%;visibility:hidden"></div></div><figcaption>Demo of Ruby in Codi.vim</figcaption></figure>
 
 <p>This feature, and the fact that I can toggle this buffer for <em>multiple programming languages</em> using a single mapping blew my mind but as with anything,
 it requires some more battle testing to see if it works in common scenario's.</p>
@@ -27,14 +27,14 @@ it requires some more battle testing to see if it works in common scenario's.</p
 
 <p>This is where I found out that when used with a split, it will not be fullscreen but rather split the current buffer:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/split-behavior-782f77b40.gif" alt="Default split behaviour" /><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Default split behaviour</figcaption></figure>
+<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/split-behavior-3d6f68841.webm" type="video/webm" /><source src="/img/posts/split-behavior-76ab1804b.mp4" type="video/mp4" /></video><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Default split behaviour</figcaption></figure>
 
 <p>At this point I started experimenting with a small <a href="https://gist.github.com/SidOfc/5218a7a9f12ed2105a9b052ca8e6707e">vimscript snippet</a> in my .vimrc.
 Excluding comments and blanks it is 10 LoC.
 It wraps the default <code>Codi</code> command in a function which creates an empty buffer in a new tab with the right filetype set before finally running <code>Codi</code> itself.
 This creates the fullscreen split that I wanted:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/wrapped-split-behavior-9aa87d5a3.gif" alt="Enhanced split behaviour" /><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Enhanced split behaviour</figcaption></figure>
+<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/wrapped-split-behavior-3b2f08ab9.webm" type="video/webm" /><source src="/img/posts/wrapped-split-behavior-91450156a.mp4" type="video/mp4" /></video><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Enhanced split behaviour</figcaption></figure>
 
 <h2 id="problem-solved-or-maybe-not">Problem solved, or maybe not?</h2>
 
@@ -47,7 +47,7 @@ After hiding the buffer, its <code>tabpagenr()</code> is stored in a dictionary 
 
 <p>Then, when toggling codi for a filetype that is stored, switch to that tab instead of opening a new one (there is even a check if that tab actually exists):</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/wrapped-split-behavior-2-86ab20cbe.gif" alt="Enhanced split behaviour version 2" /><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Enhanced split behaviour version 2</figcaption></figure>
+<figure><div class="fig-ar-container"><video style="opacity: 0" oncanplaythrough="this.style.opacity=1" class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/wrapped-split-behavior-2-85e1f66af.webm" type="video/webm" /><source src="/img/posts/wrapped-split-behavior-2-ae7b5a0d4.mp4" type="video/mp4" /></video><div style="padding-bottom:48.02%;visibility:hidden"></div></div><figcaption>Enhanced split behaviour version 2</figcaption></figure>
 
 <p>And there we go! Aside from the fact that the buffer now remains, the name is also <code>scratch::ruby</code>.
 This is a bit more descriptive than having just <code>[Scratch]</code> in <code>:ls</code> output when multiple codi buffers of a different filetype are active.</p>
