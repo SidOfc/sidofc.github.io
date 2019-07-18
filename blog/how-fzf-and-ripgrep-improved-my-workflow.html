@@ -91,7 +91,7 @@ output before seeing it or knowing how it looks and issuing an extra command
 to actually stop the process.</p>
 
 <p>To make this easier, I wrote a small wrapper (first in <a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/kp">zsh</a>,
-later migrated to <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/kp.fish">fish</a>) called <code>kp</code>.
+later migrated to <a href="https://github.com/SidOfc/dotfiles/blob/e94b96b908479950186e42a3709511a0afe300e4/.config/fish/functions/kp.fish">fish</a>) called <code>kp</code>.
 It lists processes using <code>ps -ef</code> and pipes it to <code>fzf</code>.</p>
 
 <figure><div class="fig-ar-container"><video class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/kill-with-kp-5d9d8a3cd.webm" type="video/webm" /><source src="/img/posts/kill-with-kp-69d61518b.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Killing processes using kp</figcaption></figure>
@@ -119,13 +119,13 @@ another for updating and one for deleting brew packages:</p>
 
 <ul>
   <li>
-    <p><code>bip</code> — <strong>B</strong><em>rew</em> <strong>I</strong><em>nstall</em> <strong>P</strong><em>lugin</em>, install one or more plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bip">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/bip.fish">fish</a>)</p>
+    <p><code>bip</code> — <strong>B</strong><em>rew</em> <strong>I</strong><em>nstall</em> <strong>P</strong><em>lugin</em>, install one or more plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bip">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/e94b96b908479950186e42a3709511a0afe300e4/.config/fish/functions/bip.fish">fish</a>)</p>
   </li>
   <li>
-    <p><code>bup</code> — <strong>B</strong><em>rew</em> <strong>U</strong><em>pdate</em> <strong>P</strong><em>lugin</em>, update multiple installed plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bup">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/bup.fish">fish</a>)</p>
+    <p><code>bup</code> — <strong>B</strong><em>rew</em> <strong>U</strong><em>pdate</em> <strong>P</strong><em>lugin</em>, update multiple installed plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bup">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/e94b96b908479950186e42a3709511a0afe300e4/.config/fish/functions/bup.fish">fish</a>)</p>
   </li>
   <li>
-    <p><code>bcp</code> — <strong>B</strong><em>rew</em> <strong>C</strong><em>lean</em> <strong>P</strong><em>lugin</em>, delete multiple installed plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bcp">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/bcp.fish">fish</a>)</p>
+    <p><code>bcp</code> — <strong>B</strong><em>rew</em> <strong>C</strong><em>lean</em> <strong>P</strong><em>lugin</em>, delete multiple installed plugins (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/bcp">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/e94b96b908479950186e42a3709511a0afe300e4/.config/fish/functions/bcp.fish">fish</a>)</p>
   </li>
 </ul>
 
@@ -142,7 +142,7 @@ script will become available in your shell. This makes sense but can leave you w
 a messed up shell path or duplicate entries. It could cause all kinds of weirdness
 and slowness in your terminal.</p>
 
-<p>My solution to this is a simple path explorer called <code>fp</code> (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/fp">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/fp.fish">fish</a>).
+<p>My solution to this is a simple path explorer called <code>fp</code> (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/fp">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/e94b96b908479950186e42a3709511a0afe300e4/.config/fish/functions/fp.fish">fish</a>).
 It invokes FZF with a list of folders populated using <code>$PATH</code>.</p>
 
 <figure><div class="fig-ar-container"><video class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/dirs-in-path-3a8277729.webm" type="video/webm" /><source src="/img/posts/dirs-in-path-9ae75f9ba.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>Directories present in $PATH</figcaption></figure>
@@ -155,12 +155,12 @@ the directory listing. Pressing <kbd>escape</kbd> in the overview will exit the 
 
 <h2 id="checking-features-on-caniusecomhttpcaniusecom">Checking features on <a href="http://caniuse.com">caniuse.com</a></h2>
 
-<p>Additionally, I've written a post before on how to <a href="https://medium.com/@sidneyliebrand/combining-caniuse-with-fzf-fb93ad235bae">combine Caniuse with FZF</a>.
+<p>Additionally, I've written a post before on how to <a href="/blog/combining-caniuse-with-fzf">combine Caniuse with FZF</a>.
 It allows me to quickly find out wether I should stay away from some Web API or not.
 this small tool also allows me to query features that have been added or deprecated recently.</p>
 
 <figure><div class="fig-ar-container"><video class="fig-ar-lock" autoplay="true" loop="true" muted="true" playsinline="true"><source src="/img/posts/checking-caniuse-768e4b392.webm" type="video/webm" /><source src="/img/posts/checking-caniuse-41c909fde.mp4" type="video/mp4" /></video><div style="padding-bottom:23.44%;visibility:hidden"></div></div><figcaption>An example of looking for features using cani</figcaption></figure>
-<p>The <code>cani</code> command (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/cani">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/master/.config/fish/functions/cani.fish">fish</a>) itself uses another <a href="https://github.com/SidOfc/dotfiles/blob/master/bin/ciu">ruby script</a>
+<p>The <code>cani</code> command (<a href="https://github.com/SidOfc/dotfiles/blob/d07fa3862ed065c2a5a7f1160ae98416bfe2e1ee/zsh/cani">zsh</a>, <a href="https://github.com/SidOfc/dotfiles/blob/1e07bc882e64cc22783ac8ec2a01651503ecc7b3/.config/fish/functions/cani.fish">fish</a>) itself uses another <a href="https://github.com/SidOfc/dotfiles/blob/master/bin/ciu">ruby script</a>
 (<code>ciu</code>) I wrote to actually provide the data and format it properly.
 The data is fetched once then cached for a day.
 So you'll have fresh data on a daily basis :)</p>
