@@ -12,7 +12,7 @@
     <name>Sidney Liebrand</name>
   </author>
   <entry>
-    <title>A collection of Vim key binds</title>
+    <title>Sidney Liebrand's digital home</title>
     <summary>In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I've used Vim for about two months now and I'm still learning a lot. In this post I'm going to take you through a part of my .vimrc that describes my non-plugin key binds.</summary>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds"/>
     <id>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</id>
