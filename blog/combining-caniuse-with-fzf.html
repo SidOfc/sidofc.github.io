@@ -51,7 +51,7 @@ and the file will be no older than a day at worst. For brevity I did not include
 Ruby script but it can be <a href="https://github.com/SidOfc/dotfiles/blob/master/bin/ciu">found here</a> in my <a href="https://github.com/SidOfc/dotfiles">dotfiles repo</a>.
 Combining it with FZF yielded the following result:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/caniuse-fzf-ie-last-version-features-e63bab847.png" alt="Caniuse fzf: IE features supported since last version" /><div style="padding-bottom:38.67%;visibility:hidden"></div></div><figcaption>Caniuse fzf: IE features supported since last version</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/media/posts/caniuse-fzf-ie-last-version-features-e63bab847.png" alt="Caniuse fzf: IE features supported since last version" /><div style="padding-bottom:38.67%;visibility:hidden"></div></div><figcaption>Caniuse fzf: IE features supported since last version</figcaption></figure>
 
 <p>The above display might seem a bit intimidating at first, but the output isn't hard to understand
 if you know what each column indicates. In the leftmost column, we have a 2 letter W3C status, e.g.
@@ -69,7 +69,7 @@ to search for this as a single word rather than 4 single characters.</p>
 
 <p>I can also search for all the <code>[wd]</code> features, like this:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/caniuse-search-wd-feature-6e25d4bab.png" alt="Searching for working draft CSS features" /><div style="padding-bottom:15.56%;visibility:hidden"></div></div><figcaption>Searching for working draft CSS features</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/media/posts/caniuse-search-wd-feature-6e25d4bab.png" alt="Searching for working draft CSS features" /><div style="padding-bottom:15.56%;visibility:hidden"></div></div><figcaption>Searching for working draft CSS features</figcaption></figure>
 
 <p>Any text you see on the screenshots can be used to search and you get some free bonuses of seeing how many
 features there are in caniuse (426) and how many of them matched your query (86 are WD apparently).</p>
@@ -95,11 +95,11 @@ cani<span class="o">()</span> <span class="o">{</span>
 
 <p>This will take your selected features from FZF:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/caniuse-select-multiple-features-34b4325a3.png" alt="Selecting multiple feature entries" /><div style="padding-bottom:31.0%;visibility:hidden"></div></div><figcaption>Selecting multiple feature entries</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/media/posts/caniuse-select-multiple-features-34b4325a3.png" alt="Selecting multiple feature entries" /><div style="padding-bottom:31.0%;visibility:hidden"></div></div><figcaption>Selecting multiple feature entries</figcaption></figure>
 
 <p>then it tries to select the title and run each selected feature title through the <code>caniuse</code> command:</p>
 
-<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/img/posts/caniuse-cmd-output-dd89b0b49.png" alt="Output entry results using caniuse-cmd package" /><div style="padding-bottom:74.0%;visibility:hidden"></div></div><figcaption>Output entry results using caniuse-cmd package</figcaption></figure>
+<figure><div class="fig-ar-container"><img class="fig-ar-lock" style="opacity:0" onload="this.style.opacity=1" src="/media/posts/caniuse-cmd-output-dd89b0b49.png" alt="Output entry results using caniuse-cmd package" /><div style="padding-bottom:74.0%;visibility:hidden"></div></div><figcaption>Output entry results using caniuse-cmd package</figcaption></figure>
 
 <p>There! All the details I can muster now combined in a single command with support for outputting multiple features at the same time.</p>
 
