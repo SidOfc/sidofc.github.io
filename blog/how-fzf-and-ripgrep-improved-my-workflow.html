@@ -240,7 +240,7 @@ I came up with the following setup to accomplish this:</p>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>command<span class="p">!</span> <span class="p">-</span>bang <span class="p">-</span>nargs<span class="p">=</span>* Rg
 <span class="se">  \</span> <span class="k">call</span> fzf#<span class="k">vim</span>#<span class="k">grep</span><span class="p">(</span>
-<span class="se">  \</span>   <span class="s1">'rg --column --line-number --hidden --ignore-case --no-heading --color=always '</span><span class="p">.</span>shellescape<span class="p">(&lt;</span><span class="k">q</span><span class="p">-</span>args<span class="p">&gt;),</span> <span class="m">1</span><span class="p">,</span>
+<span class="se">  \</span>   <span class="s1">'rg --column --line-number --hidden --ignore-case --no-heading --color=always '</span><span class="p">.</span><span class="nb">shellescape</span><span class="p">(&lt;</span><span class="k">q</span><span class="p">-</span><span class="k">args</span><span class="p">&gt;),</span> <span class="m">1</span><span class="p">,</span>
 <span class="se">  \</span>   <span class="p">&lt;</span>bang<span class="p">&gt;</span><span class="m">0</span> ? fzf#<span class="k">vim</span>#with_preview<span class="p">({</span><span class="s1">'options'</span><span class="p">:</span> <span class="s1">'--delimiter : --nth 4..'</span><span class="p">},</span> <span class="s1">'up:60%'</span><span class="p">)</span>
 <span class="se">  \</span>           <span class="p">:</span> fzf#<span class="k">vim</span>#with_preview<span class="p">({</span><span class="s1">'options'</span><span class="p">:</span> <span class="s1">'--delimiter : --nth 4..'</span><span class="p">},</span> <span class="s1">'right:50%:hidden'</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">),</span>
 <span class="se">  \</span>   <span class="p">&lt;</span>bang<span class="p">&gt;</span><span class="m">0</span><span class="p">)</span>
@@ -273,4 +273,4 @@ two fantastic tools.</p>
 
 <p>Happy fuzzy finding :)</p>
 
-<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2019</small></footer></div></body></html>
+<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2020</small></footer></div></body></html>

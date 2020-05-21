@@ -62,7 +62,7 @@ Unfortunately it didn't make it since it was too workflow specific.</p>
 The main difference is this line which resizes codi to 50% of the buffer width whenever a new instance is spawned:</p>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">" since it is fullscreen, I'd like a 50/50 split</span>
-<span class="k">let</span> <span class="nv">g:codi</span>#width <span class="p">=</span> winwidth<span class="p">(</span>winnr<span class="p">())</span> / <span class="m">2</span>
+<span class="k">let</span> <span class="nv">g:codi</span>#width <span class="p">=</span> <span class="nb">winwidth</span><span class="p">(</span><span class="nb">winnr</span><span class="p">())</span> / <span class="m">2</span>
 </code></pre></div></div>
 
 <p>The author thought it would be a nice addition to have percentage width support and for the snippets to live elsewhere for others to use in their .vimrc.
@@ -85,4 +85,4 @@ If you have a great idea, comment on this post!</p>
 
 <p>Until next time.</p>
 
-<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2019</small></footer></div></body></html>
+<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2020</small></footer></div></body></html>

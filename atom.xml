@@ -2,12 +2,12 @@
 <feed xmlns="https://www.w3.org/2005/Atom">
   <title>Sidney Liebrand's blog</title>
   <subtitle>The official https://sidneyliebrand.io Atom feed</subtitle>
-  <rights>Copyright https://sidneyliebrand.io 2019</rights>
+  <rights>Copyright https://sidneyliebrand.io 2020</rights>
   <category term="technology"/>
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io"/>
   <link href="https://sidneyliebrand.io/atom.xml" rel="self"/>
-  <updated>2019-07-10T19:10:00Z</updated>
+  <updated>2020-05-20T22:12:34Z</updated>
   <author>
     <name>Sidney Liebrand</name>
   </author>
@@ -18,6 +18,14 @@
     <id>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</id>
     <published>2017-09-16T11:11:03Z</published>
     <updated>2017-09-16T11:11:03Z</updated>
+  </entry>
+  <entry>
+    <title>Creating my own vim statusline</title>
+    <summary>Recently I decided to clean up my vim plugins once again, I do not think I use too many but I prefer to keep my setup simple. One of the things which bothered me was the configuration for lightline.vim in my vim config. It seemed needlessly complex and I wondered if I could recreate it without any plugins at all!</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/blog/creating-my-own-vim-statusline"/>
+    <id>https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</id>
+    <published>2020-05-20T22:12:34Z</published>
+    <updated>2020-05-20T22:12:34Z</updated>
   </entry>
   <entry>
     <title>Recruiters who call during working hours</title>

@@ -4,8 +4,8 @@
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Wed, 10 Jul 2019 19:10:00 GMT</lastBuildDate>
-    <copyright>Copyright https://sidneyliebrand.io 2019</copyright>
+    <lastBuildDate>Wed, 20 May 2020 22:12:34 GMT</lastBuildDate>
+    <copyright>Copyright https://sidneyliebrand.io 2020</copyright>
     <category term="technology"/>
     <item>
       <title>A collection of Vim key binds</title>
@@ -13,6 +13,13 @@
       <link>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</guid>
       <pubdate>Sat, 16 Sep 2017 11:11:03 GMT</pubdate>
+    </item>
+    <item>
+      <title>Creating my own vim statusline</title>
+      <description>Recently I decided to clean up my vim plugins once again, I do not think I use too many but I prefer to keep my setup simple. One of the things which bothered me was the configuration for lightline.vim in my vim config. It seemed needlessly complex and I wondered if I could recreate it without any plugins at all!</description>
+      <link>https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</guid>
+      <pubdate>Wed, 20 May 2020 22:12:34 GMT</pubdate>
     </item>
     <item>
       <title>Recruiters who call during working hours</title>

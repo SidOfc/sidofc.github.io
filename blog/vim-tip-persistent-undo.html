@@ -33,21 +33,21 @@ Vim needs a directory to store the persistent undo history and two settings need
 This is the snippet I have in my Vim config that handles this automatically:</p>
 
 <div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">" guard for distributions lacking the persistent_undo feature.</span>
-<span class="k">if</span> has<span class="p">(</span><span class="s1">'persistent_undo'</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">has</span><span class="p">(</span><span class="s1">'persistent_undo'</span><span class="p">)</span>
     <span class="c">" define a path to store persistent_undo files.</span>
-    <span class="k">let</span> target_path <span class="p">=</span> expand<span class="p">(</span><span class="s1">'~/.config/vim-persisted-undo/'</span><span class="p">)</span>
+    <span class="k">let</span> target_path <span class="p">=</span> <span class="nb">expand</span><span class="p">(</span><span class="s1">'~/.config/vim-persisted-undo/'</span><span class="p">)</span>
 
     <span class="c">" create the directory and any parent directories</span>
     <span class="c">" if the location does not exist.</span>
-    <span class="k">if</span> <span class="p">!</span>isdirectory<span class="p">(</span>target_path<span class="p">)</span>
-        <span class="k">call</span> system<span class="p">(</span><span class="s1">'mkdir -p '</span> <span class="p">.</span> target_path<span class="p">)</span>
+    <span class="k">if</span> <span class="p">!</span><span class="nb">isdirectory</span><span class="p">(</span>target_path<span class="p">)</span>
+        <span class="k">call</span> <span class="nb">system</span><span class="p">(</span><span class="s1">'mkdir -p '</span> <span class="p">.</span> target_path<span class="p">)</span>
     <span class="k">endif</span>
 
     <span class="c">" point Vim to the defined undo directory.</span>
-    <span class="k">let</span> &amp;undodir <span class="p">=</span> target_path
+    <span class="k">let</span> &amp;<span class="nb">undodir</span> <span class="p">=</span> target_path
 
     <span class="c">" finally, enable undo persistence.</span>
-    <span class="k">set</span> undofile
+    <span class="k">set</span> <span class="nb">undofile</span>
 <span class="k">endif</span>
 </code></pre></div></div>
 
@@ -77,4 +77,4 @@ Likewise if I'm wrong or anything is unclear, I'll happily stand corrected.</p>
 
 <p>Until next time :)</p>
 
-<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2019</small></footer></div></body></html>
+<p>👋</p><footer><a class="button" href="/">Back</a></footer></article></main><footer class="footer"><small>&copy; https://sidneyliebrand.io 2020</small></footer></div></body></html>

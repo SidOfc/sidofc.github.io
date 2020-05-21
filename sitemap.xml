@@ -16,6 +16,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
