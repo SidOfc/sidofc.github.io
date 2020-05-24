@@ -12,6 +12,38 @@
     <name>Sidney Liebrand</name>
   </author>
   <entry>
+    <title>Converting .gif to .webm using ffmpeg</title>
+    <summary>In this TIL: converting .gif to .webm files using ffmpeg cli</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/til/converting-gif-to-webm-using-ffmpeg"/>
+    <id>https://sidneyliebrand.io/til/converting-gif-to-webm-using-ffmpeg</id>
+    <published>2019-06-09T22:00:00Z</published>
+    <updated>2019-06-09T22:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Fixing audio configuration after upgrading Ubuntu</title>
+    <summary>In this TIL: fixing some audio decifiencies in Ubuntu after upgrading</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/til/fixing-audio-configuration-after-upgrading-ubuntu"/>
+    <id>https://sidneyliebrand.io/til/fixing-audio-configuration-after-upgrading-ubuntu</id>
+    <published>2020-05-19T22:13:37Z</published>
+    <updated>2020-05-19T22:13:37Z</updated>
+  </entry>
+  <entry>
+    <title>Excluding multiple patterns when creating a zip file</title>
+    <summary>In this TIL: creating a zip file using multiple excludes</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/til/excluding-multiple-patterns-when-creating-a-zip-file"/>
+    <id>https://sidneyliebrand.io/til/excluding-multiple-patterns-when-creating-a-zip-file</id>
+    <published>2018-06-05T22:00:00Z</published>
+    <updated>2018-06-05T22:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Converting .gif to web-safe .mp4 using ffmpeg</title>
+    <summary>In this TIL: converting .gif to web-safe .mp4 files using ffmpeg cli</summary>
+    <link rel="alternate" href="https://sidneyliebrand.io/til/converting-gif-to-web-safe-mp4-using-ffmpeg"/>
+    <id>https://sidneyliebrand.io/til/converting-gif-to-web-safe-mp4-using-ffmpeg</id>
+    <published>2019-06-09T22:20:00Z</published>
+    <updated>2019-06-09T22:20:00Z</updated>
+  </entry>
+  <entry>
     <title>A collection of Vim key binds</title>
     <summary>In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I've used Vim for about two months now and I'm still learning a lot. In this post I'm going to take you through a part of my .vimrc that describes my non-plugin key binds.</summary>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds"/>
