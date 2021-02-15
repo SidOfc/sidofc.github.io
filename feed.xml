@@ -1,109 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0">
   <channel>
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Wed, 20 May 2020 22:12:34 GMT</lastBuildDate>
-    <copyright>Copyright https://sidneyliebrand.io 2020</copyright>
-    <category term="technology"/>
+    <lastBuildDate>Mon, 15 Feb 2021 02:11:20 GMT</lastBuildDate>
+    <copyright>Copyright https://sidneyliebrand.io 2021</copyright>
+    <category term="technology" />
     <item>
-      <title>Converting .gif to .webm using ffmpeg</title>
-      <description>In this TIL: converting .gif to .webm files using ffmpeg cli</description>
-      <link>https://sidneyliebrand.io/til/converting-gif-to-webm-using-ffmpeg</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/til/converting-gif-to-webm-using-ffmpeg</guid>
-      <pubdate>Sun, 09 Jun 2019 22:00:00 GMT</pubdate>
-    </item>
-    <item>
-      <title>Fixing audio configuration after upgrading Ubuntu</title>
-      <description>In this TIL: fixing some audio decifiencies in Ubuntu after upgrading</description>
-      <link>https://sidneyliebrand.io/til/fixing-audio-configuration-after-upgrading-ubuntu</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/til/fixing-audio-configuration-after-upgrading-ubuntu</guid>
-      <pubdate>Tue, 19 May 2020 22:13:37 GMT</pubdate>
-    </item>
-    <item>
-      <title>Excluding multiple patterns when creating a zip file</title>
-      <description>In this TIL: creating a zip file using multiple excludes</description>
-      <link>https://sidneyliebrand.io/til/excluding-multiple-patterns-when-creating-a-zip-file</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/til/excluding-multiple-patterns-when-creating-a-zip-file</guid>
-      <pubdate>Tue, 05 Jun 2018 22:00:00 GMT</pubdate>
-    </item>
-    <item>
-      <title>Converting .gif to web-safe .mp4 using ffmpeg</title>
-      <description>In this TIL: converting .gif to web-safe .mp4 files using ffmpeg cli</description>
-      <link>https://sidneyliebrand.io/til/converting-gif-to-web-safe-mp4-using-ffmpeg</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/til/converting-gif-to-web-safe-mp4-using-ffmpeg</guid>
-      <pubdate>Sun, 09 Jun 2019 22:20:00 GMT</pubdate>
-    </item>
-    <item>
-      <title>A collection of Vim key binds</title>
-      <description>In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I've used Vim for about two months now and I'm still learning a lot. In this post I'm going to take you through a part of my .vimrc that describes my non-plugin key binds.</description>
-      <link>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</guid>
-      <pubdate>Sat, 16 Sep 2017 11:11:03 GMT</pubdate>
+      <title>Converting .gif to web-safe video formats using ffmpeg</title>
+      <description>This post shows how to convert .gif images to web-safe video formats using ffmpeg cli. These formats produce smaller files which means less data to load!</description>
+      <link>https://sidneyliebrand.io/blog/converting-gif-to-web-safe-video-formats-using-ffmpeg</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/converting-gif-to-web-safe-video-formats-using-ffmpeg</guid>
+      <pubdate>Sun, 14 Feb 2021 18:30:00 GMT</pubdate>
     </item>
     <item>
       <title>Creating my own vim statusline</title>
       <description>Recently I decided to clean up my vim plugins once again, I do not think I use too many but I prefer to keep my setup simple. One of the things which bothered me was the configuration for lightline.vim in my vim config. It seemed needlessly complex and I wondered if I could recreate it without any plugins at all!</description>
       <link>https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</guid>
-      <pubdate>Wed, 20 May 2020 22:12:34 GMT</pubdate>
+      <pubdate>Thu, 21 May 2020 00:12:34 GMT</pubdate>
+    </item>
+    <item>
+      <title>Fixing audio configuration after upgrading Ubuntu</title>
+      <description>It is never fun when stuff breaks! This post is about me fixing some audio deficiencies after upgrading Ubuntu.</description>
+      <link>https://sidneyliebrand.io/blog/fixing-audio-configuration-after-upgrading-ubuntu</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/fixing-audio-configuration-after-upgrading-ubuntu</guid>
+      <pubdate>Wed, 20 May 2020 00:13:37 GMT</pubdate>
+    </item>
+    <item>
+      <title>And your metered paywall isn't part of my story, Medium</title>
+      <description>I&apos;ve been greeted by the same &quot;Your story isn&apos;t part of the metered paywall&quot; message for a while now, and figured it was time to make a change in the right direction.</description>
+      <link>https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</guid>
+      <pubdate>Mon, 10 Jun 2019 04:36:22 GMT</pubdate>
     </item>
     <item>
       <title>Recruiters who call during working hours</title>
       <description>Any kind of cold-call from some random recruiter or sales rep is annoying enough as is. Imagine my frustration when I got a call from a recruiter who called on the &lt;strong&gt;company phone&lt;/strong&gt; in the middle of a working day!</description>
       <link>https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</guid>
-      <pubdate>Fri, 31 Aug 2018 20:41:19 GMT</pubdate>
+      <pubdate>Fri, 31 Aug 2018 22:41:19 GMT</pubdate>
     </item>
     <item>
       <title>Codi.vim + fullscreen buffer</title>
       <description>Learn how to set up Codi.vim to create a fullscreen scratch buffer that also works with Vim splits. We will take a look at wrapping the &lt;code&gt;Codi&lt;/code&gt; command and improving the buffer name(s) as seen in &lt;code&gt;:ls&lt;/code&gt;.</description>
       <link>https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</guid>
-      <pubdate>Mon, 27 Aug 2018 05:55:24 GMT</pubdate>
-    </item>
-    <item>
-      <title>How FZF and ripgrep improved my workflow</title>
-      <description>In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting &lt;strong&gt;every. single. time.&lt;/strong&gt;.</description>
-      <link>https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</guid>
-      <pubdate>Sun, 24 Jun 2018 11:33:37 GMT</pubdate>
-    </item>
-    <item>
-      <title>The greatnesses and gotchas of YAML</title>
-      <description>YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!</description>
-      <link>https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</guid>
-      <pubdate>Sat, 23 Dec 2017 06:25:59 GMT</pubdate>
-    </item>
-    <item>
-      <title>Switching to ASDF version manager</title>
-      <description>Depending on how many languages you program in, getting all their version managers installed, added to &lt;code&gt;$PATH&lt;/code&gt;, configured etc... becomes quite a pain when setting up a new system, or even figuring out how this one works because you've used something else for a while.</description>
-      <link>https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</guid>
-      <pubdate>Tue, 15 Aug 2017 19:04:44 GMT</pubdate>
+      <pubdate>Mon, 27 Aug 2018 07:55:24 GMT</pubdate>
     </item>
     <item>
       <title>Vim tip: persistent undo</title>
       <description>Usually, when you open a file in your editor, make some changes, save and close, you lose the ability to &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;Z&lt;/kbd&gt;. Vim has a built in mechanism to persist changes made to files on disk. This may not sound that exciting, but what if your editor crashes while you have a set of changes you may want to revert stored?</description>
       <link>https://sidneyliebrand.io/blog/vim-tip-persistent-undo</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/vim-tip-persistent-undo</guid>
-      <pubdate>Sat, 04 Aug 2018 18:17:52 GMT</pubdate>
+      <pubdate>Sat, 04 Aug 2018 20:17:52 GMT</pubdate>
+    </item>
+    <item>
+      <title>How FZF and ripgrep improved my workflow</title>
+      <description>In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting &lt;strong&gt;every. single. time.&lt;/strong&gt;.</description>
+      <link>https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</guid>
+      <pubdate>Sun, 24 Jun 2018 13:33:37 GMT</pubdate>
+    </item>
+    <item>
+      <title>The greatnesses and gotchas of YAML</title>
+      <description>YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!</description>
+      <link>https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</guid>
+      <pubdate>Sat, 23 Dec 2017 07:25:59 GMT</pubdate>
+    </item>
+    <item>
+      <title>A collection of Vim key binds</title>
+      <description>In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I&apos;ve used Vim for about two months now and I&apos;m still learning a lot. In this post I&apos;m going to take you through a part of my .vimrc that describes my non-plugin key binds.</description>
+      <link>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</guid>
+      <pubdate>Sat, 16 Sep 2017 13:11:03 GMT</pubdate>
     </item>
     <item>
       <title>Combining Caniuse with FZF</title>
-      <description>There is caniuse.com which you can use to search online, but what if you're a lazy dev like me that likes to keep his stuff in the terminal? Well, for this reason I wrote a small wrapper using some of my all time favorite tools: Ruby and FZF!</description>
+      <description>There is caniuse.com which you can use to search online, but what if you&apos;re a lazy dev like me that likes to keep his stuff in the terminal? Well, for this reason I wrote a small wrapper using some of my all time favorite tools: Ruby and FZF!</description>
       <link>https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</link>
       <guid isPermalink="true">https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</guid>
-      <pubdate>Sun, 03 Sep 2017 09:47:27 GMT</pubdate>
+      <pubdate>Sun, 03 Sep 2017 11:47:27 GMT</pubdate>
     </item>
     <item>
-      <title>And your metered paywall isn't part of my story, Medium</title>
-      <description>I've been greeted by the same "Your story isn't part of the metered paywall" message for a while now, and figured it was time to make a change in the right direction.</description>
-      <link>https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</link>
-      <guid isPermalink="true">https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</guid>
-      <pubdate>Mon, 10 Jun 2019 02:36:22 GMT</pubdate>
+      <title>Switching to ASDF version manager</title>
+      <description>Depending on how many languages you program in, getting all their version managers installed, added to &lt;code&gt;$PATH&lt;/code&gt;, configured etc... becomes quite a pain when setting up a new system, or even figuring out how this one works because you&apos;ve used something else for a while.</description>
+      <link>https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</guid>
+      <pubdate>Tue, 15 Aug 2017 21:04:44 GMT</pubdate>
     </item>
   </channel>
 </rss>
