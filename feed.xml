@@ -4,9 +4,16 @@
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Sat, 27 Mar 2021 15:10:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Mar 2021 12:10:07 GMT</lastBuildDate>
     <copyright>Copyright https://sidneyliebrand.io 2021</copyright>
     <category term="technology" />
+    <item>
+      <title>How I became a web developer</title>
+      <description>Even though I always knew I wanted to do something with computers, I was certain I could never become a web developer. This post will be my attempt at explaining how I got there anyway :)</description>
+      <link>https://sidneyliebrand.io/blog/how-i-became-a-web-developer</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/how-i-became-a-web-developer</guid>
+      <pubdate>Mon, 29 Mar 2021 14:06:00 GMT</pubdate>
+    </item>
     <item>
       <title>Converting .gif to web-safe video formats using ffmpeg</title>
       <description>This post shows how to convert .gif images to web-safe video formats using ffmpeg cli. These formats produce smaller files which means less data to load!</description>

@@ -5,12 +5,22 @@
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io" />
   <link href="https://sidneyliebrand.io/atom.xml" rel="self" />
-  <updated>2021-03-27T15:10:01.337Z</updated>
+  <updated>2021-03-29T12:10:07.030Z</updated>
   <rights>Copyright https://sidneyliebrand.io 2021</rights>
   <category term="technology" />
   <author>
     <name>Sidney Liebrand</name>
   </author>
+  
+  <entry>
+    <title>How I became a web developer</title>
+    <summary>Even though I always knew I wanted to do something with computers, I was certain I could never become a web developer. This post will be my attempt at explaining how I got there anyway :)</summary>
+    <id>https://sidneyliebrand.io/blog/how-i-became-a-web-developer</id>
+    <link rel="alternate" href="https://sidneyliebrand.io/blog/how-i-became-a-web-developer" />
+    <published>2021-03-29T14:06:00Z</published>
+    <updated>2021-03-29T14:06:00Z</updated>
+  </entry>
+  
   
   <entry>
     <title>Converting .gif to web-safe video formats using ffmpeg</title>
