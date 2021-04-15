@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sidneyliebrand.io/sitemap.xml
