@@ -5,7 +5,7 @@
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io" />
   <link href="https://sidneyliebrand.io/atom.xml" rel="self" />
-  <updated>2021-04-05T18:17:14.417Z</updated>
+  <updated>2021-04-15T12:39:03.778Z</updated>
   <rights>Copyright https://sidneyliebrand.io 2021</rights>
   <category term="technology" />
   <author>
@@ -13,7 +13,7 @@
   </author>
   
   <entry>
-    <title>How I became a web developer</title>
+    <title>Sidney Liebrand's blog - How I became a web developer</title>
     <summary>Even though I always knew I wanted to do something with computers, I was certain I could never become a web developer. This post will be my attempt at explaining how I got there anyway :)</summary>
     <id>https://sidneyliebrand.io/blog/how-i-became-a-web-developer</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/how-i-became-a-web-developer" />
@@ -23,7 +23,7 @@
   
   
   <entry>
-    <title>Converting .gif to web-safe video formats using ffmpeg</title>
+    <title>Sidney Liebrand's blog - Converting .gif to web-safe video formats using ffmpeg</title>
     <summary>This post shows how to convert .gif images to web-safe video formats using ffmpeg cli. These formats produce smaller files which means less data to load!</summary>
     <id>https://sidneyliebrand.io/blog/converting-gif-to-web-safe-video-formats-using-ffmpeg</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/converting-gif-to-web-safe-video-formats-using-ffmpeg" />
@@ -33,7 +33,7 @@
   
   
   <entry>
-    <title>Creating my own vim statusline</title>
+    <title>Sidney Liebrand's blog - Creating my own vim statusline</title>
     <summary>Recently I decided to clean up my vim plugins once again, I do not think I use too many but I prefer to keep my setup simple. One of the things which bothered me was the configuration for lightline.vim in my vim config. It seemed needlessly complex and I wondered if I could recreate it without any plugins at all!</summary>
     <id>https://sidneyliebrand.io/blog/creating-my-own-vim-statusline</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/creating-my-own-vim-statusline" />
@@ -43,7 +43,7 @@
   
   
   <entry>
-    <title>Fixing audio configuration after upgrading Ubuntu</title>
+    <title>Sidney Liebrand's blog - Fixing audio configuration after upgrading Ubuntu</title>
     <summary>It is never fun when stuff breaks! This post is about me fixing some audio deficiencies after upgrading Ubuntu.</summary>
     <id>https://sidneyliebrand.io/blog/fixing-audio-configuration-after-upgrading-ubuntu</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/fixing-audio-configuration-after-upgrading-ubuntu" />
@@ -53,7 +53,7 @@
   
   
   <entry>
-    <title>And your metered paywall isn't part of my story, Medium</title>
+    <title>Sidney Liebrand's blog - And your metered paywall isn't part of my story, Medium</title>
     <summary>I&apos;ve been greeted by the same &quot;Your story isn&apos;t part of the metered paywall&quot; message for a while now, and figured it was time to make a change in the right direction.</summary>
     <id>https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/and-your-metered-paywall-isnt-part-of-my-story-medium" />
@@ -63,7 +63,7 @@
   
   
   <entry>
-    <title>Recruiters who call during working hours</title>
+    <title>Sidney Liebrand's blog - Recruiters who call during working hours</title>
     <summary>Any kind of cold-call from some random recruiter or sales rep is annoying enough as is. Imagine my frustration when I got a call from a recruiter who called on the &lt;strong&gt;company phone&lt;/strong&gt; in the middle of a working day!</summary>
     <id>https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/recruiters-who-call-during-working-hours" />
@@ -73,7 +73,7 @@
   
   
   <entry>
-    <title>Codi.vim + fullscreen buffer</title>
+    <title>Sidney Liebrand's blog - Codi.vim + fullscreen buffer</title>
     <summary>Learn how to set up Codi.vim to create a fullscreen scratch buffer that also works with Vim splits. We will take a look at wrapping the &lt;code&gt;Codi&lt;/code&gt; command and improving the buffer name(s) as seen in &lt;code&gt;:ls&lt;/code&gt;.</summary>
     <id>https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/codi-vim-fullscreen-buffer" />
@@ -83,7 +83,7 @@
   
   
   <entry>
-    <title>Vim tip: persistent undo</title>
+    <title>Sidney Liebrand's blog - Vim tip: persistent undo</title>
     <summary>Usually, when you open a file in your editor, make some changes, save and close, you lose the ability to &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;Z&lt;/kbd&gt;. Vim has a built in mechanism to persist changes made to files on disk. This may not sound that exciting, but what if your editor crashes while you have a set of changes you may want to revert stored?</summary>
     <id>https://sidneyliebrand.io/blog/vim-tip-persistent-undo</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/vim-tip-persistent-undo" />
@@ -93,7 +93,7 @@
   
   
   <entry>
-    <title>How FZF and ripgrep improved my workflow</title>
+    <title>Sidney Liebrand's blog - How FZF and ripgrep improved my workflow</title>
     <summary>In my never ending quest for simplicity I recently discovered FZF and ripgrep. Two command-line tools that have the potential to make every dag programming tasks easier. In this post I will explain how I use these tools to do things in a matter of keystrokes rather than having to re-google that command you keep forgetting &lt;strong&gt;every. single. time.&lt;/strong&gt;.</summary>
     <id>https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow" />
@@ -103,7 +103,7 @@
   
   
   <entry>
-    <title>The greatnesses and gotchas of YAML</title>
+    <title>Sidney Liebrand's blog - The greatnesses and gotchas of YAML</title>
     <summary>YAML is a great language for configuration files, it is a lot more flexible than JSON with comments and inheritance for example. While I was doing some research about YAML I found bits of information scattered all over the place so I attempted to piece the great things and the quirks together in a post!</summary>
     <id>https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/the-greatnesses-and-gotchas-of-yaml" />
@@ -113,7 +113,7 @@
   
   
   <entry>
-    <title>A collection of Vim key binds</title>
+    <title>Sidney Liebrand's blog - A collection of Vim key binds</title>
     <summary>In my never ending quest for an optimal Vim setup I am always looking for ways to improve. I&apos;ve used Vim for about two months now and I&apos;m still learning a lot. In this post I&apos;m going to take you through a part of my .vimrc that describes my non-plugin key binds.</summary>
     <id>https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/a-collection-of-vim-key-binds" />
@@ -123,7 +123,7 @@
   
   
   <entry>
-    <title>Combining Caniuse with FZF</title>
+    <title>Sidney Liebrand's blog - Combining Caniuse with FZF</title>
     <summary>There is caniuse.com which you can use to search online, but what if you&apos;re a lazy dev like me that likes to keep his stuff in the terminal? Well, for this reason I wrote a small wrapper using some of my all time favorite tools: Ruby and FZF!</summary>
     <id>https://sidneyliebrand.io/blog/combining-caniuse-with-fzf</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/combining-caniuse-with-fzf" />
@@ -133,7 +133,7 @@
   
   
   <entry>
-    <title>Switching to ASDF version manager</title>
+    <title>Sidney Liebrand's blog - Switching to ASDF version manager</title>
     <summary>Depending on how many languages you program in, getting all their version managers installed, added to &lt;code&gt;$PATH&lt;/code&gt;, configured etc... becomes quite a pain when setting up a new system, or even figuring out how this one works because you&apos;ve used something else for a while.</summary>
     <id>https://sidneyliebrand.io/blog/switching-to-asdf-version-manager</id>
     <link rel="alternate" href="https://sidneyliebrand.io/blog/switching-to-asdf-version-manager" />
