@@ -4,9 +4,16 @@
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Fri, 16 Apr 2021 10:59:13 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Apr 2021 16:52:03 GMT</lastBuildDate>
     <copyright>Copyright https://sidneyliebrand.io 2021</copyright>
     <category term="technology" />
+    <item>
+      <title>Sidney Liebrand's blog - Building a Next.js page load progress bar</title>
+      <description>I&apos;ve seen a fair few tutorials on building a page load progress bar for Next.js applications but most of them use the external library NProgress. While NProgress is a very nice general purpose library we can also build our own &apos;cheap&apos; progress bar without using any library!</description>
+      <link>https://sidneyliebrand.io/blog/building-a-next-js-page-load-progress-bar</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/building-a-next-js-page-load-progress-bar</guid>
+      <pubdate>Sun, 18 Apr 2021 19:00:00 GMT</pubdate>
+    </item>
     <item>
       <title>Sidney Liebrand's blog - How I became a web developer</title>
       <description>Even though I always knew I wanted to do something with computers, I was certain I could never become a web developer. This post will be my attempt at explaining how I got there anyway :)</description>

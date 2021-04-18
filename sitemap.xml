@@ -11,6 +11,11 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
+    <loc>https://sidneyliebrand.io/blog/building-a-next-js-page-load-progress-bar</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://sidneyliebrand.io/blog/how-i-became-a-web-developer</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>

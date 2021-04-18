@@ -5,12 +5,22 @@
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io" />
   <link href="https://sidneyliebrand.io/atom.xml" rel="self" />
-  <updated>2021-04-16T10:59:13.361Z</updated>
+  <updated>2021-04-18T16:52:03.850Z</updated>
   <rights>Copyright https://sidneyliebrand.io 2021</rights>
   <category term="technology" />
   <author>
     <name>Sidney Liebrand</name>
   </author>
+  
+  <entry>
+    <title>Sidney Liebrand's blog - Building a Next.js page load progress bar</title>
+    <summary>I&apos;ve seen a fair few tutorials on building a page load progress bar for Next.js applications but most of them use the external library NProgress. While NProgress is a very nice general purpose library we can also build our own &apos;cheap&apos; progress bar without using any library!</summary>
+    <id>https://sidneyliebrand.io/blog/building-a-next-js-page-load-progress-bar</id>
+    <link rel="alternate" href="https://sidneyliebrand.io/blog/building-a-next-js-page-load-progress-bar" />
+    <published>2021-04-18T19:00:00Z</published>
+    <updated>2021-04-18T19:00:00Z</updated>
+  </entry>
+  
   
   <entry>
     <title>Sidney Liebrand's blog - How I became a web developer</title>
