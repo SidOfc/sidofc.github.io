@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fcv","\u002Fhome","\u002F","\u002Fwow-raid-roster","\u002Fblog\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
