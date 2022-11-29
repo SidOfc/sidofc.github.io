@@ -4,9 +4,16 @@
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Fri, 02 Sep 2022 19:48:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2022 19:49:19 GMT</lastBuildDate>
     <copyright>Copyright https://sidneyliebrand.io 2022</copyright>
     <category term="technology" />
+    <item>
+      <title>Sidney Liebrand's blog - Handling FontFaceSet.entries() result not being iterable in Firefox</title>
+      <description>This post describes how to deal with a bug in Firefox where it fails to properly identify the result of &lt;code&gt;FontFaceSet.entries()&lt;/code&gt; as an actual iterable object.</description>
+      <link>https://sidneyliebrand.io/blog/fixing-font-face-set-entries-not-iterable-in-firefox</link>
+      <guid isPermalink="true">https://sidneyliebrand.io/blog/fixing-font-face-set-entries-not-iterable-in-firefox</guid>
+      <pubdate>Tue, 29 Nov 2022 19:20:00 GMT</pubdate>
+    </item>
     <item>
       <title>Sidney Liebrand's blog - Building a Next.js page load progress bar</title>
       <description>I&apos;ve seen a fair few tutorials on building a page load progress bar for Next.js applications but most of them use the external library NProgress. While NProgress is a very nice general purpose library we can also build our own &apos;cheap&apos; progress bar without using any library!</description>

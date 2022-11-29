@@ -5,12 +5,22 @@
   <id>https://sidneyliebrand.io</id>
   <link href="https://sidneyliebrand.io" />
   <link href="https://sidneyliebrand.io/atom.xml" rel="self" />
-  <updated>2022-09-02T19:48:52.733Z</updated>
+  <updated>2022-11-29T19:49:19.062Z</updated>
   <rights>Copyright https://sidneyliebrand.io 2022</rights>
   <category term="technology" />
   <author>
     <name>Sidney Liebrand</name>
   </author>
+  
+  <entry>
+    <title>Sidney Liebrand's blog - Handling FontFaceSet.entries() result not being iterable in Firefox</title>
+    <summary>This post describes how to deal with a bug in Firefox where it fails to properly identify the result of &lt;code&gt;FontFaceSet.entries()&lt;/code&gt; as an actual iterable object.</summary>
+    <id>https://sidneyliebrand.io/blog/fixing-font-face-set-entries-not-iterable-in-firefox</id>
+    <link rel="alternate" href="https://sidneyliebrand.io/blog/fixing-font-face-set-entries-not-iterable-in-firefox" />
+    <published>2022-11-29T19:20:00Z</published>
+    <updated>2022-11-29T19:20:00Z</updated>
+  </entry>
+  
   
   <entry>
     <title>Sidney Liebrand's blog - Building a Next.js page load progress bar</title>
