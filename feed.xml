@@ -4,8 +4,8 @@
     <title>Sidney Liebrand's blog</title>
     <description>The official https://sidneyliebrand.io RSS feed</description>
     <link>https://sidneyliebrand.io</link>
-    <lastBuildDate>Wed, 30 Nov 2022 11:01:51 GMT</lastBuildDate>
-    <copyright>Copyright https://sidneyliebrand.io 2022</copyright>
+    <lastBuildDate>Sun, 12 May 2024 19:01:11 GMT</lastBuildDate>
+    <copyright>Copyright https://sidneyliebrand.io 2024</copyright>
     <category term="technology" />
     <item>
       <title>Sidney Liebrand's blog - Handling FontFaceSet.entries() result not being iterable in Firefox</title>
